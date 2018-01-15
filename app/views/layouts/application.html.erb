@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+    
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <!-- IMPORTANT LINK FOR ALL DESIGNING -->
+      <link rel="stylesheet" href="https://capbeast.com/assets/theme-main-255ef60416f8a69e801afcf3c0b20873c5056da7567b137568a9062a9e515b30.css">
+    <!-- END -->
+    <!-- CAROUSEL SLIDER -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <%= javascript_include_tag "application"%>
+
+    <!-- END -->
+        <!-- <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.1026/styles/kendo.common.min.css"/>
+        <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.1026/styles/kendo.rtl.min.css"/>
+        <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.1026/styles/kendo.silver.min.css"/>
+        <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.1026/styles/kendo.mobile.all.min.css"/> -->
+    <!-- TEXT EDITOR UPDATE -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+    <!-- END -->
+      <!-- <link rel="stylesheet" type="text/css" href="assets/stylesheets/jquery.simpleGallery.css">
+      <link rel="stylesheet" type="text/css" href="assets/stylesheets/jquery.simpleLens.css">
+      <script type="text/javascript" src="assets/javascripts/jquery.simpleGallery.js"></script> -->
+
+  <!-- change Header image onmousehover written by me -->
+  <script>
+  function mysnapbackFunction() {
+      var image = document.getElementById('myholder');
+      if (image.src.match("image4")) {
+          image.src = "<%= asset_path( 'image4.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'image4.jpg' ) %>";
+    }
+  }
+  function myfittedFunction() {
+      var image = document.getElementById('myholder');
+      if (image.src.match("fitted_hat1")) {
+          image.src = "<%= asset_path( 'image4.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'fitted_hat1.jpg' ) %>";
+    }
+  }
+  function mystrapFunction() {
+      var image = document.getElementById('myholder');
+      if (image.src.match("image15")) {
+          image.src = "<%= asset_path( 'image4.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'image15.jpg' ) %>";
+    }
+  }
+  function mycamoFunction() {
+      var image = document.getElementById('myholder');
+      if (image.src.match("image27")) {
+          image.src = "<%= asset_path( 'image4.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'image27.jpg' ) %>";
+    }
+  }
+  function mybeanieFunction() {
+      var image = document.getElementById('myholder');
+      if (image.src.match("beany5")) {
+          image.src = "<%= asset_path( 'image4.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'beany5.jpg' ) %>";
+    }
+  }
+  function mypanelFunction() {
+      var image = document.getElementById('myholder');
+      if (image.src.match("panel3")) {
+          image.src = "<%= asset_path( 'image4.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'panel3.jpg' ) %>";
+    }
+  }
+  function mytruckerFunction() {
+      var image = document.getElementById('myholder');
+      if (image.src.match("image11")) {
+          image.src = "<%= asset_path( 'image4.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'image11.jpg' ) %>";
+    }
+  }
+  function mybucketFunction() {
+      var image = document.getElementById('myholder');
+      if (image.src.match("image12")) {
+          image.src = "<%= asset_path( 'image4.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'image12.jpg' ) %>";
+    }
+  }
+  function myathleticFunction() {
+      var image = document.getElementById('myholder');
+      if (image.src.match("athletic5")) {
+          image.src = "<%= asset_path( 'image4.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'athletic5.jpg' ) %>";
+    }
+  }
+  function mygolfFunction() {
+      var image = document.getElementById('myholder');
+      if (image.src.match("golf")) {
+          image.src = "<%= asset_path( 'image4.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'golf.jpg' ) %>";
+    }
+  }
+  function mymilitaryFunction() {
+      var image = document.getElementById('myholder');
+      if (image.src.match("military3")) {
+          image.src = "<%= asset_path( 'image4.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'military3.jpg' ) %>";
+    }
+  }
+  </script>
+<!-- END -->
+  </head>
+  <body>
+    <div class = "conatiner">
+      <div class="wrapper">
+        <%= render 'layouts/header' %>
+        <hr style="margin-top: 0px; border-color: #d2d2d1;" />
+          <%= yield %>
+        <%= render 'layouts/footer' %>
+      </div>
+    </div> <!-- /container -->
+
+  </body>
+</html>

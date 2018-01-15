@@ -1,0 +1,178 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.img_size {
+    height: 60px;
+    display: inline-block;
+    width: auto;
+}
+.show_img{
+    position: relative;
+    width: 550px;
+    height: 550px;
+
+}
+.header .tools a {
+    display: block;
+    position: fixed;
+    color: #000;
+    font-size: 15px;
+    width: 42px;
+    height: 0px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0px 8px 0px 40px;
+}
+.text{
+    display: inline-block;
+    text-align: center;
+    margin: -111px;
+    margin-top: -214px;
+    margin-bottom: 144px;
+    height: 34px;
+    width: 278px;
+}
+.centered {
+    height: fit-content;
+    color: white;
+    position: absolute;
+    top: 21%;
+    left: 32%;
+    padding: 70px 15px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.checkout{
+ height:35px;
+ width: 153px;
+ }
+   
+.navbar-brand>img {
+    display: block;
+    margin: -59px 11px 4px -2px;
+}
+
+.img-holder {
+    max-width: 60%;
+}
+
+.myinput {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    box-shadow: none !important;
+    background-color: #524b4b;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    text-align: left;
+    margin: -111px;
+    margin-top: 22px;
+    margin-bottom: 144px;
+    height: 170px;
+    width: 400px; 
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+.sort-list {
+    font: 1.2rem/1 "teko", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: -21px 23px 50px 43px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+div#editor {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+}
+
+#edit {
+  display: inline-block;
+}
+
+
+p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+.input {
+    width: 0px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+        margin: 0px 31px;
+}
+
+.input:focus {
+    width: 100%
+}
+
+.nav-li {
+    display: block;
+    color: #000;
+    padding: 4px 46px;
+        margin-right: 19px;
+}
+
+.font{
+    font-family: serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 75px;
+    line-height: .89;
+    margin: 0 0 38px -3px;
+    letter-spacing: 4px;
+    transition: all .3s ease;
+}
+   
+.btnchange{
+
+        letter-spacing: -2.5px;
+        padding: 9px 27px 6px;
+        text-indent: 2px;
+        font-size: 17px;
+}
+
+.faq{
+    font-family: "Karla","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 21px;
+    line-height: 1.43;
+    color: #444;
+} 
+
+.input_box {
+    box-shadow: none !important;
+}
