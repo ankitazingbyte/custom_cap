@@ -176,3 +176,13 @@ p, ol, ul, td {
 .input_box {
     box-shadow: none !important;
 }
+
+.block{
+    display: inline-block;
+    text-align: center;
+    margin: 0px -47px 0px;
+}
+div#main-menu {
+    padding-left: 2px;
+    padding-right: 145px;
+}

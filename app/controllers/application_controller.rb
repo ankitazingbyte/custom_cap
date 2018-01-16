@@ -5,14 +5,14 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:email,:password, :password_confirmation,:admin])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :email,:password, :password_confirmation, :admin])
   end
 
   def after_sign_in_path_for(resource)
-      if  resource.admin?
-     	custom_snapbacks_path
+      if resource.admin?
+     	  products_path
       else
-     	root_path
+     	  root_path
       end
   end
 
@@ -26,6 +26,5 @@ class ApplicationController < ActionController::Base
       Order.new
     end
   end
-end
 
 end

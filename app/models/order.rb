@@ -16,6 +16,5 @@ class Order < ApplicationRecord
 	  def update_subtotal
 	    self[:sub_total] = sub_total
 	  end
-	end
 
 end

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :shippings
+  resources :contacts
+  resources :addresses
   devise_for :users
   resources :products
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -31,4 +34,5 @@ Rails.application.routes.draw do
   get 'home/checkout_shipping'
   get 'home/checkout_payment'
   get 'home/contact'
+  post 'home/contact_us_mailer'
 end

@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180115131731) do
+ActiveRecord::Schema.define(version: 20180116103904) do
+
+  create_table "addresses", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.text "address"
+    t.integer "zip_code"
+    t.string "city"
+    t.string "country"
+    t.string "state"
+    t.integer "phone"
+    t.string "company"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "brands", force: :cascade do |t|
     t.string "name"
@@ -26,6 +40,30 @@ ActiveRecord::Schema.define(version: 20180115131731) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image"
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.text "street_address"
+    t.integer "postal_code"
+    t.string "city"
+    t.string "state"
+    t.string "country"
+    t.string "phone"
+    t.string "image"
+    t.string "details"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "images", force: :cascade do |t|
+    t.string "image"
+    t.string "imageable_type"
+    t.integer "imageable_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "order_items", force: :cascade do |t|
@@ -63,6 +101,13 @@ ActiveRecord::Schema.define(version: 20180115131731) do
     t.datetime "updated_at", null: false
     t.integer "brand_id"
     t.integer "category_id"
+  end
+
+  create_table "shippings", force: :cascade do |t|
+    t.string "express"
+    t.string "standard"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

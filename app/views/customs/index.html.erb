@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="main-section">
       <ul class="hidden-xs sort-list list-inline text-center">
-       <%= Category.all.each do |category| %>
+       <% Category.all.each do |category| %>
           <li>
           <%= link_to category.name, products_path(category: category.name), class: "link" %>
           </li>

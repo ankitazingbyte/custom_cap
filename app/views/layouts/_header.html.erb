@@ -2,17 +2,17 @@
 	<div class="container-fluid">
 
 		<nav class="user-bar text-right">
-			<%# if user_signed_in? %>
-				Welcome <%#= current_user.email %> Account
-			<%#else %>
+			<% if user_signed_in? %>
+				Welcome <%= current_user.first_name %> Account
+			<% else %>
 				<%=link_to 'LOGIN', home_login_form_path %>
-			<%# end %>
+			<% end %>
 			<span>/</span> 
-			<%# if user_signed_in? %>
-				<%#= link_to 'LOGOUT',destroy_user_session_path, method: :delete %>
-			<%# else %>
-				<%#= link_to 'Sign Up', home_signup_form_path %>
-			<%# end %>
+			<% if user_signed_in? %>
+				<%= link_to 'LOGOUT',destroy_user_session_path, method: :delete %>
+			<% else %>
+				<%= link_to 'Sign Up', home_signup_form_path %>
+			<% end %>
 				
 		</nav>
 
@@ -26,9 +26,17 @@
 				<div class="col-sm-2 col-sm-push-10">
 					<ul class="tools nav navbar-nav">
 						<form>
-  							<input type="text" name="search" class="input">
+  							<div class="input-group">
+							   <%= form_tag products_path, :method => 'get'  do %>
+							      <%= text_field_tag :search, params[:search], placeholder: "Search books", class: "input" %>
+							       <span class="input-group-btn">
+							        <%= submit_tag "Search", class: 'btn btn-success' %>
+							       </span>
+							    <% end %>
+							   </form>
+							</div>
 						</form>
-					<li><%#= link_to "#{current_order.order_items.size}", cart_path, class: "fa fa-shopping-cart cart" %></li>
+					<li><%= link_to "#{current_order.order_items.size}", cart_path, class: "fa fa-shopping-cart cart" %></li>
 					</ul>
 				</div>
 				<div class="col-sm-10 col-sm-pull-2 main-menu">
@@ -46,30 +54,16 @@
 														<%= image_tag 'image4.jpg', class: "img-holder", id: "myholder" %>
 													</picture>
 												</div>
-											</div>
-											<div class="col-sm-3 col-xs-7">
-												<ul class="list-unstyled">
-												<li><%= link_to "Custom Snapbacks", home_custom_snapback_path, onmouseover: "mysnapbackFunction()" %></li>
-												<li> <%= link_to "Custom Fitted Hats", home_custom_fitted_hat_path, onmouseover: "myfittedFunction()" %></li>
-												<li><%= link_to "Custom Dad Hats", home_custom_dad_hat_path, onmouseover: "mystrapFunction()" %></li>
-												<li><%= link_to "Custom Camo Hats", home_custom_camo_hat_path, onmouseover: "mycamoFunction()" %></li>
-												</ul>
-											</div>
-											<div class="col-sm-3 col-xs-7">
-											<ul class="list-unstyled">
-											<li><%= link_to "Custom Beanies", home_custom_beanies_path, onmouseover: "mybeanieFunction()" %></li>
-											<li><%= link_to "Custom 5 panel Hats", home_custom_panel_hat_path, onmouseover: "mypanelFunction()" %></li>
-											<li><%= link_to "Custom Trucker Hats", home_custom_trucker_hat_path, onmouseover: "mytruckerFunction()" %></li>
-											<li><%= link_to "Custom Bucket Hats", home_custom_bucket_hat_path, onmouseover: "mybucketFunction()" %></li>
-											</ul>
-											</div>
-											<div class="col-sm-3 col-xs-7">
-											<ul class="list-unstyled">
-											<li><%= link_to "Custom Athletic Hats", home_custom_athletic_hat_path, onmouseover: "myathleticFunction()" %></li>
-											<li><%= link_to "Custom Golf Hats", home_custom_golf_hat_path, onmouseover: "mygolfFunction()" %></li>
-											<li><%= link_to "Custom Military Hats", home_custom_military_hat_path, onmouseover: "mymilitaryFunction()" %></li>
-											</ul>
-											</div>
+											</div>	
+											<% Category.all.each do |category| %>
+												<div class="col-sm-3 col-xs-7">
+													<ul class="list-unstyled">
+													    <li>
+															<%= link_to category.name, products_path(category: category.name) %>
+														</li>
+												    </ul>
+												</div>
+											<% end %>
 										</div>
 									</div>
 								</div>
@@ -81,32 +75,22 @@
 										<ul class="brands-list list-inline text-center">
 											<li>
 												<a class="menu-thumbail" href="brands/new-era.html">
-													<li class="dropdown">
-														<a href="#" data-toggle="dropdown" , class="dropdown-toggle"><%= image_tag "new-era-2x.png", width: "81" %><span class="caret"></span></a>
-														<div class="dropdown-menu">
-															<div class="container-fluid">
-																<ul class="brands-list list-inline text-center">
-																	<h2>CUSTOM SNAPBACK</h2>
-																	<%= Brand.all.each do |brand| %>
-																		<li>
-																		<%= link_to brand.name, products_path(brand: brand.name), class: "link" %>
-																		</li>
-																 	<% end %>
-																</ul>
-															</div>
-														</div>
-													</li>
+													<% Brand.all.each do |brand| %>
+														<li>
+															<%= link_to brand.name, products_path(brand: brand.name), class: "link" %>
+														</li>
+													<% end %>				
 												</a>
 											</li>
 										 	
 											<li>
-											<a class="menu-thumbail" href="brands/nike.html"><%= image_tag "nike-2x.png", width: "81" %></a>
+												<a class="menu-thumbail" href="brands/nike.html"><%#= image_tag "nike-2x.png", width: "81" %></a>
 											</li>
 											<li>
-											<a class="menu-thumbail" href="brands/capbeast-classics.html"><%= image_tag "classics-2x.png", width: "81" %></a>
+												<a class="menu-thumbail" href="brands/capbeast-classics.html"><%#= image_tag "classics-2x.png", width: "81" %></a>
 											</li>
 											<li>
-											<a class="menu-thumbail" href="brands/oakley.html"><%= image_tag "oakley-2x.png", width: "81" %></a>
+												<a class="menu-thumbail" href="brands/oakley.html"><%#= image_tag "oakley-2x.png", width: "81" %></a>
 											</li>
 										</ul>
 									</div>

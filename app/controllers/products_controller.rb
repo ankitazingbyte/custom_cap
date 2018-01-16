@@ -4,24 +4,27 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+      @products = Product.all
+       @order_item = current_order.order_items.new
     if params[:brand].blank?
-    @products = Product.all
+      @category_id = Category.find_by(name: params[:category]).id
+      @products = Product.where(:category_id => @category_id)
     else
       @brand_id =Brand.find_by(name: params[:brand]).id
       @products = Product.where(:brand_id => @brand_id)
     end
+     # @q = Product.ransack(params[:q])
+     # @products = @q.result(distinct: true).order(:title).page params[:page]
   end
-
   # GET /products/1
   # GET /products/1.json
   def show
+    @order_item = current_order.order_items.new
   end
 
   # GET /products/new
   def new
     @product = Product.new
-    @brands = Brand.all.map{|b| [ b.name, b.id ] }
-    @categories = Brand.all.map{|c| [ c.name, c.id ] }
   end
 
   # GET /products/1/edit
@@ -47,6 +50,8 @@ class ProductsController < ApplicationController
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
+    @product.brand_id = params[:brand_id]
+    @product.category_id = params[:category_id]
     respond_to do |format|
       if @product.update(product_params)
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }
@@ -76,6 +81,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:image, :title, :price, :product_detail, :brand_id, :category_id)
+      params.require(:product).permit(:user_id, :image, :title, :price, :product_detail, :brand_id, :category_id, :order_id, :cart_id, :quantity, images_attributes:[:id, :image, :imageable_id, :imageable_type, :_destroy] )
     end
 end

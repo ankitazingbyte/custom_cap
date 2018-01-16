@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="main-section">
       <ul class="hidden-xs sort-list list-inline text-center">
-       <%= Brand.all.each do |brand| %>
+       <% Brand.all.each do |brand| %>
           <li>
           <%= link_to brand.name, products_path(brand: brand.name), class: "link" %>
           </li>
@@ -19,7 +19,7 @@
                 <a href="/products/flat-bill-snapback-new-era?taxon_id=7">
                   <picture>
                     <a alt="Flat bill snapback cap - New Era 9Fifty - New Era NE400 - CapBeast" class="img-responsive" itemprop="url">
-                        <a href="/products/<%= product.id %>"><%= image_tag product.image.url, class: "img-responsive", id: "theImage" %>
+                        <a href="/products/<%= product.id %>"><%= image_tag product.images.first.image.url, class: "img-responsive", id: "theImage" unless product.images.blank?  %>
                       </a>
                     </a>
                   </picture>
@@ -58,15 +58,7 @@
         <div class="row">
           <div class="col-sm-2 col-sm-offset-5 text-center">
             <nav class="pagination_override">
-              <span class="page current">
-              1
-              </span>
-              <span class="page">
-              <a href="/custom-hats/custom-snapbacks?page=2" rel="next">2</a>
-              </span>
-              <span class="next">
-              <a href="/custom-hats/custom-snapbacks?page=2" rel="next">Next &rsaquo;</a>
-              </span>
+              <%#= paginate @products %>
             </nav>
           </div>
         </div>
