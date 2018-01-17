@@ -1,0 +1,54 @@
+<%= form_for Shipping.new do |form| %>
+        <br>
+          <div class="row">
+            <div class="col-md-6">
+            <h4>United States - Standard shipping</h4>
+            <div class="radio">
+            <label class="color-active">
+              <%= form.radio_button :standard, id: :shipping_standard, :checked => false, id: "order_shipments_attributes_0_selected_shipping_rate_id_201929" %>
+    
+            $14.00
+            </label>
+            </div>
+            Standard shipping is 3-5 business days.
+            Keep in mind that production may take up to 2 weeks.
+          </div>
+          <div class="col-md-6">
+            <h4>United States - Express shipping</h4>
+            <div class="radio">
+            <label class="color-active">
+            <%= form.radio_button :express, id: :shipping_express, :checked => false, id: "order_shipments_attributes_0_selected_shipping_rate_id_201930" %>
+            $24.00
+            </label>
+            </div>
+            Express shipping is 2-3 business days.
+            Keep in mind that production may take up to 2 weeks.
+          </div>
+        </div>
+        <hr>
+        <%= form.submit "Save and continue", class: "btn btn-danger checkout_submit"%>
+<% end %> 
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="widget-block">
+        <strong class="title">ORDER SUMMARY</strong>
+        <dl class="summary">
+        <dt>Subtotal</dt>
+        <dd>$74.00</dd>
+        <dt>Shipping total: </dt>
+        <dd>$14.00</dd>
+        <dt>Taxes: </dt>
+        <dd><strong>-</strong></dd>
+        <dt><strong>Order Total</strong></dt>
+        <dd><strong>$88.00</strong></dd>
+        </dl>
+        </div>
+        <div class="widget-block">
+        <strong class="title">APPLY DISCOUNT</strong>
+        <form accept-charset="UTF-8" action="/orders/CB36121007/apply_coupon" class="discount-form" id="update-cart" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="YFYHhbtGQiROZYJwZklrSt/CV9WHW89pQjY459FOnJY=" /></div>
+        <div class="form-group">
+        <input type="text" name="order[coupon_code]" class="form-control" placeholder="code">
+        <input type="hidden" name="order[state]" value="delivery" class="form-control">
+        </div>
+        <input type="submit" value="Apply Coupon" class="btn btn-default">
+        </form>

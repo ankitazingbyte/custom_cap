@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+<h1> Category Detail </h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @category.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%#= image_tag @category.image.url %>
+</p>
+
+
+<h1> All products Of Category </h1>
+
+<tr><%#= @category.products.each do |product| %><br>
+<strong>Id:</strong>
+<td> <%= @category.products.ids %></td><br>
+   <strong>Name:</strong>
+  <td> <%#= @category.products.tiltes %></td><br>
+   <%# end %></tr>
+   
+   <%= @category.products %></p>
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>

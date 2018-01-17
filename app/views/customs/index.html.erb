@@ -1,0 +1,76 @@
+<div class="container"> 
+  <div class="container-fluid">
+    <div class="main-section">
+      <ul class="hidden-xs sort-list list-inline text-center">
+       <% Category.all.each do |category| %>
+          <li>
+          <%= link_to category.name, products_path(category: category.name), class: "link" %>
+          </li>
+        <% end %>
+      </ul>
+      <header class="heading text-center">
+      <h1>Design your own Custom caps</h1>
+      </header>
+      <div class="row mb20">
+        <ul class="products-list list-unstyled text-center">
+          <% @products.each do |product| %> 
+            <li class="col-sm-4">
+              <div class="img-holder" itemscope itemtype="http://schema.org/Product" id="product_1">
+                <a href="/products/flat-bill-snapback-new-era?taxon_id=7">
+                  <picture>
+                    <a alt="Flat bill snapback cap - New Era 9Fifty - New Era NE400 - CapBeast" class="img-responsive" itemprop="url">
+                        <a href="/products/<%= product.id %>"><%= image_tag product.image.url, class: "img-responsive", id: "theImage" %>
+                      </a>
+                    </a>
+                  </picture>
+                </a>
+              </div>
+              <ul class="set-color list-inline">
+                </li>
+                  <li>
+                    <a href="#" class="change_product_image" style="background: linear-gradient(to bottom, #747D7D 0%, #747D7D 100%);"></a>
+              
+                  </li>
+                </li>
+                  <li>
+                  <a href="#" class="change_product_image" style="background: linear-gradient(to bottom, #15125C 0%, #15125C 100%);"></a>
+                  <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191992/product/IMG_0128.jpg?1475692723"></div>
+                  </li>
+                  <li>
+                  <a href="#" class="change_product_image" style="background: linear-gradient(to bottom, #030303  0%, #030303  50%,  #1F5919  50%,  #1F5919  100%);"></a>
+                  <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/261065/product/FLAT_BILL_9FIFTY_SNAPBACK__NEW_ERA_CAMO_-_Front_View.jpg?1485186371"></div>
+                  </li>
+                </li>
+                  <li>
+                  <a href="#" class="change_product_image" style="background: linear-gradient(to bottom, #D6C994 0%, #D6C994 100%);"></a>
+                  <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/722/product/IMG_0139.jpg?1412110055"></div>
+                  </li>
+                  <li>
+                  <a href="#" class="change_product_image" style="background: linear-gradient(to bottom, #000000  0%, #000000  50%,  #030303 50%,  #030303 100%);"></a>
+                  <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191987/product/IMG_0131.jpg?1475692677"></div>
+                  </li>
+              </ul>
+              <strong class="title"><a href="/custom_snapbacks/<%= product.id %>" itemprop="name" title="Flat bill 9Fifty snapback | New Era"><%= product.title %></a></strong>
+              <strong class="price">$<%= product.price %></strong>
+            </li>
+          <% end %>
+        </ul>
+        <div class="row">
+          <div class="col-sm-2 col-sm-offset-5 text-center">
+            <nav class="pagination_override">
+              <span class="page current">
+              1
+              </span>
+              <span class="page">
+              <a href="/custom-hats/custom-snapbacks?page=2" rel="next">2</a>
+              </span>
+              <span class="next">
+              <a href="/custom-hats/custom-snapbacks?page=2" rel="next">Next &rsaquo;</a>
+              </span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> 
+</div>

@@ -1,0 +1,41 @@
+<div class="container-fluid">
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 text-center">
+			<h2>CHECKOUT</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+			<ul class="nav nav-pills  nav-justified">
+			<li class="btn-default">
+			<a href="#" class="btn btn-default">Address</a>
+			</li>
+			<li class="">
+			<a href="#" class="btn btn-default btn-checkout">Shipping Method</a>
+			</li>
+			<li class="">
+			<a href="#" class="btn btn-default btn-checkout">Payment &amp; Confirm</a>
+			</li>
+			</ul>
+		<%= render 'addresses/form' %>
+
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="widget-block">
+			<strong class="title">ORDER SUMMARY</strong>
+				<dl class="summary">
+					<dt>Subtotal</dt>
+					<dd>$74.00</dd>
+					<dt>Shipping total: </dt>
+					<dd><strong>-</strong></dd>
+					<dt>Taxes: </dt>
+					<dd><strong>-</strong></dd>
+					<dt><strong>Order Total</strong></dt>
+					<dd><strong>$74.00</strong></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>

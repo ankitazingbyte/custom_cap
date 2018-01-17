@@ -1,0 +1,28 @@
+<div class="container-fluid">
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 text-center">
+		<h2>CHECKOUT</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+			<ul class="nav nav-pills  nav-justified">
+			<li class="btn-checkout">
+			<a href="http://localhost:3000/home/checkout" class="btn btn-default btn-checkout">Address</a>
+			</li>
+			<li class="btn-checkout">
+			<a href="#" class="btn btn-default">Shipping Method</a>
+			</li>
+			<li class="">
+			<a href="#" class="btn btn-default btn-checkout">Payment &amp; Confirm</a>
+			</li>
+			</ul>
+
+			<div class="tab-content">
+				<%= render 'shippings/form' %>
+			</div>
+		</div>
+	</div>
+</div>

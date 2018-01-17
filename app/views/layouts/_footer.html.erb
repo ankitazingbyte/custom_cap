@@ -1,0 +1,69 @@
+<footer id="footer">
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3">
+				<%= image_tag "logo.png" %>
+				</div>
+				<div class="col-sm-3">
+					<h4>Information</h4>
+					<ul class="list-unstyled">
+						<li><%=link_to 'About Us', home_about_us_path %></li>
+						<li><%=link_to 'Contact Us', home_contact_path %></li>
+						<li><%=link_to 'Delivery Information', home_delivery_policy_path %></li>
+						<li><%= link_to 'Privacy Policy', home_privarcy_policy_path %></li>
+						<li><%= link_to 'Delivery', home_terms_of_delivery_path %></li>
+						<li><%= link_to 'Returns', home_return_path %></li>
+						<li><%= link_to 'Site Map'%></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<h4>PRODUCT CATEGORIES</h4>
+					<ul class="list-unstyled">
+						<li>
+							<% Category.all.each do |category| %>
+								<ul class="list-unstyled">
+								    <li>
+										<%= link_to category.name, products_path(category: category.name) %>
+									</li>
+							    </ul>
+							<% end %>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+				<h4>NEWSLETTER</h4>
+
+				<!-- <form accept-charset="UTF-8" action="https://capbeast.com/subscriptions" class="subscribe-form" method="post"><div style="display:none"> --><!-- <input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="6MHXe3guztMT3PSgqCz3dcEP0STM26HTxnJl7Hs6e54=" /></div> -->
+				<!-- <p>Sign up to our newsletter and receive free coupons and discount codes!</p>
+				<fieldset>
+				<input class="form-control" id="newsletter_email" name="email" placeholder="Email" type="text" />
+				<button type="submit" id="newsletter_button" class="btn btn-opposite" style="min-width:20px;height:42px;"><i class="icon-arrow-right"></i></button>
+				</fieldset>
+				</form> -->
+
+				<!-- <ul class="socials list-inline">
+				<li><a href="https://www.facebook.com/capbeast" class="icon-facebook"></a></li>
+				<li><a href="https://twitter.com/wearecapbeast" class="icon-twitter"></a></li>
+				<li><a href="https://instagram.com/capbeast" class="icon-instagram"></a></li>
+				</ul> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-9">
+
+				<span class="copy">COPYRIGHT &copy; 2017 <a href="#">CAPBEAST</a> | ALL RIGHTS RESERVED</span>
+				
+				<div class="col-sm-3 text-right">
+
+				<!-- <ul class="cards list-inline">
+				<li><img alt="paypal" src="assets/spree/frontend/footer/card-01-5bbc88d774353e08d712d36f0b6e382d56f3f240c09b8ac388fa59f0b9b569a9.png" /></li>
+				<li><img alt="visa" src="assets/spree/frontend/footer/card-02-8f1b91625a826e85a1eb201b828ffd31a1193491c05fc1d16937ca2678cc4d73.png" /></li>
+				<li><img alt="mastercard" src="assets/spree/frontend/footer/card-03-96dfb145dc70937806f43b4f9200a795d08d1a897dbfd2c06948112e7bc3d159.png" /></li>
+				<li><img alt="amex" src="assets/spree/frontend/footer/card-04-12fd39fc08efe653b121b59a668951db166a4ce77718a00a708c334c69b94026.png" /></li>
+				</ul> -->
+				</div>
+			</div>
+		</div>
+	</footer>
+</footer>_

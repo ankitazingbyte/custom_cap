@@ -1,0 +1,108 @@
+<header class="header text-uppercase">
+	<div class="container-fluid">
+
+		<nav class="user-bar text-right">
+			<% if user_signed_in? %>
+				Welcome <%= current_user.first_name %> Account
+			<% else %>
+				<%=link_to 'LOGIN', home_login_form_path %>
+			<% end %>
+			<span>/</span> 
+			<% if user_signed_in? %>
+				<%= link_to 'LOGOUT',destroy_user_session_path, method: :delete %>
+			<% else %>
+				<%= link_to 'Sign Up', home_signup_form_path %>
+			<% end %>
+				
+		</nav>
+
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+			<a class="navbar-brand" href="http://localhost:3000">
+				<%= image_tag "classics-2x.png",width: "130" %></a>
+			</div>
+
+			<div class="row nav-li">
+				<div class="col-sm-2 col-sm-push-10">
+					<ul class="tools nav navbar-nav">
+						<li>
+  							<div class="input-group">
+							   	<%= form_tag(products_path, method: :get) do %>
+		  							<%= text_field_tag :title, params[:term], placeholder: "Search caps", class: "input"%>
+		  							<%= submit_tag 'Search' %>
+								<% end %>
+							</div>
+						</li>
+					<li><%= link_to "#{current_order.order_items.size}", cart_path, class: "fa fa-shopping-cart fa-5x cart" %></li>
+					</ul>
+				</div>
+				<div class="col-sm-10 col-sm-pull-2 main-menu">
+					<div class="collapse navbar-collapse" id="main-menu">
+
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">create <span class="caret"></span></a>
+								<div class="dropdown-menu">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-sm-3 col-xs-5">
+												<div class="text-center">
+													<picture>
+														<%= image_tag 'image4.jpg', class: "img-holder", id: "myholder" %>
+													</picture>
+												</div>
+											</div>	
+											<% Category.all.each do |category| %>
+												<div class="col-sm-3 col-xs-7">
+													<ul class="list-unstyled">
+													    <li>
+															<%= link_to category.name, products_path(category: category.name) %>
+														</li>
+												    </ul>
+												</div>
+											<% end %>
+										</div>
+									</div>
+								</div>
+							</li>
+  							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">BRANDS<span class="caret"></span></a>
+								<div class="dropdown-menu">
+									<div class="container-fluid">
+										<ul class="brands-list list-inline text-center">
+											<li>
+												<a class="menu-thumbail" href="brands/new-era.html">
+													<% Brand.all.each do |brand| %>
+														<li>
+															<%= link_to brand.name, products_path(brand: brand.name), class: "link" %>
+														</li>
+													<% end %>				
+												</a>
+											</li>
+										 	
+											<li>
+												<a class="menu-thumbail" href="brands/nike.html"><%#= image_tag "nike-2x.png", width: "81" %></a>
+											</li>
+											<li>
+												<a class="menu-thumbail" href="brands/capbeast-classics.html"><%#= image_tag "classics-2x.png", width: "81" %></a>
+											</li>
+											<li>
+												<a class="menu-thumbail" href="brands/oakley.html"><%#= image_tag "oakley-2x.png", width: "81" %></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li><%= link_to "FAQ", faqs_path %></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+						<li>
+						</li>
+						<li><%= link_to "GET A QUOTE", home_contact_path %></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>

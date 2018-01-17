@@ -1,0 +1,592 @@
+<main>
+  <div class="container-fluid">
+    <div class="main-section">
+      <div class="product-details row">
+        <div class="col-md-7" style="">
+          <div class="label-steps text-center">  
+          <div id="fpd" class="fpd-container fpd-bottom-actions-centered fpd-views-outside" style="margin:auto">
+              <input id="ga_price" name="ga_price" type="hidden" value="28.0" />
+              <%#= image_tag @product.images.first.image.url, class: "show_img", id: "myclicked" %>
+              <img id="output" class="centered"/>
+              <div id="editor">
+                <div class="centered myText" id='edit'>
+   
+
+               </div>
+              </div>
+              <article>
+                <div class="simpleLens-gallery-container" id="demo-1">
+                  <div class="simpleLens-container">
+                      <div class="simpleLens-big-image-container">
+                          <a class="simpleLens-lens-image" data-lens-image="<%= @product.image.url %>">
+                              <%= image_tag @product.images.first.image.url, class: "show_img", class: "simpleLens-big-image" %>
+                          </a>
+                      </div>
+                  </div>
+                  <% @product.images.each do |product| %>
+                  <div class="fpd-product">
+                    <div class="fpd-views-selection fpd-grid-contain   btns-set  fpd-clearfix" style="display: block;">
+                      <div class="fpd-item fpd-tooltip tooltipstered fpd-view-active col-md-3" title="front">
+                        <div class="simpleLens-thumbnails-container">
+                            <a href="#" class="simpleLens-thumbnail-wrapper"
+                               data-lens-image="<%= product.image.url %>"
+                               data-big-image="<%= product.image.url %>">
+                                <%= image_tag product.image.url, class: "img_size"%>
+                            
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <% end %>
+                </div>
+              </article>
+
+              <%# @product.images.each do |product| %>
+              <!-- <div class="fpd-product">
+                <div class="fpd-views-selection fpd-grid-contain   btns-set  fpd-clearfix" style="display: block;">
+                  <div class="fpd-item fpd-tooltip tooltipstered fpd-view-active col-md-3" title="front">
+                  <span style="letter-spacing: -2px;">Front</span>
+                        <%#= image_tag product.image.url, class: "img_size", onclick: "mybackFunction()"%>
+                  </div>
+                </div>
+              </div> -->
+               <%# end %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-md-push-1">
+          <div class="descr">
+            <h1 class="master-product" data-id="1"><%= @product.title %></h1>
+            <strong class="price product-price selling dynamic_price"><%= number_to_currency @product.price %></strong>
+      <!-- DISCOUNT MODAL POPUP -->
+                <a data-toggle="modal" data-target="#myModal" class="link">Volume Discounts</a>
+            <!-- Modal -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h5 class="modal-title text-center">Discounts</h5>
+                     </div>
+                     <div class="modal-body">
+                        <table class="table table-striped table-bordered">
+                          <thead>
+                             <tr>
+                              <th class="text-center">Quantity</th>
+                              <th class="text-center">Discount(%)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="text-center">
+                              <td>1 - 4</td>
+                              <td>0.0</td>
+                            </tr>
+                            <tr class="text-center">
+                              <td>5 - 9</td>
+                              <td>10.0</td>
+                            </tr>
+                            <tr class="text-center">
+                              <td>10 - 14</td>
+                              <td>15.0</td>
+                            </tr>
+                            <tr class="text-center">
+                              <td>15 - 19</td>
+                              <td>20.0</td>
+                            </tr>
+                            <tr class="text-center">
+                              <td>20 - 49</td>
+                              <td>25.0</td>
+                            </tr>
+                            <tr class="text-center">
+                              <td>50 - 74</td>
+                              <td>30.0</td>
+                            </tr>
+                            <tr class="text-center">
+                              <td>75 - 100</td>
+                              <td>35.0</td>
+                            </tr>
+                            <tr class="text-center">
+                              <td>100 - 10000</td>
+                              <td>40.0</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="modal-footer block-form">
+                          <a href="#" data-dismiss="modal" class="btn btn-danger">Close</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END -->
+            <div class="sizes_div">
+              <div class="clearfix">
+                  <label class="qty-field">Total Quantity:<p id="qty"></p></label>
+                </div>
+              <%= form_for @order_item, remote: true do |f| %>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="inline">One Size<br>
+                    <%= f.number_field :quantity, value: 0, min: 0, width: "60px;", id:"myNumber"%>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix mt10 mb10">
+                  <div class="input-group-btn">
+                    <%= f.hidden_field :product_id, value: @product.id %>
+                    <%= f.submit "add_to_cart", class: "btn btn-danger", onclick:"myqty()" %>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+            <div> 
+              <!-- <label class="pull-left">Colors:</label>
+              <ul class="set-color list-inline">
+                <li><div class="color-div col-xs-1 fpd-tootip" title="Black" data-index="0" data-url="/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2418" style="background: linear-gradient(to bottom, #000000  50%,  #030303 50%);"></div></li>
+                <li><div class="color-div col-xs-1 fpd-tootip" title="Charcoal" data-index="1" data-url="/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2421" style="background-color: #747D7D;"></div></li>
+                <li><div class="color-div col-xs-1 fpd-tootip" title="Deep Navy" data-index="2" data-url="/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2420" style="background-color: #15125C;"></div></li>
+                <li><div class="color-div col-xs-1 fpd-tootip" title="Stone" data-index="3" data-url="/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=279" style="background-color: #D6C994;"></div></li>
+                <li><div class="color-div col-xs-1 fpd-tootip" title="White" data-index="4" data-url="/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2419" style="background-color: #FFFFFF;"></div></li>
+                <li><a data-toggle="modal" href="#colorModal1">more colors</a></li>
+              </ul> -->
+            </div>
+            <h4 class="text-left top-mar">Customize Now!</h4>
+            <div class="clearfix">
+              <div class="row">
+                <div class-md-6>
+                 <a data-toggle="modal" href="#add-text-Modal" class="btn btn-default add-text-btn">Add Text</a>
+                </div>
+                <div class-md-6>
+                  <a data-toggle="modal" href="#uploadImagePopup" class="btn btn-default add-image-button">Upload Image</a>
+                </div>
+              </div>
+          <!-- add_text_modal -->
+              <div class="product-details modal" id="add-text-Modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <br>
+                    <div class="modal-body">
+                      <div class="form-group add_text">
+                        <textarea style="width:100%;height:100px">
+
+                          
+
+                        </textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer block-form">
+                      <button class="btn btn-default add_text_done">Done</button>
+                      <a href="#" data-dismiss="modal" class="btn btn-secondary">Cancel</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <!-- Upload_logo_modal -->
+              <div class="product-details modal" id="uploadImagePopup">
+                <div class="modal-dialog"><br>
+                  <div class="modal-content"><br>
+                    <div class="modal-header" style="border-bottom: none;">
+                      <h5 class="modal-title text-center">We EMBROIDER on all our products</h5>
+                      <h5 class="modal-title text-center">We also remove any background</h5>
+                      <%= image_tag "upload.png" %>
+                      <p>Take a cue from your favorite hats, they all have BOLD logos that look great when stitched. So make sure that the image you are uploading isn't:</p>
+                      <ul style="font-size:16px">
+                      <li>A photograph - sorry photos don't stitch well</li>
+                      <li>An image that includes really tiny text - really small text can't be stitched</li>
+                      </ul>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <input type="file" accept="image/*" onchange="loadFile(event)">
+
+                            <h4>My Images</h4>
+                            <img id="output" height="100px" />
+                            <table class="table table-responsive table-striped">
+                            <tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody>
+                            </table>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="modal-footer block-form" style="text-align: left !important">
+                      <div class="row">
+                        <!-- <div class="col-md-6">
+                          <p>
+                            <label style="color: red;" class="access_right_label">
+                              <input type="checkbox" id="access_right"></input> &nbsp;I accept the <a style="color:red;text-decoration:underline" target="_blank" href="/terms-and-conditions">terms and conditions</a> of CapBeast.com
+                            </label>
+                          </p>
+                        </div> -->
+                        <div class="col-md-6" style="text-align:right">
+                          <a href="#" data-dismiss="modal" class="btn btn-opposite">Done</a>
+                          <!-- <button class="btn btn-danger" id="done-upload-image" disabled="disabled">Done</button> -->
+                          <button type="button" class="btn btn-close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="custom_fpd_tool_bar"></div>
+        </div> 
+      </div>  
+      <div class="row">
+        <div class="modal" id="colorModal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn-close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title text-center">Colors</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row product-colors-section">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="product-image">
+                      <!-- <img id="product-zoom" src=https://uploads.capbeast.com/spree/products/191987/original/IMG_0131.jpg?1475692677 alt="" class="img-responsive"> -->
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="clearfix product-color-information">
+                      <label class="pull-left">Available Colors</label>
+                    </div>
+                    <!-- <ul class="set-color list-inline">
+                    <li class="change_color_image" style="text-decoration: none;" data-index="0" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2418>
+                    <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191987/original/IMG_0131.jpg?1475692677"></div>
+                    <div class="" style="background: linear-gradient(to bottom, #000000  50%,  #030303 50%);"></div>
+                    </li>
+                    <li class="change_color_image" style="text-decoration: none;" href="#" data-index="1" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2421>
+                    <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191991/original/IMG_0133.jpg?1475692720"></div>
+                    <div class="" style="background-color: #747D7D;"></div>
+                    </li>
+                    <li class="change_color_image" style="text-decoration: none;" href="#" data-index="2" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2420>
+                    <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191992/original/IMG_0128.jpg?1475692723"></div>
+                    <div class="" style="background-color: #15125C;"></div>
+                    </li>
+                    <li class="change_color_image" style="text-decoration: none;" href="#" data-index="3" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=279>
+                    <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/722/original/IMG_0139.jpg?1412110055"></div>
+                    <div class="" style="background-color: #D6C994;"></div>
+                    </li>
+                    <li class="change_color_image" style="text-decoration: none;" href="#" data-index="4" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2419>
+                    <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191993/original/IMG_0138.jpg?1475692725"></div>
+                    <div class="" style="background-color: #FFFFFF;"></div>
+                    </li>
+                    <li class="change_color_image" style="text-decoration: none;" data-index="5" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2426>
+                    <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/261065/original/FLAT_BILL_9FIFTY_SNAPBACK__NEW_ERA_CAMO_-_Front_View.jpg?1485186371"></div>
+                    <div class="" style="background: linear-gradient(to bottom, #030303  50%,  #1F5919  50%);"></div>
+                    </li>
+                    </ul> -->
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer block-form">
+                <!-- <a href="#" data-dismiss="modal" class="btn btn-danger">Cancel</a>
+                <button class="btn btn-default" id="done-color-chooser" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2418 data-index="0" data-modal_id="colorModal1">Done</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- PRODUCT DEATILS -->
+      <div class="row">
+        <div class="col-sm-12 col-md-8">
+          <div class="product-details-section product-details2">
+            <h3 class="text-left">Product Details</h3>
+            <hr>
+            <p>
+            This New Era 6-panel cap highlights all that was good back in the day. The old-school snapback closure and iconic flat bill adds that subtle charm to take you back to the good ol’ days. Customize this design to reflect your true colors. Snapback has 7 positions for adjusting to the right size.
+            </p>
+          </div>
+        </div>
+      </div>
+  <!-- END -->
+    <!--   ADD TO CART MODAL POPUP -->
+      <div class="modal" id="wait_for_upload" data-keyboard=true data-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content color-scheme-3">
+            <div class="modal-header">
+              <h3 class="modal-title" align="center">We are processing your request</h3>
+            </div>
+            <div>
+              <div>
+                <div class="row">
+                  <div class="product-detail-section col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div align="center" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding: 6px">
+                      <div class="fpd-loader-wrapper" style=" padding: 30px"><div class="fpd-loader"><div class="fpd-loader-circle"></div></div></div>
+                    </div>
+                    <div align="center" class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 16px;margin-bottom: 46px;border-bottom:1px solid #e5e5e5">
+                      <p>As your images upload to our servers and we process the awesome hat you are making, enjoy this just as awesome joke:</p>
+                      <p>What did one Hat say to the Other? You stay here, I'll go on a head!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="adding_image_to_designer" data-keyboard=true data-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">We are processing your request</h4>
+            </div>
+          <div>
+        <div>
+        <div class="row">
+          <div align="center" class="product-detail-section col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="product-detail-section col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="fpd-loader-wrapper" style=" padding: 30px"><div class="fpd-loader"><div class="fpd-loader-circle"></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- END -->
+      <div class="modal-footer block-form">
+      </div>
+
+<!-- ERROR MODAL POPUP OF ADD TO CART -->
+
+      <div class="modal" id="errorPopup">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <br>
+              <h4 class="modal-title text-center">Please add text or upload an image onto your hat</h4>
+              <br>
+            </div>
+            <div class="modal-footer">
+              <div class="text-center">
+              <button class="btn btn-default" id="done-error-popup">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- END -->
+    </div>
+  </div>
+</main>
+
+
+<script>
+    $(document).ready(function(){
+        $('#demo-1 .simpleLens-thumbnails-container img').simpleGallery({
+            loading_image: 'demo/images/loading.gif'
+        });
+
+        $('#demo-1 .simpleLens-big-image').simpleLens({
+            loading_image: 'demo/images/loading.gif'
+        });
+    });
+</script>
+
+
+<!-- ADD TEXT BOX MODAL  -->
+  <script type="text/javascript">
+
+      $(".add_text_done").on('click',function(){
+        textarea_val = $(".add_text").find('textarea').val()
+        $(".centered").html(textarea_val)
+         $('#myModal').modal('hide')
+
+        // centered
+
+      })
+  </script>
+<!-- END -->
+<!-- <script>
+    var dataItem;
+
+    $("#grid").kendoGrid({
+        columns: [
+            {
+                template: "<div class='contentDivs' style='white-space: nowrap; height: 25px; overflow: hidden; max-width:65%; float: left;'>#= text #</div><button class='editButtons' style='float:right'>Edit</button>",
+                width: "300px"
+            },
+            
+        ],
+        dataSource: {
+            data: [{
+                    
+                    text: "Lorem ipsum dolor lis in magna. In feugiat non ipsum a laoreet. Nulla facilisi.",
+                  
+                },
+                
+            ]
+        },
+        dataBound: onDataBound
+    });
+
+    function onDataBound(e) {
+        $(".contentDivs").children().css("display", "table-cell");
+        $(".editButtons").kendoButton({
+            click: function(e) {
+                var grid = $("#grid").data("kendoGrid");
+                var editor = $("#editor").data("kendoEditor");
+                var window = $("#window").data("kendoWindow");
+                var row = e.sender.element.closest("tr");
+                var dataItem = grid.dataItem(row);
+
+                kendo.bind(editor.element, dataItem);
+                window.open().center();
+            }
+        });
+    };
+
+    $("#window").kendoWindow({
+        width: "600px",
+        visible: false,
+        modal: true,
+        close: function(e) {
+            e.sender.element.focus()
+        },
+        actions: [
+            "Maximize",
+            "Close"
+        ],
+    });
+    $("#editor").kendoEditor();
+</script>
+ -->
+
+<!-- TEXT SHOW BY UI -->
+ <!--  <script>
+    $(function() {
+      $('div.myText').on('click', function() {
+        var div = $(this);
+        var tb = div.find('input:text');//get textbox, if exist
+        if (tb.length) {//text box already exist
+          div.text(tb.val());//remove text box & put its current value as text to the div
+        } else {
+          tb = $('<input>').prop({
+            'type': 'text',
+            'value': div.text()//set text box value from div current text
+          });
+          div.empty().append(tb);//add new text box
+          tb.focus();//put text box on focus
+
+        }
+      });
+    });
+  </script> -->
+  <!-- EDITOR UPDATE -->
+  <script>
+    // $(function(){
+    //    $('#edit').froalaEditor({
+    //      editInPopup: true
+    //   })
+    // });
+  </script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script> -->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"> -->
+    
+  </script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0//js/froala_editor.pkgd.min.js"></script> -->
+<!-- END -->
+
+<!-- change image onmousehover written by me -->
+  <script>
+  function myFunction() {
+      var image = document.getElementById('myclicked');
+      if (image.src.match("snapfront1")) {
+          image.src = "<%= asset_path( 'snapfront1.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'snapfront1.jpg' ) %>";
+    }
+  }
+  function mybackFunction() {
+      var image = document.getElementById('myclicked');
+      if (image.src.match("snapback1")) {
+          image.src = "<%= asset_path( 'snapfront1.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'snapback1.jpg' ) %>";
+    }
+  }
+
+  function myleftFunction() {
+      var image = document.getElementById('myclicked');
+      if (image.src.match("snapleft1")) {
+          image.src = "<%= asset_path( 'snapfront1.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'snapleft1.jpg' ) %>";
+    }
+  }
+
+  function myrightFunction() {
+      var image = document.getElementById('myclicked');
+      if (image.src.match("snapright1")) {
+          image.src = "<%= asset_path( 'snapfront1.jpg' ) %>";
+      } else {
+          image.src = "<%= asset_path( 'snapright1.jpg' ) %>";
+    }
+  }
+  </script>
+<!-- END -->
+
+<!-- UPLOAD LOGO JAVASCRIPT -->
+  <script>
+    var loadFile = function(event) {
+      var output = document.getElementById('output');
+      output.src = URL.createObjectURL(event.target.files[0]);
+    };
+  </script>
+  <script>
+    window.addEventListener('load', function() {
+      document.querySelector('input[type="file"]').addEventListener('change', function() {
+          if (this.files && this.files[0]) {
+              var img = document.querySelector('img');  // $('img')[0]
+              // img.src = URL.createObjectURL(this.files[0]); // set src to file url
+              img.onload = imageIsLoaded; // optional onload event listener
+          }
+      });
+    });
+    function imageIsLoaded(e) { alert(e); }
+  </script>
+<!-- END -->
+
+<!-- QUANTITY SHOW -->  
+ <script>
+    function myqty() {
+        var x = document.getElementById("myNumber").value;
+        document.getElementById("qty").innerHTML = x;
+    }
+  </script>
+<!--  END -->
+<!-- EDITOR -->
+<script>
+  $(document).ready(function () {
+            // $('#editor').jqxEditor({
+            //     height: 400,
+            //     width: getWidth('editor'),
+            //     tools: 'bold italic underline | left center right'
+            // });
+        });
+</script>
+<!-- END -->
+<!-- ADD TO CARD POPUP ERROR -->
+  <script>
+  function whichElement(e) {
+      var targ;
+      if (!e) {
+          var e = window.event;
+      }
+      if (e.target) {
+          targ=e.target;
+      } else if (e.srcElement) {
+          targ=e.srcElement;
+      }
+      var tname;
+      tname = targ.tagName;
+      alert("You clicked on a " + tname + " element.");
+  }
+  </script>
+<!-- END -->
+
+  

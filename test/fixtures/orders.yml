@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  total: 1.5
+  sub_total: 1.5
+  order_status_id: 1
+  user_id: 1
+
+two:
+  total: 1.5
+  sub_total: 1.5
+  order_status_id: 1
+  user_id: 1

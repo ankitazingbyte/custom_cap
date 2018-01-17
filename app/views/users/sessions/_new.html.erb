@@ -1,0 +1,27 @@
+<center>  
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+              <div class="form-group">
+                <label>name</label><br>
+                    <%= f.text_field :first_name, class: "form-control", id: "spree_user_email", placeholder: "name"%>
+              </div>
+              <div class="form-group">
+                <label for="email1-field">email Address</label><br>
+                    <%= f.email_field :email, autofocus: true, class: "form-control", id: "spree_user_email", placeholder: "Email"%>
+              </div>
+              <div class="form-group">
+                <label for="pass1-field">PASSWORD</label><br />
+                    <%= f.password_field :password, autocomplete: "off", class: "form-control", id: "spree_user_password", placeholder: "Password"%>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <%= f.check_box :remember_me, id:"spree_user_remember_me"%>
+                  <span>Remember Me</span>
+                </label>
+              </div>
+              <div class="form-group">
+                <%= f.submit "LOG IN", class: "btn btn-default login-submit" %>
+              </div>
+      <% end %>
+
+  <%= link_to 'Forget Your Password', home_forget_psw_path %>
+</center>

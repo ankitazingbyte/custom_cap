@@ -1,0 +1,60 @@
+<div class="container">
+
+	<div class="row">
+	<div class="col-md-6 col-md-offset-3 text-center">
+	<h2>CHECKOUT</h2>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+	<ul class="nav nav-pills  nav-justified">
+	<li class="btn-checkout">
+	<a href="http://localhost:3000/home/checkout" class="btn btn-default btn-checkout">Address</a>
+	</li>
+	<li class="">
+	<a href="http://localhost:3000/home/checkout_shipping" class="btn btn-default btn-checkout">Shipping Method</a>
+	</li>
+	<li class="btn-checkout">
+	<a href="#" class="btn btn-default">Payment &amp; Confirm</a>
+	</li>
+	</ul><br />
+	<h4>Pay With</h4>
+	<hr>
+	<div class="row">
+		<div class="col-md-6">
+			<h4 style="display: inline">Credit Card</h4>
+			<%= render 'charges/new' %>
+		</div>
+		<div class="col-md-6">
+			<h4 style="display: inline">Paypal Account</h4>
+
+		 	<a href= "https://www.paypal.com/webscr?cmd=_express-checkout&token=EC-4KR9929436625521H&useraction=commit"><%= image_tag 'paypal.png', class: "checkout" %></a>
+		 </div>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+	<div class="widget-block">
+	<strong class="title">ORDER SUMMARY</strong>
+	<dl class="summary">
+	<dt>Subtotal</dt>
+	<dd>$74.00</dd>
+	<dt>Shipping total: </dt>
+	<dd>$14.00</dd>
+	<dt>Taxes: </dt>
+	<dd><strong>-</strong></dd>
+	<dt><strong>Order Total</strong></dt>
+	<dd><strong>$88.00</strong></dd>
+	</dl>
+	</div>
+	<div class="widget-block">
+	<strong class="title">APPLY DISCOUNT</strong>
+	<form accept-charset="UTF-8" action="/orders/CB36121007/apply_coupon" class="discount-form" id="update-cart" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="YFYHhbtGQiROZYJwZklrSt/CV9WHW89pQjY459FOnJY=" /></div>
+	<div class="form-group">
+	<input type="text" name="order[coupon_code]" class="form-control" placeholder="code">
+	<input type="hidden" name="order[state]" value="payment" class="form-control">
+	</div>
+	<input type="submit" value="Apply Coupon" class="btn btn-default">
+	</form> </div>
+	</div>
+	</div>
+</div>
