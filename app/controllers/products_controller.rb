@@ -5,7 +5,8 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
       @products = Product.all
-       @order_item = current_order.order_items.new
+      @products = Product.search(params[:title])
+      @order_item = current_order.order_items.new
     if params[:brand].blank?
       @category_id = Category.find_by(name: params[:category]).id
       @products = Product.where(:category_id => @category_id)
@@ -13,8 +14,6 @@ class ProductsController < ApplicationController
       @brand_id =Brand.find_by(name: params[:brand]).id
       @products = Product.where(:brand_id => @brand_id)
     end
-     # @q = Product.ransack(params[:q])
-     # @products = @q.result(distinct: true).order(:title).page params[:page]
   end
   # GET /products/1
   # GET /products/1.json

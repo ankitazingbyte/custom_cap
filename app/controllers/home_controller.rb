@@ -3,39 +3,6 @@ class HomeController < ApplicationController
   def index
 
   end
-  def custom_snapback
-
-  end
-  def custom_fitted_hat
-
-  end
-  def custom_dad_hat
-
-  end
-  def custom_camo_hat
-
-  end
-  def custom_beanies
-
-  end
-  def custom_athletic_hat
-
-  end
-  def custom_trucker_hat
-
-  end
-  def custom_bucket_hat
-
-  end
-  def custom_golf_hat
-
-  end
-  def custom_military_hat
-
-  end
-  def custom_panel_hat
-
-  end
   def login_form
 
   end
@@ -55,6 +22,21 @@ class HomeController < ApplicationController
   
   end
   def contact
+    
+  end
+  def about_us
+
+  end
+  def delivery_policy
+
+  end
+  def privarcy_policy
+
+  end
+  def terms_of_delivery
+
+  end
+  def return
     
   end
    def contact_us_mailer

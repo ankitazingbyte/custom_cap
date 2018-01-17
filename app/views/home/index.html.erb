@@ -54,120 +54,16 @@
 			</div>
 
 			<div class="main-section">
-				<div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="594028cf0000ff0005a47f1f" data-style-height="130px" data-style-width="100%" data-theme="light" data-tags="SelectedReview" data-schema-type="Organization">
+				<!-- <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="594028cf0000ff0005a47f1f" data-style-height="130px" data-style-width="100%" data-theme="light" data-tags="SelectedReview" data-schema-type="Organization">
 					<a href="https://www.trustpilot.com/review/www.capbeast.com" target="_blank">Trustpilot</a>
-				</div>
+				</div> -->
 				<ul class="categories-list list-unstyled text-center row">
-					<li class="col-sm-4">
-						<a href=http://localhost:3000/home/custom_snapback>
-							<div class="img-holder">
-								<picture>
-									<%= image_tag "image4.jpg" %>
-								</picture>
-							</div>
-							<strong class="title"><span>Snapbacks</span></strong>
-						</a>
-					</li>
-					<li class="col-sm-4">
-					<a href=http://localhost:3000/home/custom_fitted_hats>
-					<div class="img-holder">
-					<picture>
-					<%= image_tag "image5.jpg" %>
-					</picture>
-					</div>
-					<strong class="title"><span>Fitted Hats</span></strong>
-					</a>
-					</li>
-					<li class="col-sm-4">
-					<a href=http://localhost:3000/home/custom_dad_hats>
-					<div class="img-holder">
-					<picture>
-					<%= image_tag "image6.png" %>
-					</picture>
-					</div>
-					<strong class="title"><span>Dad Hats</span></strong>
-					</a>
-					</li>
-					<li class="col-sm-4">
-					<a href=http://localhost:3000/home/custom_camo_hats>
-					<div class="img-holder">
-					<picture>
-					<%= image_tag "image7.jpg" %>
-					</picture>
-					</div>
-					<strong class="title"><span>Camo Hats</span></strong>
-					</a>
-					</li>
-					<li class="col-sm-4">
-					<a href=http://localhost:3000/home/custom_beanies>
-					<div class="img-holder">
-					<picture>
-					<%= image_tag "image8.jpg" %>
-					</picture>
-					</div>
-					<strong class="title"><span>Beanies</span></strong>
-					</a>
-					</li>
-					<li class="col-sm-4">
-					<a href=http://localhost:3000/home/custom_panel_hats>
-					<div class="img-holder">
-					<picture>
-					<%= image_tag "image10.jpg" %>
-					</picture>
-					</div>
-					<strong class="title"><span>5 Panel Hats</span></strong>
-					</a>
-					</li>
-					<li class="col-sm-4">
-					<a href=http://localhost:3000/home/custom_trucker_hats>
-					<div class="img-holder">
-					<picture>
-					<%= image_tag "image11.jpg" %>
-					</picture>
-					</div>
-					<strong class="title"><span>Trucker Hats</span></strong>
-					</a>
-					</li>
-					<li class="col-sm-4">
-					<a href=http://localhost:3000/home/custom_bucket_hats>
-					<div class="img-holder">
-					<picture>
-					<%= image_tag "image12.jpg" %>
-					</picture>
-					</div>
-					<strong class="title"><span>Bucket Hats</span></strong>
-					</a>
-					</li>
-					<li class="col-sm-4">
-					<a href=http://localhost:3000/home/custom_athletic_hats>
-					<div class="img-holder">
-					<picture>
-					<%= image_tag "image13.jpg" %>
-					</picture>
-					</div>
-					<strong class="title"><span>Athletic Hats</span></strong>
-					</a>
-					</li>
-					<li class="col-sm-4">
-					<a href=http://localhost:3000/home/custom_golf_hats>
-					<div class="img-holder">
-					<picture>
-					<%= image_tag "image14.jpg" %>
-					</picture>
-					</div>
-					<strong class="title"><span>Golf Hats</span></strong>
-					</a>
-					</li>
-					<li class="col-sm-4">
-					<a href=http://localhost:3000/home/custom_military_hats>
-					<div class="img-holder">
-					<picture>
-					<%= image_tag "image15.jpg" %>
-					</picture>
-					</div>
-					<strong class="title"><span>Military Hats</span></strong>
-					</a>
-					</li>
+					<% Category.all.each do |category| %>
+						<li class="col-sm-4">
+							<div><picture><%= image_tag category.image.url,class: "img-holder" unless category.image.blank?%></picture></div>
+						<strong><span><%= link_to category.name, products_path(category: category.name), class: "title" %></span></strong>
+						</li>
+					<% end %>
 				</ul>
 				<div class="slider text-center" style="padding: 20px 0 90px;">
 					<h2>CAPBEAST ON INSTAGRAM</h2>
@@ -209,41 +105,6 @@
 										</picture>
 									</a>
 								</div>
-								<div class="slide">
-									<a href=https://www.instagram.com/p/BbNb4DxjR1n/>
-										<picture>
-											<img src=../scontent.cdninstagram.com/t51.2885-15/s150x150/e35/c106.0.427.427/23421253_189263588306640_5157086580858421248_n.jpg alt=Repost: Awesome shoutout! #capbeast #capbeastmode #customhats #customdesign #customswag #designahat #embroideredhats #hatsofinstagram #lovehats #potd #instapic #instacool #instaclick . . . Eroplanong Papel #steegshirt #caps #caps4all #capbeast #snapback #yupoong #flexfitme #snap #sumbrero #qaps 📷: @steeg_shirt>
-										</picture>
-									</a>
-								</div>
-								<div class="slide">
-									<a href=https://www.instagram.com/p/BbNateDgTFW/>
-										<picture>
-											<img src=../scontent.cdninstagram.com/t51.2885-15/s150x150/e35/23416722_188755848339114_2929883271783251968_n.jpg alt=One of each pls. #flightclub>
-										</picture>
-									</a>
-								</div>
-								<div class="slide">
-									<a href=https://www.instagram.com/p/BbNBnnGAaeC/>
-										<picture>
-											<img src=../scontent.cdninstagram.com/t51.2885-15/s150x150/e35/23417255_124120624949922_4397404142910308352_n.jpg alt=One of each pls. #flightclub>
-										</picture>
-									</a>
-								</div>
-								<div class="slide">
-									<a href=https://www.instagram.com/p/BbLDF-KAiCL/>
-										<picture>
-											<img src=../scontent.cdninstagram.com/t51.2885-15/s150x150/e35/23164871_331443760653186_36940176194273280_n.jpg alt=Repost: Folks keep tagging us in your #capbeast pics! The best pics will get free hats! #capbeastmode #customhats #customdesign #customswag #designahat #embroideredhats #hatsofinstagram #lovehats #potd #instapic #instacool #instaclick . . . Shout out to @capbeast It came out great ! #theone #itsclobberingtime #rebirth #ict #homerunsports 📷: @mbtheoneict>
-										</picture>
-									</a>
-								</div>
-								<div class="slide">
-									<a href=https://www.instagram.com/p/BbKp7XJgpJD/>
-										<picture>
-											<img src=../scontent.cdninstagram.com/t51.2885-15/s150x150/e35/23421675_141566859929301_2170156599966957568_n.jpg alt=Repost: Folks keep tagging us in your #capbeast pics! The best pics will get free hats! #capbeastmode #customhats #customdesign #customswag #designahat #embroideredhats #hatsofinstagram #lovehats #potd #instapic #instacool #instaclick . . . Shout out to @capbeast It came out great ! #theone #itsclobberingtime #rebirth #ict #homerunsports 📷: @mbtheoneict>
-										</picture>
-									</a>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -256,7 +117,6 @@
 
 			<div class="qoute-block text-center">
 				<div class="content">
-					<img alt="Сapbeast" class="img-bg" src="assets/spree/frontend/logo-white-22bd8ee8ecb1c404534eacc25370b6532e3d6657150cd3d4cebd6900b4d5dd3b.svg" />
 					<h2>WHY WE’RE BEAST</h2>
 					<blockquote>
 						<q>CapBeast was extremely easy and FUN to use. Couldn’t be happier with my new range of custom caps!</q>

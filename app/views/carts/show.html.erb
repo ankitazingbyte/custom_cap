@@ -1,4 +1,66 @@
 <center><h1>My Cart</h1></center>
-<div class="shopping-cart">
-  <%= render "carts/shopping_cart" %>
+<div class="container-fluid">
+    <div class="cart-section">
+      	<div class="row">
+      		<div class="col-sm-8 col-md-9">
+				<div class="shopping-cart">
+				  <%= render "shopping_cart" %>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3">
+	          <div class="widget-block">
+	            <strong class="title">ORDER SUMMARY</strong>
+	              <dl class="summary">
+	                <dt>Subtotal</dt>
+	                  <dd>$140.50</dd>
+	                <dt>Shipping total: </dt>
+	                  <dd><strong>-</strong></dd>
+	                <dt>Taxes: </dt>
+	                  <dd><strong>-</strong></dd>
+	                <dt><strong>Order Total</strong></dt>
+	                  <dd><strong>$140.50</strong></dd>
+	              </dl>
+	                <%= link_to 'CHECKOUT NOW', home_checkout_path, class: "btn btn-danger" %>
+	            <div class="link">
+	                <%= link_to'Continue Shopping', home_index_path %>
+	            </div>
+	          </div>
+	          <div id="alert-pop">
+	            <div class="modal fade" id="cart_delete_warning" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	              <div class="modal-dialog modal-md">
+	                <div class="modal-content">
+	                  <div class="modal-header">
+	                    <br>
+	                      <h4 class="text-center">Are you sure you want to remove this item from your cart?</h4>
+	                  </div>
+	                  <div class="modal-body">
+	                    <div class="row">
+	                      <div class="col-sm-12 text-center">
+	                        <form accept-charset="UTF-8" action="/orders/CB13881788/remove_line_item" method="post"><div style="display:none"><!-- <input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="delete" /><input name="authenticity_token" type="hidden" value="sKq6pXGLqUMwvjqqOnK0DEcF3xU4fDN0M4Y6hJv44e8=" /> --></div>
+	                        <input id="line_item" name="line_item" type="hidden" />
+	                        <br>
+	                        <input class="ok btn btn-danger delete-item-from-cart" name="commit" type="submit" value="OK" />
+	                        <button class="btn btn-default" data-dismiss="modal" value="Cancel">Cancel</button>
+	                        <br>
+	                        <br>
+	                        </form> 
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="widget-block">
+	            <strong class="title">APPLY DISCOUNT</strong>
+	              <!-- <form accept-charset="UTF-8" action="/cart" class="discount-form" id="update-cart" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="sKq6pXGLqUMwvjqqOnK0DEcF3xU4fDN0M4Y6hJv44e8=" /></div>
+	                <div class="form-group">
+	                  <input type="text" name="order[coupon_code]" class="form-control" placeholder="code">
+	                </div>
+	                <input type="submit" value="Apply Coupon" class="btn btn-default">
+	              </form>  -->
+	          </div>
+			</div>
+		</div>
+	</div>
 </div>

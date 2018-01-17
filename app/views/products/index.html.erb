@@ -2,11 +2,7 @@
   <div class="container-fluid">
     <div class="main-section">
       <ul class="hidden-xs sort-list list-inline text-center">
-       <% Brand.all.each do |brand| %>
-          <li>
-          <%= link_to brand.name, products_path(brand: brand.name), class: "link" %>
-          </li>
-        <% end %>
+       
       </ul>
       <header class="heading text-center">
       <h1>Design your own Custom caps</h1>

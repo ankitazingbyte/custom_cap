@@ -126,14 +126,12 @@ p, ol, ul, td {
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-        margin: 0px 31px;
+    margin: -35px -31px;
 }
 
 .input:focus {
@@ -185,4 +183,15 @@ p, ol, ul, td {
 div#main-menu {
     padding-left: 2px;
     padding-right: 145px;
+}
+.cart{
+    display: block;
+    position: relative;
+    color: #000;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 8px 0 0;
+        margin: -10px;
 }

@@ -1,11 +1,11 @@
 class OrderItem < ApplicationRecord
 	belongs_to :order ,optional: true
   	belongs_to :product, optional: true
-  	belongs_to :user, optional:true
   	validates :quantity, presence: true, numericality: { only_integer: true, greater_than: 0 }
 	  validate :order_present
 	  validate :product_present
 	  before_save :finalize
+	  belongs_to :user, optional: true
 
 
 	    def unit_price
