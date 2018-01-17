@@ -27,18 +27,14 @@
 #    <<: *default
 # #   # database: db/production.sqlite3
 
-  default: &default
-    adapter: postgresql
-    encoding: unicode
-    username: postgres
-    password: 12345678
-    pool: 5
-    host: localhost
+ default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: 12345678
+  pool: 5
+  host: localhost
 
-
-    development:
-      <<: *default
-       database: db/development
-      # pool: 5
-      # timeout: 5000
-    
+development:
+  <<: *default
+  database: bestclassforme_development_1
