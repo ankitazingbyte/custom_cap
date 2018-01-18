@@ -24,20 +24,19 @@
                       </div>
                   </div>
                   <% @product.images.each do |product| %>
-                  <div class="fpd-product">
-                    <div class="fpd-views-selection fpd-grid-contain   btns-set  fpd-clearfix" style="display: block;">
-                      <div class="fpd-item fpd-tooltip tooltipstered fpd-view-active col-md-3" title="front">
-                        <div class="simpleLens-thumbnails-container">
-                            <a href="#" class="simpleLens-thumbnail-wrapper"
-                               data-lens-image="<%= product.image.url %>"
-                               data-big-image="<%= product.image.url %>">
-                                <%= image_tag product.image.url, class: "img_size"%>
-                            
-                            </a>
+                    <div class="fpd-product">
+                      <div class="fpd-views-selection fpd-grid-contain   btns-set  fpd-clearfix" style="display: block;">
+                        <div class="fpd-item fpd-tooltip tooltipstered fpd-view-active col-md-3" title="front">
+                          <div class="simpleLens-thumbnails-container">
+                              <a href="#" class="simpleLens-thumbnail-wrapper"
+                                 data-lens-image="<%= product.image.url %>"
+                                 data-big-image="<%= product.image.url %>">
+                                  <%= image_tag product.image.url, class: "img_size"%>
+                              </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
                   <% end %>
                 </div>
               </article>

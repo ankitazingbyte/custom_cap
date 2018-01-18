@@ -1,12 +1,11 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-
   # GET /products
   # GET /products.json
   def index
       @products = Product.all
-      @products = Product.search(params[:title])
       @order_item = current_order.order_items.new
+      @products = Product.search(params[:title])
     if params[:brand].blank?
       @category_id = Category.find_by(name: params[:category]).id
       @products = Product.where(:category_id => @category_id)

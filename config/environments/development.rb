@@ -65,8 +65,7 @@ Rails.application.configure do
   authentication:       'plain',
   enable_starttls_auto: true  
   }
-<<<<<<< HEAD
-=======
+
   config.assets.initialize_on_precompile = false
->>>>>>> 0bb7084707890da8c77ae0e57081979cd61479c8
+
 end

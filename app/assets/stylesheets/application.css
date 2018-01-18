@@ -61,8 +61,8 @@
 }
 
 .checkout{
- height:35px;
- width: 153px;
+     height:35px;
+     width: 153px;
  }
    
 .navbar-brand>img {
@@ -72,6 +72,7 @@
 
 .img-holder {
     max-width: 60%;
+    margin: 2px 56px;
 }
 
 .myinput {
@@ -141,8 +142,8 @@ p, ol, ul, td {
 .nav-li {
     display: block;
     color: #000;
-    padding: 4px 46px;
-        margin-right: 19px;
+    margin-right: 19px;
+    padding: 0px 12px;
 }
 
 .font{
@@ -157,11 +158,10 @@ p, ol, ul, td {
 }
    
 .btnchange{
-
-        letter-spacing: -2.5px;
-        padding: 9px 27px 6px;
-        text-indent: 2px;
-        font-size: 17px;
+    letter-spacing: -2.5px;
+    padding: 9px 27px 6px;
+    text-indent: 2px;
+    font-size: 17px;
 }
 
 .faq{
@@ -193,5 +193,35 @@ div#main-menu {
     text-align: center;
     line-height: 40px;
     padding: 0 8px 0 0;
-        margin: -10px;
+    margin: -10px;
+}
+.footer {
+    padding: 79px 0 19px;
+    background: #000;
+    color: #999;
+    font-size: 11px;
+    line-height: 1.54;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    height: 480px;
+}
+.footer li{
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+.fa{
+    font-size: xx-large;
+}
+.card{
+    padding: 0px 841px;
+    margin: 26px 54px;
+    height: 50px;
+    margin-top: -160px;
+}
+
+.header {
+    position: relative;
+    z-index: 100;
+    padding: 7px 0 0;
+    font: 15px/1.2 "teko", Arial, Helvetica, sans-serif;
 }

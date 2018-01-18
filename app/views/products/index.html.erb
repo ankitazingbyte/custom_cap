@@ -15,7 +15,7 @@
                 <a href="/products/flat-bill-snapback-new-era?taxon_id=7">
                   <picture>
                     <a alt="Flat bill snapback cap - New Era 9Fifty - New Era NE400 - CapBeast" class="img-responsive" itemprop="url">
-                        <a href="/products/<%= product.id %>"><%= image_tag product.images.first.image.url, class: "img-responsive", id: "theImage" unless product.images.blank?  %>
+                        <a href="/products/<%= product.id %>"><%= image_tag product.images.first.image.url, class: "img-responsive", id: "theImage" unless product.images.blank? %>
                       </a>
                     </a>
                   </picture>
@@ -25,7 +25,6 @@
                 </li>
                   <li>
                     <a href="#" class="change_product_image" style="background: linear-gradient(to bottom, #747D7D 0%, #747D7D 100%);"></a>
-              
                   </li>
                 </li>
                   <li>
@@ -46,7 +45,7 @@
                   <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191987/product/IMG_0131.jpg?1475692677"></div>
                   </li>
               </ul>
-              <strong class="title"><a href="/custom_snapbacks/<%= product.id %>" itemprop="name" title="Flat bill 9Fifty snapback | New Era"><%= product.title %></a></strong>
+              <strong class="title"><a href="/products/<%= product.id %>"><%= product.title %></a></strong>
               <strong class="price">$<%= product.price %></strong>
             </li>
           <% end %>
