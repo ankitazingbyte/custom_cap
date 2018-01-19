@@ -26,30 +26,23 @@ class ShippingsController < ApplicationController
   def create
     @shipping = Shipping.new(shipping_params)
 
-    respond_to do |format|
       if @shipping.save
-        format.html { redirect_to @shipping, notice: 'Shipping was successfully created.' }
-        format.json { render :show, status: :created, location: @shipping }
+        redirect_to orders_path
       else
-        format.html { render :new }
-        format.json { render json: @shipping.errors, status: :unprocessable_entity }
+       render 'new'
       end
-    end
   end
 
   # PATCH/PUT /shippings/1
   # PATCH/PUT /shippings/1.json
   def update
-    respond_to do |format|
       if @shipping.update(shipping_params)
-        format.html { redirect_to @shipping, notice: 'Shipping was successfully updated.' }
-        format.json { render :show, status: :ok, location: @shipping }
+        redirect_to orders_path
       else
-        format.html { render :edit }
-        format.json { render json: @shipping.errors, status: :unprocessable_entity }
+        render 'edit'
       end
-    end
   end
+
 
   # DELETE /shippings/1
   # DELETE /shippings/1.json
