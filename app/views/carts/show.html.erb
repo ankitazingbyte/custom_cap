@@ -12,13 +12,13 @@
 	            <strong class="title">ORDER SUMMARY</strong>
 	              <dl class="summary">
 	                <dt>Subtotal</dt>
-	                  <dd>$140.50</dd>
-	                <dt>Shipping total: </dt>
+	                  <dd><%= number_to_currency current_order.subtotal %></dd>
+	                <dt>Shipping Total: </dt>
 	                  <dd><strong>-</strong></dd>
-	                <dt>Taxes: </dt>
-	                  <dd><strong>-</strong></dd>
+	                <dt>Total Items:</dt>
+	                  <dd><strong><%= current_order.order_items.size %></strong></dd>
 	                <dt><strong>Order Total</strong></dt>
-	                  <dd><strong>$140.50</strong></dd>
+	                  <dd><strong><%= number_to_currency current_order.subtotal %></strong></dd>
 	              </dl>
 	                <%= link_to 'CHECKOUT NOW', home_checkout_path, class: "btn btn-danger" %>
 	            <div class="link">

@@ -71,8 +71,8 @@
 }
 
 .img-holder {
-    max-width: 60%;
-    margin: 2px 56px;
+        max-width: 100%;
+    height: auto;
 }
 
 .myinput {
@@ -98,7 +98,7 @@
 }
 
 .sort-list {
-    font: 1.2rem/1 "teko", Arial, Helvetica, sans-serif;
+    font: 2.2rem/1 "teko", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     margin: -21px 23px 50px 43px;
     letter-spacing: 3px;
@@ -117,7 +117,7 @@ div#editor {
 
 
 p, ol, ul, td {
-    font-family: verdana, arial, helvetica, sans-serif;
+    font: 600 2.2rem/1"teko", Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 28px;
 }
@@ -129,7 +129,7 @@ p, ol, ul, td {
     font-size: 16px;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 11px 7px 7px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     margin: -35px -31px;
@@ -144,6 +144,7 @@ p, ol, ul, td {
     color: #000;
     margin-right: 19px;
     padding: 0px 12px;
+    padding-right: 89px;
 }
 
 .font{
@@ -225,3 +226,19 @@ div#main-menu {
     padding: 7px 0 0;
     font: 15px/1.2 "teko", Arial, Helvetica, sans-serif;
 }
+.categories-list{
+    text-transform: uppercase;
+    font: 600 1.2rem/1 "teko", Arial, Helvetica, sans-serif;
+    padding: 0px 50px;
+    letter-spacing: 2px;
+
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.header .navbar-collapse .navbar-nav {
+    font-size: 2rem;

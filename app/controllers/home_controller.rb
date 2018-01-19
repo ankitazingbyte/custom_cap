@@ -18,9 +18,7 @@ class HomeController < ApplicationController
   def checkout_shipping
     
   end
-  def checkout_payment
   
-  end
   def contact
     
   end

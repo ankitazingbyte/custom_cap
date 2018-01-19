@@ -21,7 +21,6 @@ Rails.application.routes.draw do
   get 'home/signup_form'
   get 'home/checkout'
   get 'home/checkout_shipping'
-  get 'home/checkout_payment'
   get 'home/contact'
   post 'home/contact_us_mailer'
   get 'home/about_us'

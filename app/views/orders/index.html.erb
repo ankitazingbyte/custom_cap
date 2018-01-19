@@ -23,7 +23,7 @@
       <div class="row">
         <div class="col-md-6">
           <h4 style="display: inline">Credit Card</h4>
-          <%#= render 'charges/new' %>
+          <%= render 'charges/new' %>
         </div>
         <div class="col-md-6">
           <h4 style="display: inline">Paypal Account</h4>
@@ -83,13 +83,13 @@
         <strong class="title">ORDER SUMMARY</strong>
         <dl class="summary">
         <dt>Subtotal</dt>
-        <dd>$74.00</dd>
-        <dt>Shipping total: </dt>
+        <dd><%= number_to_currency current_order.subtotal %></dd>
+        <dt>Shipping Total: </dt>
         <dd>$14.00</dd>
-        <dt>Taxes: </dt>
-        <dd><strong>-</strong></dd>
+        <dt>Total items:</dt>
+        <dd><strong><%= current_order.order_items.size %></strong></dd>
         <dt><strong>Order Total</strong></dt>
-        <dd><strong>$88.00</strong></dd>
+        <dd><strong><%= number_to_currency current_order.subtotal %></strong></dd>
         </dl>
       </div>
       <div class="widget-block">

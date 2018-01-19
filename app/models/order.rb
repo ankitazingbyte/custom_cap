@@ -4,7 +4,7 @@ class Order < ApplicationRecord
 	  has_many :products
 	  before_create :set_order_status
 	  before_save :update_subtotal
-	  
+	  belongs_to :user, optional: true
 	  
 	  def subtotal
 	    order_items.collect { |oi| oi.valid? ? (oi.quantity * oi.unit_price) : 0 }.sum

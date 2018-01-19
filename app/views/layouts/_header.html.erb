@@ -20,7 +20,8 @@
 				<%= image_tag "classics-2x.png",width: "130" %></a>
 			</div>
 
-			<div class="row nav-li">
+			<div class="row ">
+				<div class= "nav-li">
 				<div class="col-sm-2 col-sm-push-10">
 					<ul class="tools nav navbar-nav">
 						<li>
@@ -42,14 +43,14 @@
 								<div class="dropdown-menu">
 									<div class="container-fluid">
 										<div class="row">
-											<% Category.all.each do |category| %>
 											<div class="col-sm-3 col-xs-5">
 												<div class="text-center">
 													<picture>
-														<%= image_tag category.image.url, class: "img-holder", id: "myholder" %>
+														<%= image_tag "snap2.jpg", class: "img-holder", id: "myholder" %>
 													</picture>
 												</div>
 											</div>	
+											<% Category.all.each do |category| %>
 												<div class="col-sm-3 col-xs-7">
 													<ul class="list-unstyled">
 													    <li>
@@ -93,10 +94,11 @@
 							<li><%= link_to "FAQ", faqs_path %></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-						<li><%= link_to "GET A QUOTE", home_contact_path %></li>
+						<li style="padding-left: 20px"><%= link_to "GET A QUOTE", home_contact_path %></li>
 						</ul>
 					</div>
 				</div>
+			    </div>
 			</div>
 		</nav>
 	</div>

@@ -14,3 +14,8 @@
 //= require cocoon
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+      $('.tooltip').tooltipster();
+      theme: 'tooltipster-noir'
+  });

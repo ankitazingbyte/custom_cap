@@ -61,7 +61,7 @@
 					<% Category.all.each do |category| %>
 						<li class="col-sm-4">
 							<div><picture><%= image_tag category.image.url,class: "img-holder" unless category.image.blank?%></picture></div>
-						<strong><span><%= link_to category.name, products_path(category: category.name), class: "title" %></span></strong>
+						    <div class= "categories-list"><%= link_to category.name, products_path(category: category.name), class: "title", id: "hoverelement" %></div>
 						</li>
 					<% end %>
 				</ul>
@@ -110,7 +110,7 @@
 					</div>
 				</div>
 				<header class="heading text-center" style="padding:0px">
-					<h1>CAPBEAST MANIFESTO</h1>
+					<h1 sort-list>CAPBEAST MANIFESTO</h1>
 					<p>We believe everybody can be their own brand and we want to give you the tools to show it, loudly and proudly. Whether you’re looking to promote your business or just promote yourself, we have you covered every step of the way.</p>
 				</header>
 			</div>
@@ -157,3 +157,13 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		$(document).ready(function(e) {
+		$('#hoverelement').hover(function(){
+			$main_text=$(this).text();
+			$(this).text("CUSTOMIZE");
+		},function(){
+			$(this).text($main_text);
+			});
+		});
+	</script>
