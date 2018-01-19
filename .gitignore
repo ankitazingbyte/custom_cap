@@ -16,19 +16,16 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-<<<<<<< HEAD
-=======
+
 /log/*.log
 /tmp
 !/tmp/pid/.gitkeep
 .byebug_history
->>>>>>> 0bb7084707890da8c77ae0e57081979cd61479c8
 
 /node_modules
 /yarn-error.log
 
 .byebug_history
-<<<<<<< HEAD
-=======
+
 /config/database.yml
->>>>>>> 0bb7084707890da8c77ae0e57081979cd61479c8
+
