@@ -1,0 +1,321 @@
+/* line 1, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /home/zing-10/projects/custom_cap/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.img_size {
+    height: 60px;
+    display: inline-block;
+    width: auto;
+}
+.show_img{
+    position: relative;
+    width: 550px;
+    height: 550px;
+
+}
+.header .tools a {
+    display: block;
+    position: fixed;
+    color: #000;
+    font-size: 15px;
+    width: 42px;
+    height: 0px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0px 8px 0px 40px;
+}
+.text{
+    display: inline-block;
+    text-align: center;
+    margin: -111px;
+    margin-top: -214px;
+    margin-bottom: 144px;
+    height: 34px;
+    width: 278px;
+}
+.centered {
+    height: fit-content;
+    color: white;
+    position: absolute;
+    top: 21%;
+    left: 32%;
+    padding: 70px 15px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.checkout{
+     height:35px;
+     width: 153px;
+ }
+   
+.navbar-brand>img {
+    display: block;
+    margin: -59px 11px 4px -2px;
+}
+
+.img-holder {
+    max-width: 60%;
+    margin: 2px 56px;
+}
+
+.myinput {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    box-shadow: none !important;
+    background-color: #524b4b;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    text-align: left;
+    margin: -111px;
+    margin-top: 22px;
+    margin-bottom: 144px;
+    height: 170px;
+    width: 400px; 
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+.sort-list {
+    font: 1.2rem/1 "teko", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: -21px 23px 50px 43px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+div#editor {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+}
+
+#edit {
+  display: inline-block;
+}
+
+
+p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+.input {
+    width: 0px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin: -35px -31px;
+}
+
+.input:focus {
+    width: 100%
+}
+
+.nav-li {
+    display: block;
+    color: #000;
+    margin-right: 19px;
+    padding: 0px 12px;
+}
+
+.font{
+    font-family: serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 75px;
+    line-height: .89;
+    margin: 0 0 38px -3px;
+    letter-spacing: 4px;
+    transition: all .3s ease;
+}
+   
+.btnchange{
+    letter-spacing: -2.5px;
+    padding: 9px 27px 6px;
+    text-indent: 2px;
+    font-size: 17px;
+}
+
+.faq{
+    font-family: "Karla","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 21px;
+    line-height: 1.43;
+    color: #444;
+} 
+
+.input_box {
+    box-shadow: none !important;
+}
+
+.block{
+    display: inline-block;
+    text-align: center;
+    margin: 0px -47px 0px;
+}
+div#main-menu {
+    padding-left: 2px;
+    padding-right: 145px;
+}
+.cart{
+    display: block;
+    position: relative;
+    color: #000;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 8px 0 0;
+    margin: -10px;
+}
+.footer {
+    padding: 79px 0 19px;
+    background: #000;
+    color: #999;
+    font-size: 11px;
+    line-height: 1.54;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    height: 480px;
+}
+.footer li{
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+.fa{
+    font-size: xx-large;
+}
+.card{
+    padding: 0px 841px;
+    margin: 26px 54px;
+    height: 50px;
+    margin-top: -160px;
+}
+
+.header {
+    position: relative;
+    z-index: 100;
+    padding: 7px 0 0;
+    font: 15px/1.2 "teko", Arial, Helvetica, sans-serif;
+}
