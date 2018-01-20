@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery prepend: true, with: :null_session
-  before_action :configure_permitted_parameters, if: :devise_controller?
-
+   before_action :configure_permitted_parameters, if: :devise_controller?
+   helper :all
   protected
 
   def configure_permitted_parameters
@@ -17,7 +17,12 @@ class ApplicationController < ActionController::Base
   end
 
   helper_method :current_order
+  # helper_method :current_user
 
+  # def current_user
+  #   @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  # end
+  
   def current_order
     if !session[:order_id].nil?
       Order.find(session[:order_id])
@@ -25,9 +30,8 @@ class ApplicationController < ActionController::Base
       Order.new
     end
   end
-  def current_user
-    return unless session[:user_id]
-    @current_user ||= User.find(session[:user_id])
-  end
+
+
 
 end
+  

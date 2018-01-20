@@ -1,25 +1,9 @@
-<center><h1><strong>My Cart</strong></h1></center>
 <div class="container-fluid">
     <div class="cart-section">
       	<div class="row">
       		<div class="col-sm-8 col-md-9">
 				<div class="shopping-cart">
-					<h3><strong>Custom Products</strong></h3>
-					<table class="cart-table table">
-					  	<%= render "shopping_cart" %>
-					  	<tfoot>
-				            <tr>
-					            <td colspan="6">
-					            	<dl class="summary">
-							            <dt>Subtotal</dt>
-							            <dd><%= number_to_currency current_order.subtotal %></dd>
-							            <dt><strong>Order Total</strong></dt>
-							            <dd><strong><%= number_to_currency current_order.subtotal %></strong></dd>
-					            	</dl>
-					            </td>
-				            </tr>
-			            </tfoot>
-        			</table>
+					<%= render "shopping_cart" %>
 				</div>
 			</div>
 			<div class="col-sm-4 col-md-3">
