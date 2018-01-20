@@ -3,15 +3,16 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-      @products = Product.all
-      @order_item = current_order.order_items.new
-      @products = Product.search(params[:title])
-    if params[:brand].blank?
+    if params[:category].blank?
+      @brand_id = Brand.find_by(name: params[:brand]).id
+      @products = Product.where(:brand_id => @brand_id)
+    elsif params[:brand].blank?
       @category_id = Category.find_by(name: params[:category]).id
       @products = Product.where(:category_id => @category_id)
-    else
-      @brand_id =Brand.find_by(name: params[:brand]).id
-      @products = Product.where(:brand_id => @brand_id)
+    else params[:product].blank?
+      @order_item = current_order.order_items.new
+      @products = Product.search(params[:title])
+      @products = Product.all
     end
   end
   # GET /products/1

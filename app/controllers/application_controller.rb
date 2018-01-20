@@ -5,19 +5,18 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :email,:password, :password_confirmation, :admin, :order_id, :order_item_id])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :email,:password, :password_confirmation, :admin, :order_id])
   end
 
   def after_sign_in_path_for(resource)
-      if resource.admin?
-     	  products_path
-      else
-     	  root_path
-      end
+    if resource.admin?
+     	products_path
+    else
+     	root_path
+    end
   end
 
-
-    helper_method :current_order
+  helper_method :current_order
 
   def current_order
     if !session[:order_id].nil?
@@ -25,6 +24,10 @@ class ApplicationController < ActionController::Base
     else
       Order.new
     end
+  end
+  def current_user
+    return unless session[:user_id]
+    @current_user ||= User.find(session[:user_id])
   end
 
 end

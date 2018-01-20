@@ -1,47 +1,1142 @@
-<p id="notice"><%= notice %></p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WordPress | Fancy Product Designer</title>
+<link rel="pingback" href="http://fancyproductdesigner.com/xmlrpc.php"><link rel="shortcut icon" href="//fancyproductdesigner.com/wp-content/uploads/2015/03/favicon.ico"><link rel="apple-touch-icon-precomposed" href="//fancyproductdesigner.com/wp-content/uploads/2015/03/apple-icon.png"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="//fancyproductdesigner.com/wp-content/uploads/2015/03/ms-icon-310x310.png">
+<!-- This site is optimized with the Yoast SEO plugin v6.1.1 - https://yoa.st/1yg?utm_content=6.1.1 -->
+<meta name="description" content="The All-Purpose Product Designer Plugin for WordPress, WooCommerce and jQuery. Create and sell customizable products in your Web-Shop."/>
+<meta name="keywords" content="responsive product designer, product configurator, html5, T-Shirt designer, design your phone case, tablets and smarthphones,business cards, Photo Book, Photo Calendar"/>
+<link rel="canonical" href="http://fancyproductdesigner.com/wordpress/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="WordPress | Fancy Product Designer" />
+<meta property="og:description" content="The All-Purpose Product Designer Plugin for WordPress, WooCommerce and jQuery. Create and sell customizable products in your Web-Shop." />
+<meta property="og:url" content="http://fancyproductdesigner.com/wordpress/" />
+<meta property="og:site_name" content="Fancy Product Designer" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/fancyproductdesigner.com\/","name":"Fancy Product Designer","potentialAction":{"@type":"SearchAction","target":"http:\/\/fancyproductdesigner.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
 
-<h1>Contacts</h1>
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Fancy Product Designer &raquo; Feed" href="http://fancyproductdesigner.com/feed/" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v6.2.6 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+    var disableStr = 'ga-disable-UA-20706811-3';
 
-<table>
-  <thead>
-    <tr>
-      <th>First name</th>
-      <th>Last name</th>
-      <th>Email</th>
-      <th>Street address</th>
-      <th>Postal code</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Country</th>
-      <th>Phone</th>
-      <th>Image</th>
-      <th>Details</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  /* Function to detect opted out users */
+  function __gaTrackerIsOptedOut() {
+    return document.cookie.indexOf(disableStr + '=true') > -1;
+  }
 
-  <tbody>
-    <% @contacts.each do |contact| %>
-      <tr>
-        <td><%= contact.first_name %></td>
-        <td><%= contact.last_name %></td>
-        <td><%= contact.email %></td>
-        <td><%= contact.street_address %></td>
-        <td><%= contact.postal_code %></td>
-        <td><%= contact.city %></td>
-        <td><%= contact.state %></td>
-        <td><%= contact.country %></td>
-        <td><%= contact.phone %></td>
-        <td><%= contact.image %></td>
-        <td><%= contact.details %></td>
-        <td><%= link_to 'Show', contact %></td>
-        <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-        <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  /* Disable tracking if the opt-out cookie exists. */
+  if ( __gaTrackerIsOptedOut() ) {
+    window[disableStr] = true;
+  }
 
-<br>
+  /* Opt-out function */
+  function __gaTrackerOptout() {
+    document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+    window[disableStr] = true;
+  }
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
 
-<%= link_to 'New Contact', new_contact_path %>
+  __gaTracker('create', 'UA-20706811-3', 'auto');
+  __gaTracker('set', 'forceSSL', true);
+  __gaTracker('send','pageview');
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+    <script type="text/javascript">
+      window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/fancyproductdesigner.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.2"}};
+      !function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-color-picker-css'  href='http://fancyproductdesigner.com/wp-admin/css/color-picker.min.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='radykal-select2-css'  href='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/admin/css/select2.min.css?ver=4.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='radykal-admin-css'  href='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/admin/css/radykal-admin.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fpd-ui-layout-composer-toolbar-css'  href='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/admin/css/ui-layout-composer-toolbar.css?ver=3.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='radykal-tooltipster-css'  href='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/admin/css/tooltipster.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fpd-admin-icon-font-css'  href='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/admin/css/icon-font.css?ver=3.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fpd-admin-css'  href='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/admin/css/admin.css?ver=3.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fpd-pricing-builder-css'  href='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer-pricing/admin/css/pricing-rules-builder.css?ver=1.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='cookielawinfo-style-css'  href='http://fancyproductdesigner.com/wp-content/plugins/cookie-law-info/css/cli-style.css?ver=1.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='essential-grid-plugin-settings-css'  href='http://fancyproductdesigner.com/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.1.6.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-open-sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='http://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-droid-serif-css'  href='http://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&#038;ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fpd-jssocials-theme-css'  href='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/assets/jssocials/jssocials-theme-flat.css?ver=1.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='fpd-jssocials-css'  href='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/assets/jssocials/jssocials.css?ver=1.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-fpd-css'  href='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/assets/css/FancyProductDesigner-all.min.css?ver=4.4.7' type='text/css' media='all' />
+<link rel='stylesheet' id='fpd-single-product-css'  href='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/assets/css/fancy-product.css?ver=3.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fpd-styles-css'  href='http://fancyproductdesigner.com/wp-content/plugins/fpd-demo/fpd-styles.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-lightbox-fancybox-css'  href='http://fancyproductdesigner.com/wp-content/plugins/responsive-lightbox/assets/fancybox/jquery.fancybox-1.3.4.css?ver=1.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='http://fancyproductdesigner.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.6.4' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='font-awesome-4-css'  href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css?ver=4.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='superior-faq-css'  href='http://fancyproductdesigner.com/wp-content/plugins/superior-faq/css/superior-faq.css?ver=1.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='x-stack-css'  href='http://fancyproductdesigner.com/wp-content/themes/x/framework/css/dist/site/stacks/icon.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='x-cranium-migration-css'  href='http://fancyproductdesigner.com/wp-content/themes/x/framework/legacy/cranium/css/dist/site/icon.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='x-woocommerce-css'  href='http://fancyproductdesigner.com/wp-content/themes/x/framework/css/dist/site/woocommerce/icon.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='x-gravity-forms-css'  href='http://fancyproductdesigner.com/wp-content/themes/x/framework/css/dist/site/gravity_forms/icon.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='x-google-fonts-css'  href='//fonts.googleapis.com/css?family=Lato%3A400%2C400italic%2C700%2C700italic%2C300&#038;subset=latin%2Clatin-ext&#038;ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='x-fa-icon-classes-css'  href='http://fancyproductdesigner.com/wp-content/plugins/cornerstone/assets/dist/css/site/fa-icon-classes.css?ver=2.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://fancyproductdesigner.com/wp-content/plugins/jetpack/css/jetpack.css?ver=5.7' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"http:\/\/fancyproductdesigner.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=6.2.6'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/cookie-law-info/js/cookielawinfo.js?ver=1.5.3'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/responsive-lightbox/assets/fancybox/jquery.fancybox-1.3.4.js?ver=1.7.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var rlArgs = {"script":"fancybox","selector":"lightbox","customEvents":"","activeGalleries":"1","modal":"0","showOverlay":"1","showCloseButton":"1","enableEscapeButton":"1","hideOnOverlayClick":"1","hideOnContentClick":"0","cyclic":"0","showNavArrows":"1","autoScale":"1","scrolling":"yes","centerOnScroll":"1","opacity":"1","overlayOpacity":"70","overlayColor":"#666","titleShow":"1","titlePosition":"outside","transitions":"fade","easings":"swing","speeds":"300","changeSpeed":"300","changeFade":"100","padding":"5","margin":"5","videoWidth":"1080","videoHeight":"720","woocommerce_gallery":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/responsive-lightbox/js/front.js?ver=1.7.2'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/essential-grid/public/assets/js/lightbox.js?ver=2.1.6.2.1'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.1.6.2.1'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.6.4'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/superior-faq/js/jquery.smart_autocomplete.js?ver=4.9.2'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/themes/x/framework/js/dist/site/x-head.min.js?ver=5.2.5'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/cornerstone/assets/dist/js/site/cs-head.js?ver=2.1.7'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-includes/js/hoverIntent.min.js?ver=1.8.1'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/themes/x/framework/legacy/cranium/js/dist/site/x-head.min.js?ver=5.2.5'></script>
+<link rel='https://api.w.org/' href='http://fancyproductdesigner.com/wp-json/' />
+<link rel='shortlink' href='https://wp.me/P3YEAz-FT' />
+<link rel="alternate" type="application/json+oembed" href="http://fancyproductdesigner.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Ffancyproductdesigner.com%2Fwordpress%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://fancyproductdesigner.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Ffancyproductdesigner.com%2Fwordpress%2F&#038;format=xml" />
+<!-- Hotjar Tracking Code for http://fancyproductdesigner.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:166800,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>   <script type="text/javascript">
+      var ajaxRevslider;
+      
+      jQuery(document).ready(function() {
+        // CUSTOM AJAX CONTENT LOADING FUNCTION
+        ajaxRevslider = function(obj) {
+        
+          // obj.type : Post Type
+          // obj.id : ID of Content to Load
+          // obj.aspectratio : The Aspect Ratio of the Container / Media
+          // obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+          
+          var content = "";
+
+          data = {};
+          
+          data.action = 'revslider_ajax_call_front';
+          data.client_action = 'get_slider_html';
+          data.token = 'e7a716e1da';
+          data.type = obj.type;
+          data.id = obj.id;
+          data.aspectratio = obj.aspectratio;
+          
+          // SYNC AJAX REQUEST
+          jQuery.ajax({
+            type:"post",
+            url:"http://fancyproductdesigner.com/wp-admin/admin-ajax.php",
+            dataType: 'json',
+            data:data,
+            async:false,
+            success: function(ret, textStatus, XMLHttpRequest) {
+              if(ret.success == true)
+                content = ret.data;               
+            },
+            error: function(e) {
+              console.log(e);
+            }
+          });
+          
+           // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+           return content;             
+        };
+        
+        // CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+        var ajaxRemoveRevslider = function(obj) {
+          return jQuery(obj.selector+" .rev_slider").revkill();
+        };
+
+        // EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+        var extendessential = setInterval(function() {
+          if (jQuery.fn.tpessential != undefined) {
+            clearInterval(extendessential);
+            if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+              jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+              // type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+              // func: the Function Name which is Called once the Item with the Post Type has been clicked
+              // killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+              // openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+            }
+          }
+        },30);
+      });
+    </script>
+    
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+  <noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+  <meta name="generator" content="Powered by Slider Revolution 5.4.6.4 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script type="text/javascript">function setREVStartSize(e){
+        try{ var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;         
+          if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})          
+        }catch(d){console.log("Failure at Presize of Slider:"+d)}
+      };</script>
+        <style type="text/css">
+
+                    .fpd-container .fpd-primary-bg-color,.fpd-actions-wrapper > .fpd-action-btn:hover,.fpd-actions-wrapper > .fpd-action-btn.fpd-active,.fpd-thumbnail-preview > .fpd-preview-price{background-color: #000}.fpd-container .fpd-primary-text-color,.fpd-navigation > div.fpd-active,.fpd-bottom-nav > div.fpd-active{color: #000}.fpd-container .fpd-secondary-bg-color,.fpd-container .fpd-btn,.fpd-modal-wrapper .fpd-modal-content .fpd-btn,.fpd-switch-container.fpd-enabled .fpd-switch-toggle,.fpd-switch-container.fpd-enabled .fpd-switch-bar,.fpd-modal-product-designer.fpd-modal-overlay .fpd-done{background-color: #48cfad}.fpd-container .fpd-btn:hover,.fpd-modal-wrapper .fpd-modal-content .fpd-btn:hover{background: #54d2b2}.fpd-container .fpd-btn.fpd-secondary,.fpd-modal-wrapper .fpd-modal-content .fpd-btn.fpd-secondary{background: #e0e1e2}.fpd-container .fpd-btn.fpd-secondary:hover,.fpd-modal-wrapper .fpd-modal-content .fpd-btn.fpd-secondary:hover{background: #e8e9e9}.fpd-container .fpd-btn.fpd-dark{background: rgba(0,0,0,0.6)}.fpd-container .fpd-btn.fpd-dark:hover{background: rgba(26,26,26,0.6)}.fpd-toggle.fpd-enabled{color: #48cfad !important}.fpd-container,.fpd-container textarea,.fpd-sub-tooltip-theme .tooltipster-content,.fpd-modal-wrapper > .fpd-modal-close{color: rgba(0,0,0,0.8)}.fpd-actions-wrapper > .fpd-action-btn,.fpd-list > .fpd-list-row,.fpd-container.fpd-sidebar > .fpd-mainbar,.fpd-container textarea,.fpd-container.fpd-sidebar.fpd-sidebar-right > .fpd-mainbar,.fpd-container.fpd-main-bar-container .fpd-mainbar,.fpd-container .fpd-module input,.fpd-thumbnail-preview,.fpd-container .fpd-stage-off-canvas,.fpd-manage-layers-panel .fpd-sortable-placeholder,.fpd-container .fpd-close-off-canvas,.fpd-topbar[class*="fpd-off-canvas-"] .fpd-mainbar .fpd-content,.fpd-container input[type="text"]{border-color: rgba(0,0,0,0.1) !important}.fpd-container textarea:focus,.fpd-element-toolbar textarea:focus{border: 1px solid rgba(0,0,0,0.1)}.fpd-product-designer-wrapper {
+    margin: 20px 0;
+}
+          
+        </style>
+              <style type="text/css" id="wp-custom-css">
+        footer .h-widget:before {
+  display: none;
+}
+
+footer .h-widget {
+  font-size: 120%;
+}
+
+footer .menu {
+  border: none;
+}
+
+footer .menu li {
+  border: none !important;
+}
+
+footer .menu li a {
+  font-size: 12px;
+}     </style>
+    <style id="x-generated-css" type="text/css">a,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,#respond .required,.x-pagination a:hover,.x-pagination span.current,.widget_tag_cloud .tagcloud a:hover,.widget_product_tag_cloud .tagcloud a:hover,.x-scroll-top:hover,.x-comment-author a:hover,.mejs-button button:hover{color:#48cfad;}a:hover{color:#37bc9b;}.woocommerce .price > .amount,.woocommerce .price > ins > .amount,.woocommerce li.product .entry-header h3 a:hover,.woocommerce .star-rating:before,.woocommerce .star-rating span:before,.woocommerce .onsale{color:#48cfad;}a.x-img-thumbnail:hover,textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="time"]:focus,input[type="week"]:focus,input[type="number"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="color"]:focus,.uneditable-input:focus,.x-pagination a:hover,.x-pagination span.current,.widget_tag_cloud .tagcloud a:hover,.widget_product_tag_cloud .tagcloud a:hover,.x-scroll-top:hover{border-color:#48cfad;}.flex-direction-nav a,.flex-control-nav a:hover,.flex-control-nav a.flex-active,.x-dropcap,.x-skill-bar .bar,.x-pricing-column.featured h2,.x-portfolio-filters,.x-entry-share .x-share:hover,.widget_price_filter .ui-slider .ui-slider-range,.mejs-time-current{background-color:#48cfad;}.x-portfolio-filters:hover{background-color:#37bc9b;}.x-comment-author,.x-comment-time,.comment-form-author label,.comment-form-email label,.comment-form-url label,.comment-form-rating label,.comment-form-comment label{font-family:""Lato",sans-serif";}.x-comment-time,.entry-thumb:before,.p-meta{color:#848484;}.woocommerce .price > .from,.woocommerce .price > del,.woocommerce p.stars span a:after{color:#848484;}.entry-title a:hover,.x-comment-author,.x-comment-author a,.comment-form-author label,.comment-form-email label,.comment-form-url label,.comment-form-rating label,.comment-form-comment label,.x-accordion-heading .x-accordion-toggle,.x-nav-tabs > li > a:hover,.x-nav-tabs > .active > a,.x-nav-tabs > .active > a:hover,.mejs-button button{color:#566471;}.h-comments-title small,.h-feature-headline span i,.x-portfolio-filters-menu,.mejs-time-loaded{background-color:#566471 !important;}@media (min-width:1200px){.x-sidebar{width:250px;}body.x-sidebar-content-active,body[class*="page-template-template-blank"].x-sidebar-content-active.x-blank-template-sidebar-active{padding-left:250px;}body.x-content-sidebar-active,body[class*="page-template-template-blank"].x-content-sidebar-active.x-blank-template-sidebar-active{padding-right:250px;}}html{font-size:15px;}@media (min-width:480px){html{font-size:15px;}}@media (min-width:767px){html{font-size:15px;}}@media (min-width:979px){html{font-size:15px;}}@media (min-width:1200px){html{font-size:15px;}}body{font-style:normal;font-weight:400;color:#848484;background-color:#f7f7f7;}.w-b{font-weight:400 !important;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:"Lato",sans-serif;font-style:normal;font-weight:300;}h1,.h1{letter-spacing:-0.017em;}h2,.h2{letter-spacing:-0.023em;}h3,.h3{letter-spacing:-0.029em;}h4,.h4{letter-spacing:-0.039em;}h5,.h5{letter-spacing:-0.044em;}h6,.h6{letter-spacing:-0.067em;}.w-h{font-weight:300 !important;}.x-container.width{width:90%;}.x-container.max{max-width:1200px;}.site,.x-site{width:90%;max-width:1200px;}.x-main.full{float:none;display:block;width:auto;}@media (max-width:979px){.x-main.full,.x-main.left,.x-main.right,.x-sidebar.left,.x-sidebar.right{float:none;display:block;width:auto !important;}}.entry-header,.entry-content{font-size:1rem;}body,input,button,select,textarea{font-family:"Lato",sans-serif;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.h1 a,.h2 a,.h3 a,.h4 a,.h5 a,.h6 a,blockquote{color:#566471;}.cfc-h-tx{color:#566471 !important;}.cfc-h-bd{border-color:#566471 !important;}.cfc-h-bg{background-color:#566471 !important;}.cfc-b-tx{color:#848484 !important;}.cfc-b-bd{border-color:#848484 !important;}.cfc-b-bg{background-color:#848484 !important;}.x-btn,.button,[type="submit"]{color:#ffffff;border-color:#48cfad;background-color:#48cfad;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);}.x-btn:hover,.button:hover,[type="submit"]:hover{color:#ffffff;border-color:#37bc9b;background-color:#37bc9b;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);}.x-btn.x-btn-real,.x-btn.x-btn-real:hover{margin-bottom:0.25em;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);}.x-btn.x-btn-real{box-shadow:0 0.25em 0 0 #a71000,0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-real:hover{box-shadow:0 0.25em 0 0 #a71000,0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-flat,.x-btn.x-btn-flat:hover{margin-bottom:0;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);box-shadow:none;}.x-btn.x-btn-transparent,.x-btn.x-btn-transparent:hover{margin-bottom:0;border-width:3px;text-shadow:none;text-transform:uppercase;background-color:transparent;box-shadow:none;}.h-widget:before,.x-flickr-widget .h-widget:before,.x-dribbble-widget .h-widget:before{position:relative;font-weight:normal;font-style:normal;line-height:1;text-decoration:inherit;-webkit-font-smoothing:antialiased;speak:none;}.h-widget:before{padding-right:0.4em;font-family:"fontawesome";}.x-flickr-widget .h-widget:before,.x-dribbble-widget .h-widget:before{top:0.025em;padding-right:0.35em;font-family:"foundationsocial";font-size:0.785em;}.widget_archive .h-widget:before{content:"\f040";top:-0.045em;font-size:0.925em;}.widget_calendar .h-widget:before{content:"\f073";top:-0.0825em;font-size:0.85em;}.widget_categories .h-widget:before,.widget_product_categories .h-widget:before{content:"\f02e";font-size:0.95em;}.widget_nav_menu .h-widget:before,.widget_layered_nav .h-widget:before{content:"\f0c9";}.widget_meta .h-widget:before{content:"\f0fe";top:-0.065em;font-size:0.895em;}.widget_pages .h-widget:before{content:"\f0f6";top:-0.065em;font-size:0.85em;}.widget_recent_reviews .h-widget:before,.widget_recent_comments .h-widget:before{content:"\f086";top:-0.065em;font-size:0.895em;}.widget_recent_entries .h-widget:before{content:"\f02d";top:-0.045em;font-size:0.875em;}.widget_rss .h-widget:before{content:"\f09e";padding-right:0.2em;}.widget_search .h-widget:before,.widget_product_search .h-widget:before{content:"\f0a4";top:-0.075em;font-size:0.85em;}.widget_tag_cloud .h-widget:before,.widget_product_tag_cloud .h-widget:before{content:"\f02c";font-size:0.925em;}.widget_text .h-widget:before{content:"\f054";padding-right:0.4em;font-size:0.925em;}.x-dribbble-widget .h-widget:before{content:"\f009";}.x-flickr-widget .h-widget:before{content:"\f010";padding-right:0.35em;}.widget_best_sellers .h-widget:before{content:"\f091";top:-0.0975em;font-size:0.815em;}.widget_shopping_cart .h-widget:before{content:"\f07a";top:-0.05em;font-size:0.945em;}.widget_products .h-widget:before{content:"\f0f2";top:-0.05em;font-size:0.945em;}.widget_featured_products .h-widget:before{content:"\f0a3";}.widget_layered_nav_filters .h-widget:before{content:"\f046";top:1px;}.widget_onsale .h-widget:before{content:"\f02b";font-size:0.925em;}.widget_price_filter .h-widget:before{content:"\f0d6";font-size:1.025em;}.widget_random_products .h-widget:before{content:"\f074";font-size:0.925em;}.widget_recently_viewed_products .h-widget:before{content:"\f06e";}.widget_recent_products .h-widget:before{content:"\f08d";top:-0.035em;font-size:0.9em;}.widget_top_rated_products .h-widget:before{content:"\f075";top:-0.145em;font-size:0.885em;}.woocommerce p.stars span a{background-color:#48cfad;}body .gform_wrapper .gfield_required,body .gform_wrapper span.ginput_total{color:#48cfad;}body .gform_wrapper h2.gsection_title,body .gform_wrapper h3.gform_title{font-weight:300;}body .gform_wrapper h2.gsection_title{letter-spacing:-0.023em !important;}body .gform_wrapper h3.gform_title{letter-spacing:-0.029em !important;}body .gform_wrapper .top_label .gfield_label,body .gform_wrapper .left_label .gfield_label,body .gform_wrapper .right_label .gfield_label{font-weight:400;}.x-navbar .desktop .x-nav > li > a,.x-navbar .desktop .sub-menu a,.x-navbar .mobile .x-nav li a{color:#272727;}.x-navbar .desktop .x-nav > li > a:hover,.x-navbar .desktop .x-nav > .x-active > a,.x-navbar .desktop .x-nav > .current-menu-item > a,.x-navbar .desktop .sub-menu a:hover,.x-navbar .desktop .sub-menu .x-active > a,.x-navbar .desktop .sub-menu .current-menu-item > a,.x-navbar .desktop .x-nav .x-megamenu > .sub-menu > li > a,.x-navbar .mobile .x-nav li > a:hover,.x-navbar .mobile .x-nav .x-active > a,.x-navbar .mobile .x-nav .current-menu-item > a{color:#b7b7b7;}.x-navbar .desktop .x-nav > li > a{height:90px;padding-top:37px;}.x-navbar .desktop .x-nav > li ul{top:90px;}@media (min-width:1200px){body.x-sidebar-content-active .x-widgetbar,body.x-sidebar-content-active .x-navbar-fixed-top,body[class*="page-template-template-blank"].x-sidebar-content-active.x-blank-template-sidebar-active .x-widgetbar,body[class*="page-template-template-blank"].x-sidebar-content-active.x-blank-template-sidebar-active .x-navbar-fixed-top{left:250px;}body.x-content-sidebar-active .x-widgetbar,body.x-content-sidebar-active .x-navbar-fixed-top,body[class*="page-template-template-blank"].x-content-sidebar-active.x-blank-template-sidebar-active .x-widgetbar,body[class*="page-template-template-blank"].x-content-sidebar-active.x-blank-template-sidebar-active .x-navbar-fixed-top{right:250px;}}@media (max-width:979px){}.x-navbar.x-navbar-fixed-top.x-container.max.width{width:90%;max-width:1200px;}.x-navbar-inner{min-height:90px;}.x-brand{margin-top:17px;font-family:"Lato",sans-serif;font-size:38px;font-style:normal;font-weight:300;letter-spacing:-0.079em;text-transform:uppercase;color:#566471;}.x-brand:hover,.x-brand:focus{color:#566471;}.x-navbar .x-nav-wrap .x-nav > li > a{font-family:"Lato",sans-serif;font-style:normal;font-weight:700;letter-spacing:0.091em;text-transform:uppercase;}.x-navbar .desktop .x-nav > li > a{font-size:11px;}.x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce){padding-left:3px;padding-right:3px;}.x-navbar .desktop .x-nav > li > a > span{padding-right:calc(1.25em - 0.091em);}.x-btn-navbar{margin-top:19px;}.x-btn-navbar,.x-btn-navbar.collapsed{font-size:24px;}@media (max-width:979px){.x-widgetbar{left:0;right:0;}}.el1.x-section,.el2.x-section {margin:0em;padding:45px 0px 45px 0px;background-color:transparent;z-index:1;}.entry-content pre {
+font-size: 13px;
+}
+
+.woocommerce .cart.shop_table .product-thumbnail img, .woocommerce-page .cart.shop_table .product-thumbnail img {
+max-width: 100px;
+max-height: 100px;
+}
+
+.x-breadcrumb-wrap { display: none; }
+
+.post-type-archive-product .x-breadcrumb-wrap, .single-product .x-breadcrumb-wrap, .make-breadcrumb-visible .x-breadcrumb-wrap {
+display: block;
+}
+
+#platform-items img {
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+#platform-items > div:hover img {
+  -webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+  filter: grayscale(0);
+}
+
+.green-trans-btn {
+  color: #48CFAD;
+}
+
+.green-trans-btn:hover {
+color: #fff !important;
+background: #37BC9B !important;
+}
+
+.white-trans-btn {
+  color: #fff;
+border-color: #fff;
+}
+
+.white-trans-btn:hover {
+color: #5ebe91 !important;
+background: #fff !important;
+border-color: #fff;
+}
+
+li.menu-item-3510 a {
+position: relative;
+}
+
+li.menu-item-3510 a:after {
+  content: "Soon";
+  display: block;
+  white-space: nowrap;
+  background: #ea365f;
+  border-radius: 2px;
+  color: #fff;
+  padding: 2px 4px;
+  position: absolute;
+  top: 3px;
+  left: 70px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.mobile li.menu-item-3510 a:after {
+  left: 60px;
+}</style><style id="cornerstone-custom-page-css" type="text/css">form[name="fpd_shortcode_form"] input[type="submit"]{pointer-events:none;opacity:0.5 !important;}</style></head>
+
+<body class="page-template page-template-template-blank-4 page-template-template-blank-4-php page page-id-2597 x-icon x-boxed-layout-active x-full-width-active x-post-meta-disabled fancy-product fpd-customize-button-hidden fpd-fullwidth-summary fpd-product-images-hidden x-navbar-static-active x-v5_2_5 cornerstone-v2_1_7">
+
+  <div id="x-root" class="x-root">
+
+    
+    <div id="top" class="site">
+
+    
+  
+  <header class="masthead masthead-inline" role="banner">
+    
+    
+
+  <div class="x-navbar-wrap">
+    <div class="x-navbar">
+      <div class="x-navbar-inner">
+        <div class="x-container max width">
+          
+<h1 class="visually-hidden">Fancy Product Designer</h1>
+<a href="http://fancyproductdesigner.com/" class="x-brand img" title="The All-Purpose Product Designer Plugin for WordPress, WooCommerce and jQuery. Create and sell customizable products in your Web-Shop.">
+  <img src="//fancyproductdesigner.com/wp-content/uploads/2016/03/fancy-product-designer-logo.png" alt="The All-Purpose Product Designer Plugin for WordPress, WooCommerce and jQuery. Create and sell customizable products in your Web-Shop."></a>           
+<a href="#" class="x-btn-navbar collapsed" data-toggle="collapse" data-target=".x-nav-wrap.mobile">
+  <i class="x-icon-bars" data-x-icon="&#xf0c9;"></i>
+  <span class="visually-hidden">Navigation</span>
+</a>
+
+<nav class="x-nav-wrap desktop" role="navigation">
+  <ul id="menu-main-menu" class="x-nav"><li id="menu-item-3068" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3068"><a href="http://fancyproductdesigner.com/"><span>Home</span></a></li>
+<li id="menu-item-3047" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3047"><a href="http://fancyproductdesigner.com/features/"><span>Features</span></a>
+<ul class="sub-menu">
+  <li id="menu-item-3146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3146"><a href="http://fancyproductdesigner.com/features/ui-layout-composer/"><span>UI &#038; Layout Composer</span></a></li>
+</ul>
+</li>
+<li id="menu-item-2524" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-2524"><a href="#"><span>Platforms</span></a>
+<ul class="sub-menu">
+  <li id="menu-item-2600" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2597 current_page_item menu-item-2600"><a href="http://fancyproductdesigner.com/wordpress/"><span>WordPress</span></a></li>
+  <li id="menu-item-2526" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2526"><a href="http://fancyproductdesigner.com/woocommerce/"><span>WooCommerce</span></a></li>
+  <li id="menu-item-2527" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2527"><a href="http://fancyproductdesigner.com/jquery/"><span>jQuery</span></a></li>
+  <li id="menu-item-3510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3510"><a href="http://fancyproductdesigner.com/shopify/"><span>Shopify</span></a></li>
+</ul>
+</li>
+<li id="menu-item-3441" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3441"><a href="#"><span>Add-ons</span></a>
+<ul class="sub-menu">
+  <li id="menu-item-3252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3252"><a href="http://fancyproductdesigner.com/plus/"><span>Plus</span></a></li>
+  <li id="menu-item-3442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3442"><a href="http://fancyproductdesigner.com/addon-pricing-rules/"><span>Pricing Rules</span></a></li>
+  <li id="menu-item-3516" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3516"><a href="https://codecanyon.net/item/multistep-product-configurator-for-woocommerce-/8749384?ref=radykal"><span>Multistep Product Configurator</span></a></li>
+  <li id="menu-item-3561" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3561"><a href="http://fancyproductdesigner.com/woocommerce-bulk-variations/"><span>WooCommerce Bulk Variations</span></a></li>
+</ul>
+</li>
+<li id="menu-item-2857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2857"><a href="http://fancyproductdesigner.com/pricing/"><span>Pricing</span></a></li>
+<li id="menu-item-3554" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3554"><a href="#"><span>Service</span></a>
+<ul class="sub-menu">
+  <li id="menu-item-3555" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3555"><a href="https://admin.fancyproductdesigner.com/"><span>ADMIN</span></a></li>
+  <li id="menu-item-3571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3571"><a href="http://fancyproductdesigner.com/customization-request/"><span>Customization Request</span></a></li>
+</ul>
+</li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="http://fancyproductdesigner.com/faqs/"><span>FAQ</span></a></li>
+<li id="menu-item-86" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86"><a href="http://support.fancyproductdesigner.com/"><span>Docs &#038; Support</span></a></li>
+</ul></nav>
+
+<div class="x-nav-wrap mobile collapse">
+  <ul id="menu-main-menu-1" class="x-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3068"><a href="http://fancyproductdesigner.com/"><span>Home</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3047"><a href="http://fancyproductdesigner.com/features/"><span>Features</span></a>
+<ul class="sub-menu">
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3146"><a href="http://fancyproductdesigner.com/features/ui-layout-composer/"><span>UI &#038; Layout Composer</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-2524"><a href="#"><span>Platforms</span></a>
+<ul class="sub-menu">
+  <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2597 current_page_item menu-item-2600"><a href="http://fancyproductdesigner.com/wordpress/"><span>WordPress</span></a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2526"><a href="http://fancyproductdesigner.com/woocommerce/"><span>WooCommerce</span></a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2527"><a href="http://fancyproductdesigner.com/jquery/"><span>jQuery</span></a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3510"><a href="http://fancyproductdesigner.com/shopify/"><span>Shopify</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3441"><a href="#"><span>Add-ons</span></a>
+<ul class="sub-menu">
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3252"><a href="http://fancyproductdesigner.com/plus/"><span>Plus</span></a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3442"><a href="http://fancyproductdesigner.com/addon-pricing-rules/"><span>Pricing Rules</span></a></li>
+  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3516"><a href="https://codecanyon.net/item/multistep-product-configurator-for-woocommerce-/8749384?ref=radykal"><span>Multistep Product Configurator</span></a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3561"><a href="http://fancyproductdesigner.com/woocommerce-bulk-variations/"><span>WooCommerce Bulk Variations</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2857"><a href="http://fancyproductdesigner.com/pricing/"><span>Pricing</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3554"><a href="#"><span>Service</span></a>
+<ul class="sub-menu">
+  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3555"><a href="https://admin.fancyproductdesigner.com/"><span>ADMIN</span></a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3571"><a href="http://fancyproductdesigner.com/customization-request/"><span>Customization Request</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="http://fancyproductdesigner.com/faqs/"><span>FAQ</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86"><a href="http://support.fancyproductdesigner.com/"><span>Docs &#038; Support</span></a></li>
+</ul></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+    <div class="x-breadcrumb-wrap">
+      <div class="x-container max width">
+
+        <div class="x-breadcrumbs"><a href="http://fancyproductdesigner.com/" ><span class="home"><i class="x-icon-home" data-x-icon="&#xf015;"></i></span></a> <span class="delimiter"><i class="x-icon-angle-right" data-x-icon="&#xf105;"></i></span> <a href="http://fancyproductdesigner.com/wordpress/" class="current" title="You Are Here" >WordPress</a></div>
+        
+      </div>
+    </div>
+
+    </header>
+
+  
+  <div class="x-main full" role="main">
+
+    
+      <article id="post-2597" class="post-2597 page type-page status-publish hentry no-post-thumbnail">
+        <div class="entry-wrap">
+          
+
+<div class="entry-content content">
+
+
+  <div id="cs-content" class="cs-content"><div id="x-section-1"  class="x-section"  style="margin: 0px;padding: 100px 0px; background-color: hsl(0, 0%, 98%);"   ><div  class="x-container max width"  style="margin: 0px auto;padding: 0px;"   ><div  class="x-column x-sm cs-ta-center x-1-1" style="padding: 0px;" ><img  class="x-img x-img-none"  src="http://fancyproductdesigner.com/wp-content/uploads/2015/03/wordpress-logo-hoz-rgb.png" ><div  class="x-text"    ><p><h1  class="h-custom-headline center-text h1" ><span>The #1 Product Designer Plugin for WordPress.</span></h1></p>
+</div><ul  class="x-ul-icons"  style="font-size: 18px;"   ><li  class="x-li-icon"    ><i class="x-icon-star"  data-x-icon="&#xf005;"  aria-hidden="true"    ></i>Easily add the Product Designer in any post or page using Shortcodes.</li><li  class="x-li-icon"    ><i class="x-icon-star"  data-x-icon="&#xf005;"  aria-hidden="true"    ></i>Simple form to send product with customer name and mail to site owner</li></ul></div></div></div><div id="x-section-2"  class="x-section"  style="margin: 0px;padding: 45px 0px; background-color: transparent;"   ><div  class="x-container max width"  style="margin: 0px auto;padding: 0px;"   ><div  class="x-column x-sm x-1-1" style="padding: 0px;" ><h2  class="h-custom-headline cs-ta-center h2 accent" ><span>Product Demos</span></h2><div  class="x-text"    ><p>       <div class="fpd-product-designer-wrapper">
+          <div id="fancy-product-designer-2597" class="fpd-container fpd-topbar fpd-views-inside-left fpd-shadow-1 fpd-top-actions-centered fpd-bottom-actions-centered fpd-clearfix fpd-grid-columns-2 fpd-disable-touch-scrolling "></div>
+        </div>
+        <script type="text/javascript">
+
+          //all designs for the product designer
+          var fpdProductsJSON = [{"category":"Clothing Designer","products":[[{"productTitle":"Shirt","title":"Front","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/base41.png","options":{"stageWidth":1200,"customAdds":{"uploads":true,"texts":true,"designs":true}},"elements":[{"type":"image","title":"Shadow","source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/Shadow3.png","parameters":{"degree":0,"left":600,"top":300,"scaleX":1,"scaleY":1}},{"type":"image","title":"Shirt","source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/Shirt2.png","parameters":{"locked":false,"uploadZone":0,"left":600,"top":300,"scaleX":1,"scaleY":1,"degree":0,"price":10,"originX":"center","originY":"center","colors":"#b33939","colorLinkGroup":"base","opacity":1,"removable":false,"draggable":false,"rotatable":false,"resizable":false,"zChangeable":false,"topped":false,"autoSelect":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","customAdds":[]}},{"type":"image","title":"Design","source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/Design1.png","parameters":{"locked":false,"uploadZone":0,"left":600,"top":363,"scaleX":1.6799999999999999378275106209912337362766265869140625,"scaleY":1.6799999999999999378275106209912337362766265869140625,"degree":0,"replace":"design","originX":"center","originY":"center","colors":"#000","removable":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"topped":false,"autoSelect":false,"uniScalingUnlockable":false,"boundingBoxMode":"clipping","customAdds":[],"boundingBox":{"x":460,"y":120,"width":300,"height":400}}},{"type":"text","title":"Enter your text.","source":"Enter your text.","parameters":{"locked":false,"uploadZone":0,"left":608,"top":156,"degree":0,"price":0,"originX":"center","originY":"center","showInColorSelection":false,"colors":"#000000","fill":"#000000","opacity":1,"removable":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"topped":false,"autoSelect":false,"excludeFromExport":false,"boundingBoxMode":"clipping","fontFamily":"Abel","fontWeight":"normal","fontStyle":"normal","textDecoration":"normal","textAlign":"center","fontSize":38,"lineHeight":1,"maxLength":0,"strokeWidth":1,"editable":true,"chargeAfterEditing":false,"curvable":true,"curved":false,"curveSpacing":10,"curveRadius":80,"curveReverse":false,"textBox":false,"customAdds":[],"boundingBox":{"x":460,"y":120,"width":300,"height":400}}},{"type":"image","title":"Shadow","source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/Shadow4.png","parameters":{"locked":true,"uploadZone":0,"left":600,"top":300,"scaleX":1,"scaleY":1,"degree":0,"originX":"center","originY":"center","showInColorSelection":false,"removable":false,"draggable":false,"rotatable":false,"resizable":false,"zChangeable":false,"topped":true,"autoSelect":false,"uniScalingUnlockable":false,"excludeFromExport":false,"advancedEditing":false,"boundingBoxMode":"inside","customAdds":[]}}]},{"title":"Back","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/base61.png","options":{"stageWidth":1200,"customTextParameters":{"price":6},"customAdds":{"uploads":true,"texts":true,"designs":true}},"elements":[{"type":"image","title":"Back Shadow","source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/shadows2.png","parameters":{"locked":false,"uploadZone":0,"left":600,"top":316,"scaleX":1,"scaleY":1,"degree":0,"originX":"center","originY":"center","opacity":1,"removable":false,"draggable":false,"rotatable":false,"resizable":false,"zChangeable":false,"topped":false,"autoSelect":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","customAdds":[]}},{"type":"image","title":"Shirt","source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/base6.png","parameters":{"locked":false,"uploadZone":0,"left":600,"top":300,"scaleX":1,"scaleY":1,"degree":0,"price":0,"originX":"center","originY":"center","colors":"Shirt","colorLinkGroup":"base","opacity":1,"removable":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"topped":false,"autoSelect":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","customAdds":[]}},{"type":"image","title":"Shadow","source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/over_shadow1.png","parameters":{"locked":false,"uploadZone":0,"left":600,"top":300,"scaleX":1,"scaleY":1,"degree":0,"originX":"center","originY":"center","removable":false,"draggable":false,"rotatable":false,"resizable":false,"zChangeable":false,"topped":true,"autoSelect":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","customAdds":[]}}]}],[{"productTitle":"Sweater","title":"Sweater Front","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/Hoodie11.png","options":{"customAdds":{"uploads":true,"texts":true,"designs":true}},"elements":[{"type":"image","title":"Hoodie","source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/Hoodie1.png","parameters":{"locked":false,"uploadZone":0,"left":600,"top":300,"scaleX":1,"scaleY":1,"degree":0,"originX":"center","originY":"center","colors":"#d5d5d5,#920000,#000,#62c08f","removable":false,"draggable":false,"rotatable":false,"resizable":false,"zChangeable":false,"topped":false,"autoSelect":false,"uniScalingUnlockable":false,"excludeFromExport":false,"boundingBoxMode":"inside","customAdds":[]}},{"type":"image","title":"Highlights","source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/Highlights1.png","parameters":{"locked":false,"uploadZone":0,"left":600,"top":300,"scaleX":1,"scaleY":1,"degree":0,"price":10,"originX":"center","originY":"center","opacity":1,"removable":false,"draggable":false,"rotatable":false,"resizable":false,"zChangeable":false,"topped":false,"autoSelect":false,"uniScalingUnlockable":false,"excludeFromExport":false,"boundingBoxMode":"inside","customAdds":[]}},{"type":"image","title":"Shadow","source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/Shadow7.png","parameters":{"locked":true,"uploadZone":0,"left":600,"top":300,"scaleX":1,"scaleY":1,"degree":0,"originX":"center","originY":"center","removable":false,"draggable":false,"rotatable":false,"resizable":false,"zChangeable":false,"topped":false,"autoSelect":false,"uniScalingUnlockable":false,"excludeFromExport":false,"boundingBoxMode":"inside","customAdds":[]}}]}]]}],
+            fpdDesignsJSON = [{"title":"Animals","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Zebra.svg","designs":[{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Ant-Eater.svg","title":"Ant Eater","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Ant-Eater.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Camel.svg","title":"Camel","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Camel.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Cat.svg","title":"Cat","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Cat.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Chick.svg","title":"Chick","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Chick.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Chicken.svg","title":"Chicken","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Chicken.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Crocodil.svg","title":"Crocodil","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Crocodil.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Dog.svg","title":"Dog","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Dog.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Elephant.svg","title":"Elephant","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Elephant.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fox.svg","title":"Fox","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fox.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Goat.svg","title":"Goat","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Goat.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Hippo.svg","title":"Hippo","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Hippo.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Horse.svg","title":"Horse","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Horse.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Kangaroo.svg","title":"Kangaroo","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Kangaroo.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Leopard.svg","title":"Leopard","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Leopard.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Lion.svg","title":"Lion","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Lion.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Monkey.svg","title":"Monkey","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Monkey.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Ostrich.svg","title":"Ostrich","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Ostrich.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Panda.svg","title":"Panda","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Panda.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Pig.svg","title":"Pig","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Pig.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Pinguin.svg","title":"Pinguin","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Pinguin.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Rabbit.svg","title":"Rabbit","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Rabbit.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Rhino.svg","title":"Rhino","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Rhino.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Sheep.svg","title":"Sheep","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Sheep.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Snake.svg","title":"Snake","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Snake.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Stork.svg","title":"Stork","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Stork.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Tukane.svg","title":"Tukane","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Tukane.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Vulture.svg","title":"Vulture","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Vulture.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Zebra.svg","title":"Zebra","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Zebra.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"1","price":0,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true,"scaleX":1,"scaleY":1,"resizeToW":0,"resizeToH":0,"scaleMode":"fit"}}]},{"title":"Bagdges","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/badge.png","designs":[{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/badge-two.png","title":"badge-two","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/badge-two.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/badge-three.png","title":"badge-three","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/badge-three.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/badge-six.png","title":"badge-six","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/badge-six.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/badge-one.png","title":"badge-one","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/badge-one.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/badge-four.png","title":"badge-four","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/badge-four.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/badge-five.png","title":"badge-five","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/badge-five.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}}]},{"title":"Crazy Shapes","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/Peace.png","designs":[{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Stripes_and_Bubbles.png","title":"Stripes_and_Bubbles","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Stripes_and_Bubbles.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Star_with_Bubbles.png","title":"Star_with_Bubbles","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Star_with_Bubbles-300x258.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Splash.png","title":"Splash","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Splash-300x253.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Speedcar.png","title":"Speedcar","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Speedcar.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Smiley.png","title":"Smiley","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Smiley.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Screaming_guy.png","title":"Screaming_guy","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Screaming_guy-186x300.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Salamander.png","title":"Salamander","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Salamander-167x300.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Peace.png","title":"Peace","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Peace.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Heart.png","title":"Heart","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Heart.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Heart_with_Lines.png","title":"Heart_with_Lines","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Heart_with_Lines-206x300.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Heart_Frequence.png","title":"Heart_Frequence","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Heart_Frequence.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Glupschi.png","title":"Glupschi","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Glupschi.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Forbidden.png","title":"Forbidden","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Forbidden.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Flammed_Heart.png","title":"Flammed_Heart","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Flammed_Heart.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Flower.png","title":"Flower","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Flower.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Dragon.png","title":"Dragon","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Dragon-234x300.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Dart_in_Point.png","title":"Dart_in_Point","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Dart_in_Point.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Crazy_Heart.png","title":"Crazy_Heart","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Crazy_Heart.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Bubbles.png","title":"Bubbles","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Bubbles-242x300.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Black_guy.png","title":"Black_guy","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Black_guy.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Angry_Bag.png","title":"Angry_Bag","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/Angry_Bag-153x300.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}}]},{"title":"Fitness Logos","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Woman.svg","designs":[{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Woman.svg","title":"Fitness Woman","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Woman.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Dumbbell.svg","title":"Fitness Dumbbell","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Dumbbell.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Club.svg","title":"Fitness Club","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Club.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Club-2.svg","title":"Fitness Club 2","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Club-2.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Center.svg","title":"Fitness Center","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Center.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Bar.svg","title":"Fitness Bar","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Fitness-Bar.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}}]},{"title":"Quotes","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Wow-Mother.svg","designs":[{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Best-Mother.svg","title":"Best-Mother","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Best-Mother.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Flower-Mother.svg","title":"Flower-Mother","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Flower-Mother.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Great-Mother.svg","title":"Great-Mother","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Great-Mother.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Home-Mom.svg","title":"Home-Mom","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Home-Mom.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Life-Mother.svg","title":"Life-Mother","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Life-Mother.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Mother-One.svg","title":"Mother-One","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Mother-One.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Mothersday.svg","title":"Mothersday","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Mothersday.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Wow-Mother.svg","title":"Wow-Mother","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2018/01/Wow-Mother.svg","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}}]},{"title":"Sports","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Soccerball-1.png","category":[{"title":"Flat","thumbnail":"","designs":[{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_baseball-bat-ball.png","title":"flat_baseball-bat-ball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_baseball-bat-ball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Baseball.png","title":"flat_Baseball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Baseball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Basketball-basket.png","title":"flat_Basketball-basket","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Basketball-basket.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Bike.png","title":"flat_Bike","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Bike.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Billiard-balls.png","title":"flat_Billiard-balls","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Billiard-balls.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Billiard-cue.png","title":"flat_Billiard-cue","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Billiard-cue.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_bowling-ball.png","title":"flat_bowling-ball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_bowling-ball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_boxing-glove.png","title":"flat_boxing-glove","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_boxing-glove.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Chess-piece.png","title":"flat_Chess-piece","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Chess-piece.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Dart.png","title":"flat_Dart","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Dart.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Darts.png","title":"flat_Darts","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Darts.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Dumbbell.png","title":"flat_Dumbbell","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Dumbbell.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Football-Helmet.png","title":"flat_Football-Helmet","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Football-Helmet.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Football.png","title":"flat_Football","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Football.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Golf.png","title":"flat_Golf","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Golf.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Hevay-Weight-.png","title":"flat_Hevay-Weight-","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Hevay-Weight-.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Hockey-court.png","title":"flat_Hockey-court","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Hockey-court.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Hockey-Stick.png","title":"flat_Hockey-Stick","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Hockey-Stick.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Hockeypuck.png","title":"flat_Hockeypuck","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Hockeypuck.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Ice-skate.png","title":"flat_Ice-skate","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Ice-skate.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_inline-skate.png","title":"flat_inline-skate","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_inline-skate.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Medal.png","title":"flat_Medal","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Medal.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_parachute.png","title":"flat_parachute","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_parachute.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Shuttlecock.png","title":"flat_Shuttlecock","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Shuttlecock.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Skateboard.png","title":"flat_Skateboard","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Skateboard.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Soccer-Field.png","title":"flat_Soccer-Field","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Soccer-Field.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Soccerball.png","title":"flat_Soccerball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Soccerball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Sports.png","title":"flat_Sports","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Sports.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Table-Tennis-Paddle-Ball.png","title":"flat_Table-Tennis-Paddle-Ball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Table-Tennis-Paddle-Ball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Target-Seeker-30.png","title":"flat_Target-Seeker-30","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Target-Seeker-30.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Target-Seeker-31.png","title":"flat_Target-Seeker-31","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Target-Seeker-31.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Tennis-racket-ball.png","title":"flat_Tennis-racket-ball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Tennis-racket-ball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Tennisball.png","title":"flat_Tennisball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Tennisball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_trophy.png","title":"flat_trophy","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_trophy.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Volleyball.png","title":"flat_Volleyball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Volleyball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Weight-01.png","title":"flat_Weight-01","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Weight-01.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Weight-02.png","title":"flat_Weight-02","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Weight-02.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Whistle.png","title":"flat_Whistle","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Whistle.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Winning-Places.png","title":"flat_Winning-Places","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat_Winning-Places.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat-29.png","title":"flat-29","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/flat-29.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}}]},{"title":"Line","thumbnail":"","designs":[{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Baseball-Bat-Ball.png","title":"line_Baseball-Bat-Ball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Baseball-Bat-Ball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Baseball.png","title":"line_Baseball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Baseball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Basketball-Net.png","title":"line_Basketball-Net","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Basketball-Net.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Bike.png","title":"line_Bike","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Bike.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Billiard-Balls.png","title":"line_Billiard-Balls","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Billiard-Balls.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Billiard-Cue.png","title":"line_Billiard-Cue","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Billiard-Cue.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Bowling-Ball-.png","title":"line_Bowling-Ball--","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Bowling-Ball-.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Boxing-Glove.png","title":"line_Boxing-Glove","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Boxing-Glove.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Chess-piece.png","title":"line_Chess-piece","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Chess-piece.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Dart.png","title":"line_Dart","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Dart.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Darts.png","title":"line_Darts","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Darts.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Dumbbell.png","title":"line_Dumbbell","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Dumbbell.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Football-Helmet.png","title":"line_Football-Helmet","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Football-Helmet.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Football.png","title":"line_Football","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Football.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Golf.png","title":"line_Golf","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Golf.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Heavy-Weights.png","title":"line_Heavy-Weights","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Heavy-Weights.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Hockey-Court.png","title":"line_Hockey-Court","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Hockey-Court.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Hockey-Stick.png","title":"line_Hockey-Stick","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Hockey-Stick.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Hockeypuck.png","title":"line_Hockeypuck","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Hockeypuck.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Ice-Skate.png","title":"line_Ice-Skate","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Ice-Skate.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Inline-Skate.png","title":"line_Inline-Skate","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Inline-Skate.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Medal.png","title":"line_Medal","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Medal.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Parachute.png","title":"Line Parachute","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Parachute.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Shuttlecock.png","title":"Line Shuttlecock","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Shuttlecock.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_skateboard.png","title":"line_skateboard","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_skateboard.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Soccer-Field.png","title":"line_Soccer-Field","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Soccer-Field.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Soccerball-1.png","title":"line_Soccerball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Soccerball-1.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Sports.png","title":"line_Sports","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Sports.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Table-Tennis-Paddle.png","title":"line_Table-Tennis-Paddle","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Table-Tennis-Paddle.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Target-Seeker-29.png","title":"line_Target-Seeker-29","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Target-Seeker-29.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Target-Seeker-30.png","title":"line_Target-Seeker-30","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Target-Seeker-30.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Target-Seeker-31.png","title":"line_Target-Seeker-31","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Target-Seeker-31.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Tennis-Racket-ball.png","title":"line_Tennis-Racket-ball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Tennis-Racket-ball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Tennisball.png","title":"line_Tennisball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Tennisball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Trophy.png","title":"line_Trophy","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Trophy.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Volleyball.png","title":"line_Volleyball","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Volleyball.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Weights-01.png","title":"line_Weights-01","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Weights-01.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Weights-02.png","title":"line_Weights-02","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Weights-02.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Whistle.png","title":"Line Whistle","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Whistle.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Winning-Places.png","title":"line_Winning-Places","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/line_Winning-Places.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}}]}]},{"title":"Swirls","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/swirl.png","designs":[{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/swirl3.png","title":"swirl3","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/swirl3.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/swirl2.png","title":"swirl2","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/swirl2.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/swirl.png","title":"swirl","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/swirl.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/retro_3.png","title":"retro_3","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/retro_3-207x300.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/retro_2.png","title":"retro_2","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/retro_2-220x300.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/retro_1.png","title":"retro_1","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2014/06/retro_1-300x194.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}}]},{"title":"Vintage","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2016/03/vintage.png","designs":[{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/original-black.png","title":"original-black","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/original-black-300x263.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/vintage-two.png","title":"vintage-two","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/vintage-two-297x300.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/vintage.png","title":"vintage","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/vintage-296x300.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/original.png","title":"original","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/original-300x203.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/original-retro.png","title":"original-retro","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/original-retro-300x237.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/authentic.png","title":"authentic","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/authentic-300x149.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/authentic-vintage.png","title":"authentic-vintage","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/authentic-vintage-300x292.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/authentic-two.png","title":"authentic-two","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/authentic-two-300x186.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/1989.png","title":"1989","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/1989-300x204.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}},{"source":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/1966.png","title":"1966","thumbnail":"http://fancyproductdesigner.com/wp-content/uploads/2015/03/1966-300x190.png","parameters":{"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true}}]}];
+
+          var fancyProductDesigner,
+            $body,
+            $selector,
+            $productWrapper,
+            $cartForm,
+            $mainBarCon = null,
+            $modalPrice = null,
+            fpdProductCreated = false,
+            fpdIsReady = false,
+            adminAjaxURL = "http://fancyproductdesigner.com/wp-admin/admin-ajax.php";
+
+                    jQuery(document).ready(function() {
+
+            //return;
+
+            $body = jQuery('body');
+            $selector = jQuery('#fancy-product-designer-2597');
+            $productWrapper = jQuery('.post-2597');
+            $cartForm = jQuery('[name="fpd_product"]:first').parents('form:first');
+            $mainBarCon = jQuery('.fpd-main-bar-position');
+
+            //merge image parameters with custom image parameters
+            var customImageParams = jQuery.extend(
+              {"left":0,"y":0,"z":-1,"minScaleLimit":"0.0100","colors":"#000","price":4,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":false,"topped":false,"uniScalingUnlockable":false,"boundingBoxMode":"inside","removable":true},
+              {"minW":100,"minH":100,"maxW":10000,"maxH":10000,"resizeToW":300,"resizeToH":300,"maxSize":10,"minDPI":72,"minScaleLimit":"0.0100","advancedEditing":true}            );
+
+            var modalModeOpt = false;
+            if(0) {
+              modalModeOpt = '#fpd-start-customizing-button';
+            }
+
+            //get plugin options from UI Layout
+            var uiLayoutOptions = {"stageWidth":1200,"stageHeight":600,"gridColumns":"2","initialActiveModule":"","selectedColor":"#f5f5f5","boundingBoxColor":"#005ede","outOfBoundaryColor":"#990000","cornerIconColor":"#000000","mainBarModules":["products","images","text","designs"],"actions":{"top":["download","print","snap","preview-lightbox"],"right":["magnify-glass","zoom","reset-product","qr-code"],"bottom":["undo","redo"],"left":["manage-layers","info","save","load"]},"toolbarPlacement":"dynamic"},
+              uiLayoutOptions = typeof uiLayoutOptions === 'object' ? uiLayoutOptions : {};
+
+            //call fancy product designer plugin
+            var pluginOptions = {
+              langJSON: {"toolbar":{"fill":"Fill","transform":"Transform","position":"Position","move_up":"Move Up","move_down":"Move Down","reset":"Reset","font_size":"Font Size","line_height":"Line Height","bold":"Bold","italic":"Italic","underline":"Underline","text_align":"Text Alignment","stroke":"Stroke","curved_text":"Curved Text","edit_text":"Edit Text","color":"Color","patterns":"Patterns","transparency":"Transparency","align_left":"Align Left","align_top":"Align Top","align_right":"Align Right","align_bottom":"Align Bottom","center_h":"Center Horizontal","center_v":"Center Vertical","flip_h":"Flip Horizontal","flip_v":"Flip Vertical","curved_text_switch":"Switch","curved_text_reverse":"Reverse","radius":"Radius","spacing":"Spacing","letter_spacing":"Letter Spacing","advanced_editing":"Advanced Editing","text_transform":"Text Transform","filters":"Filters","no_filter":"No Filter","grayscale":"Grayscale","sepia":"Sepia","sepia2":"Sepia Second"},"actions":{"reset_product":"Reset","zoom":"Zoom","magnify_glass":"Magnify Glass","download":"Download","info":"Info","info_content":"Use this modal to display any kind of information. You can even use <strong>HTML<\/strong> <i>tags<\/i>.","print":"Print","save":"Save","load":"Load","manage_layers":"Manage Layers","qr_code":"Add QR-Code","qr_code_input":"Enter a URL, some text...","qr_code_add_btn":"Add QR-Code","undo":"Undo","redo":"Redo","snap":"Center Snap","preview_lightbox":"Preview","save_placeholder":"Optional: Enter a title","ruler":"Toggle Ruler","previous_view":"Previous View","next_view":"Next View","start_guided_tour":"Start Guided Tour"},"modules":{"products":"Swap Product","images":"Add Image","upload_zone":"Click or drop images here","facebook_select_album":"Select An Album","text":"Add Text","text_input_placeholder":"Enter some text","text_add_btn":"Add Text","designs":"Choose From Designs","designs_search_in":"Search in","manage_layers":"Manage Layers","images_agreement":"I have the rights to use the images.","images_confirm_button":"Confirm","pixabay_search":"Search in Pixabay library","instagram_recent_photos_button":"My Recent Photos","instagram_like_photos_button":"My Liked Photos"},"image_editor":{"mask":"Mask","filters":"Filters","color_manipulation":"Color Manipulation","custom_cropping":"Custom Cropping","filter_none":"None","brightness":"Brightness","contrast":"Contrast","remove_white":"Remove Whitee","remove_white_distance":"Distance","restore":"Restore Original","save":"Save"},"misc":{"initializing":"Initializing Product Designer","out_of_bounding_box":"Move element in its containment!","product_saved":"Product Saved!","loading_image":"Loading Image...","uploaded_image_size_alert":"Sorry! But the uploaded image size does not conform our indication of size.<br \/>Minimum Width: %minW pixels<br \/>Minimum Height: %minH pixels<br \/>Maximum Width: %maxW pixels<br \/>Maximum Height: %maxH pixels","modal_done":"Done","minimum_dpi_info":"The JPEG image does not have the required DPI of %dpi.","maximum_size_info":"The image %filename exceeds the maximum file size of %mbMB.","customization_button":"Customize","shortcode_order:_success_sent":"The order has been successfully sent to the site owner!","shortcode_order:_fail_sent":"The order could not be sent. Please try again or contact the site owner!","not_supported_device_info":"Sorry! But the product designer can not be displayed on your device. Please use a device with a larger screen!","share:_button":"Share Design","share:_process":"An unique URL to share will be created for you...","share:_default_text":"Check out my design!","customization_required_info":"You need to customize the default design!","image_added":"Image Added!","reset_confirm":"Are you sure to reset everything?","popup_blocker_alert":"Please disable your pop-up blocker and try again.","shortcode_form:send":"Send","shortcode_form:name_placeholder":"Enter your name here","shortcode_form:email_placeholder":"Enter your email here","login_required_info":"You need to be logged in to upload images!","view_optional_unlock":"Unlock view","account_storage:login_required":"Please log into your account!","account_storage:products_loaded":"Saved Products Loaded.","guided_tour_back":"Back","guided_tour_next":"Next","woocommerce_catalog:_add_to_cart":"Customize","woocommerce_order:_email_view_customized_product":"View Customized Product","cart:_re-edit product":"Click here to re-edit","get_a_quote":"Get a quote","loading_product":"Loading product...","product_loading_fail":"Product could not be loaded. Please try again!","save_order":"Save Order","saving_order":"Saving Order","order_saved":"Order Saved","order_saving_failed":"Saving Order Failed. Please try again!"},"plus":{"names_numbers":"Names & Numbers","names_numbers_add_new":"Add New","drawing":"Free Drawing","drawing_brush_type":"Brush Type","drawing_pencil":"Pencil","drawing_circle":"Circle","drawing_spray":"Spray","drawing_color":"Color","drawing_line_width":"Line Width","drawing_draw_here":"Draw Here","drawing_clear":"Clear","drawing_add":"Add","bulk_add_variations_title":"Bulk Order","bulk_add_variations_add":"Add","bulk_add_variations_term":"Please set all variations in the Bulk Order panel correctly!"},"woocommerce":{"catalog:_add_to_cart":"Customize","cart:_re-edit product":"Click here to re-edit","get_a_quote":"Get a quote","order:_email_view_customized_product":"View Customized Product","save_order":"Save Order","saving_order":"Saving Order","order_saved":"Order Saved","order_saving_failed":"Saving Order Failed. Please try again!","loading_product":"Loading product...","product_loading_fail":"Product could not be loaded. Please try again!"}},
+              fonts: [{"name":"Abel","url":"google"},{"name":"Arial"},{"name":"Crimes","url":"http:\/\/fancyproductdesigner.com\/wp-content\/uploads\/fpd_fonts\/Crimes.ttf"},{"name":"Freshmarker","url":"http:\/\/fancyproductdesigner.com\/wp-content\/uploads\/fpd_fonts\/Freshmarker.ttf"},{"name":"Geneva"},{"name":"Graduate","url":"google"},{"name":"Hamburger Heaven","url":"http:\/\/fancyproductdesigner.com\/wp-content\/uploads\/fpd_fonts\/Hamburger_Heaven.ttf"},{"name":"Helvetica"},{"name":"Lemon","url":"google"},{"name":"Phantom Fingers","url":"http:\/\/fancyproductdesigner.com\/wp-content\/uploads\/fpd_fonts\/Phantom_Fingers.ttf"},{"name":"Sacramento","url":"google"},{"name":"Times New Roman"},{"name":"Verdana"},{"name":"Yesteryear","url":"google"}],
+              templatesDirectory: "http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/assets/templates/",
+              facebookAppId: "207933882969393",
+              instagramClientId: "a16742b70d4e4cd986997f93b980b808",
+              instagramRedirectUri: "http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/assets/templates/instagram_auth.php",
+              zoomStep: 0.2,
+              maxZoom: 3,
+              hexNames: {"000000":"Black","ffffff":"White","2ECC71":"Emerald","e67e22":"Carrot","d35400":"Pumpkin","f39c12":"Orange","e74c3c":"Alizarin","c0392b":"Pomegranate","2c3e50":"MidnightBlue","7f8c8d":"Asbestos"},
+              replaceInitialElements: 0,
+              lazyLoad: 1,
+              improvedResizeQuality: 0,
+              uploadZonesTopped: 1,
+              mainBarContainer: $mainBarCon.length ? $mainBarCon : false,
+              responsive: 1,
+              priceFormat: {
+                currency: "&#36;%d",
+              },
+              modalMode: modalModeOpt,
+              templatesType: 'php',
+              watermark: "",
+              loadFirstProductInStage: 1,
+              unsavedProductAlert: 0,
+              hideDialogOnAdd: 1,
+              snapGridSize: [50, 50],
+              fitImagesInCanvas: 1,
+              inCanvasTextEditing: 1,
+              openTextInputOnSelect: 0,
+              saveActionBrowserStorage: 1,
+              uploadAgreementModal: 0,
+              autoOpenInfo: 0,
+              allowedImageTypes: ["jpeg","png","svg"],
+              replaceColorsInColorGroup: 0,
+              pixabayApiKey: "7571591-cf8ff820ec635edeb4e8c6af7",
+              pixabayHighResImages: 0,
+              openModalInDesigner: 0,
+              imageSizeTooltip: 0,
+              customImageAjaxSettings: {
+                url: "http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/inc/custom-image-handler.php",
+                data: {
+                  saveOnServer: 1,
+                  uploadsDir: "/mnt/web122/e1/63/51654863/htdocs/fancyproductdesigner.com/wp_v3/wp-content/uploads/fancy_products_uploads/",
+                  uploadsDirURL: "http://fancyproductdesigner.com/wp-content/uploads/fancy_products_uploads/"
+                }
+              },
+              elementParameters: {
+                originX: "center",
+                originY: "center",
+              },
+              imageParameters: {
+                padding:  0,
+                colorPrices: {},
+                replaceInAllViews: 0,
+                patterns: []
+              },
+              textParameters: {
+                padding:  7,
+                fontFamily: "Abel",
+                colorPrices: {},
+                replaceInAllViews: 0,
+                patterns: ["http://fancyproductdesigner.com/wp-content/uploads/fpd_patterns_text/carbon.png","http://fancyproductdesigner.com/wp-content/uploads/fpd_patterns_text/grune_2.png","http://fancyproductdesigner.com/wp-content/uploads/fpd_patterns_text/grunge_1.png","http://fancyproductdesigner.com/wp-content/uploads/fpd_patterns_text/lines_purple.png","http://fancyproductdesigner.com/wp-content/uploads/fpd_patterns_text/lines_red.png","http://fancyproductdesigner.com/wp-content/uploads/fpd_patterns_text/wood_1.png"]
+              },
+              customImageParameters: customImageParams,
+              customTextParameters: {"left":0,"y":0,"z":-1,"colors":"#000000","price":2,"replaceInAllViews":false,"autoCenter":true,"draggable":true,"rotatable":true,"resizable":true,"zChangeable":true,"autoSelect":true,"topped":false,"curvable":true,"curveSpacing":10,"curveRadius":80,"curveReverse":false,"boundingBoxMode":"inside","fontSize":30,"minFontSize":1,"maxLength":0,"maxLines":0,"textAlign":"left","removable":true},
+              fabricCanvasOptions: {
+                allowTouchScrolling: 0,
+                perPixelTargetFind: 0,
+              },
+              qrCodeProps: {
+                price: 0,
+                resizeToW: 0,
+                resizeToH: 0,
+                draggable: 1,
+                resizable: 1,
+              },
+              boundingBoxProps: {
+                strokeWidth: 1              },
+              imageEditorSettings: {
+                masks: [
+    "http://fancyproductdesigner.com/wp-content/uploads/fpd_masks/circle.svg",
+    "http://fancyproductdesigner.com/wp-content/uploads/fpd_masks/heart.svg",
+    "http://fancyproductdesigner.com/wp-content/uploads/fpd_masks/hexagon.svg",
+    "http://fancyproductdesigner.com/wp-content/uploads/fpd_masks/star.svg"
+]             },
+              guidedTour: null            };
+
+            pluginOptions = jQuery.extend({}, pluginOptions, uiLayoutOptions);
+
+                  var currencyPos = "left",
+        currencySymbol = '<span class="woocommerce-Price-currencySymbol">&#36;</span>',
+        currencyFormat;
+      if(currencyPos == 'right') {
+        currencyFormat = '%d' + currencySymbol;
+      }
+      else if(currencyPos == 'right_space') {
+        currencyFormat = '%d' + ' ' + currencySymbol;
+      }
+      else if(currencyPos == 'left_space') {
+        currencyFormat = currencySymbol + ' ' + '%d';
+      }
+      else {
+        currencyFormat = currencySymbol + '%d';
+      }
+
+      pluginOptions.priceFormat.currency = currencyFormat;
+      pluginOptions.priceFormat.decimalSep = ".";
+      pluginOptions.priceFormat.thousandSep = ",";
+      
+      var plusOptions = {
+        namesNumbersDropdown: [],
+        namesNumbersEntryPrice: 0,
+        colorSelectionPlacement: "",
+        bulkVariationsPlacement: "",
+        bulkVariations: {"Size":["S","M","L","XL","XXL"]}
+      };
+
+      pluginOptions = jQuery.extend({}, pluginOptions, plusOptions);
+
+                  fancyProductDesigner = new FancyProductDesigner($selector, pluginOptions);
+
+            //when load from cart or order, use loadProduct
+            $selector.on('ready', function() {
+
+              //setup products and designs from json
+              fancyProductDesigner.setupProducts(fpdProductsJSON);
+              fancyProductDesigner.setupDesigns(fpdDesignsJSON);
+
+              if(0) {
+                var order = 0,
+                  product = order.product ? order.product : order; //deprecated: getProduct() as used instead getOrder()
+
+                fancyProductDesigner.toggleSpinner(true);
+                fancyProductDesigner.loadProduct(product);
+                //PLUS
+                if(fancyProductDesigner.bulkVariations && fancyProductDesigner.bulkVariations.setup && order.bulkVariations) {
+                  fancyProductDesigner.bulkVariations.setup(order.bulkVariations);
+                }
+              }
+
+              //requires login to upload images
+                            if ( 0 ) {
+                jQuery('.fpd-upload-zone').replaceWith('<p class="fpd-login-info">You need to be logged in to upload images!</p>');
+              }
+              fpdIsReady = true;
+
+              //add price to modal
+              $modalPrice = jQuery('<span class="fpd-modal-price fpd-right"></span>');
+              jQuery('.fpd-modal-product-designer .fpd-done').after($modalPrice);
+
+              //shortcode: actions
+              var $uiActions = fancyProductDesigner.translatedUI.children('.fpd-actions');
+              jQuery('.fpd-sc-action-placeholder').each(function(i, item) {
+
+                var $item = jQuery(item),
+                  actionName = $item.data('action'),
+                  layout = $item.data('layout'),
+                  $action = $uiActions.children('[data-action="'+actionName+'"]');
+
+                var $cloneAction = $action.clone().addClass('fpd-sc-action fpd-layout--'+layout);
+
+                $cloneAction.removeClass('fpd-disabled');
+
+                if(layout === 'icon-text' || layout === 'text') {
+                  $cloneAction.removeClass('fpd-tooltip')
+                  .children(':first').after('<span class="fpd-label">'+$cloneAction.attr('title')+'</span>');
+                }
+
+                $cloneAction.click(function() {
+                  if(fancyProductDesigner && fancyProductDesigner.actions && fpdProductCreated) {
+                    fancyProductDesigner.actions.doAction(jQuery(this));
+                  }
+                });
+
+                jQuery(item).replaceWith($cloneAction);
+
+              });
+
+            })
+            .on('productCreate', function() {
+
+              fpdProductCreated = true;
+
+              //calculate initial elemens length for customization required
+              initialElementsLength = 0;
+              fancyProductDesigner.getElements().forEach(function(view) {
+                initialElementsLength += view.length;
+              });
+
+            })
+            .on('undoRedoSet', function(evt, undos, redos) {
+
+              $body.removeClass('fpd-customization-required');
+
+            })
+
+            if(!pluginOptions.saveActionBrowserStorage) {
+
+              var loginRequiredText = "Please log into your account!";
+
+              $selector.on('actionSave', function(evt, title, thumbnail, product) {
+
+                if(0 === 0) {
+                  FPDUtil.showMessage(loginRequiredText);
+                  return;
+                }
+
+                var data = {
+                  action: 'fpd_saveuserproduct',
+                  title: title,
+                  thumbnail: thumbnail,
+                  product: JSON.stringify(product)
+                };
+
+                jQuery.post(adminAjaxURL, data, function(response) {
+
+                  FPDUtil.showMessage(response.error ? response.error : response.message);
+
+                }, 'json');
+
+              })
+              .on('actionLoad', function() {
+
+                if(0 === 0) {
+                  FPDUtil.showMessage(loginRequiredText);
+                  return;
+                }
+
+                fancyProductDesigner.toggleSpinner(true);
+
+                var data = {
+                  action: 'fpd_loaduserproducts'
+                };
+
+                jQuery.post(adminAjaxURL, data, function(response) {
+
+                  if(response.data) {
+
+                    response.data.forEach(function(item) {
+
+                      fancyProductDesigner.actions.addSavedProduct(
+                        item.thumbnail,
+                        item.product,
+                        item.title
+                      );
+
+                    });
+
+                  }
+
+                  fancyProductDesigner.toggleSpinner(false);
+
+                  FPDUtil.showMessage(response.error ? response.error : response.message);
+
+                }, 'json');
+
+              })
+              .on('actionLoad:Remove', function(evt, index, $item) {
+
+                var data = {
+                  action: 'fpd_removeuserproducts',
+                  index: index
+                };
+
+                jQuery.post(adminAjaxURL, data, function(response) {
+                }, 'json');
+
+              });
+            }
+
+          });
+
+        </script>
+
+              <script type="text/javascript">
+
+        jQuery(document).ready(function() {
+
+          jQuery('#fpd-share-button').click(function(evt) {
+
+            evt.preventDefault();
+
+            jQuery(".fpd-share-widget, .fpd-share-url").addClass('fpd-hidden');
+            jQuery('.fpd-share-process').removeClass('fpd-hidden');
+
+            var variationsSer = $productWrapper.find('.variations_form .variations select')
+                      .filter(function(index, element) {
+                        return $(element).val() != "";
+                        }).serialize();
+
+            var scale = $selector.width() > 800 ? Number(800 / $selector.width()).toFixed(2) : 1;
+            fancyProductDesigner.getViewsDataURL(function(dataURLs) {
+
+              var dataURL = dataURLs[0],
+                data = {
+                action: 'fpd_createshareurl',
+                image: dataURL,
+                product: JSON.stringify(fancyProductDesigner.getProduct()),
+              };
+
+              jQuery.post("http://fancyproductdesigner.com/wp-admin/admin-ajax.php", data, function(response) {
+
+                if(response.share_id !== undefined) {
+
+                  var pattern = new RegExp('(share_id=).*?(&|$)'),
+                    shareUrl = window.location.href + '?' + variationsSer;
+
+                  if(shareUrl.search(pattern) >= 0){
+                    shareUrl = shareUrl.replace(pattern,'$1' + response.share_id + '$2');
+                  }
+                  else{
+                    shareUrl = shareUrl + (shareUrl.indexOf('?')>0 ? '&' : '?') + 'share_id=' + response.share_id;
+                  }
+
+                  jsSocials.setDefaults('facebook', {
+                    logo: ' fpd-icon-share-facebook'
+                  });
+
+                  jsSocials.setDefaults('twitter', {
+                    logo: ' fpd-icon-share-twitter'
+                  });
+
+                  jsSocials.setDefaults('googleplus', {
+                    logo: '  fpd-icon-share-google-plus'
+                  });
+
+                  jsSocials.setDefaults('linkedin', {
+                    logo: ' fpd-icon-share-linkedin'
+                  });
+
+                  jsSocials.setDefaults('pinterest', {
+                    logo: ' fpd-icon-share-pinterest'
+                  });
+
+                  jsSocials.setDefaults('email', {
+                    logo: ' fpd-icon-share-mail'
+                  });
+
+                                    jQuery(".fpd-share-widget").empty().jsSocials({
+                    url: shareUrl,
+                    shares: ["facebook","twitter","googleplus","linkedin","email"],
+                      showLabel: false,
+                      text: "Check out my design!"
+                  }).removeClass('fpd-hidden');
+                }
+
+                jQuery('.fpd-share-process').addClass('fpd-hidden');
+                jQuery('.fpd-share-url').attr('href', shareUrl).text(shareUrl).removeClass('fpd-hidden');
+
+              }, 'json');
+
+            }, 'transparent', {multiplier: scale, format: 'png'});
+
+          });
+
+        });
+      </script>
+            <script type="text/javascript">
+
+        jQuery(document).ready(function() {
+
+          var $shortcodePrice = $cartForm.find('.fpd-shortcode-price');
+
+          //calculate initial price
+          $selector.on('productCreate', function() {
+
+            $cartForm.find(':submit').removeClass('fpd-disabled');
+            _setTotalPrice();
+
+
+          });
+
+          //listen when price changes
+          $selector.on('priceChange', _setTotalPrice);
+
+          jQuery('[name="fpd_shortcode_form"]').on('click', ':submit', function(evt) {
+
+            evt.preventDefault();
+
+            if(!fpdProductCreated) { return false; }
+
+            var order = fancyProductDesigner.getOrder({
+                customizationRequired: 0              });
+
+            var $submitBtn = jQuery(this),
+              data = {
+                action: 'fpd_newshortcodeorder'
+              };
+
+            if(order.product != false) {
+
+              var $nameInput = $cartForm.find('[name="fpd_shortcode_form_name"]').removeClass('fpd-error'),
+                $emailInput = $cartForm.find('[name="fpd_shortcode_form_email"]').removeClass('fpd-error'),
+                emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+
+              if( $nameInput.val() === '' ) {
+                $nameInput.focus().addClass('fpd-error');
+                return false;
+              }
+              else {
+                data.name = $nameInput.val();
+              }
+
+              if( !emailRegex.test($emailInput.val()) ) {
+                $emailInput.focus().addClass('fpd-error');
+                return false;
+              }
+              else {
+                data.email = $emailInput.val();
+              }
+
+              //PLUS
+              if(fancyProductDesigner.bulkVariations) {
+
+                data.bulkVariations = fancyProductDesigner.bulkVariations.getOrderVariations();
+                if(data.bulkVariations === false) {
+                  FPDUtil.showModal("Please set all variations in the Bulk Order panel correctly!");
+                  return false;
+                }
+
+              }
+
+              data.bulkVariations = JSON.stringify(data.bulkVariations);
+              data.order = JSON.stringify(order);
+              $submitBtn.addClass('fpd-disabled');
+              $selector.find('.fpd-full-loader').show();
+
+              jQuery.post(adminAjaxURL, data, function(response) {
+
+                FPDUtil.showMessage(response.id ? response.message : response.error);
+                $submitBtn.removeClass('fpd-disabled');
+                $selector.find('.fpd-full-loader').hide();
+
+              }, 'json');
+
+              $nameInput.val('');
+              $emailInput.val('');
+
+            }
+
+          });
+
+          //set total price depending from wc and fpd price
+          function _setTotalPrice() {
+
+            if($shortcodePrice.data('priceformat')) {
+
+              var htmlPrice = $shortcodePrice.data('priceformat').replace('%d', parseFloat(fancyProductDesigner.calculatePrice()).toFixed(2));
+
+              $shortcodePrice.html(htmlPrice)
+              .parent().addClass('fpd-show-up');
+
+              if($modalPrice) {
+                $modalPrice.html(htmlPrice);
+              }
+
+            }
+
+          };
+
+        });
+
+      </script>
+      <br />
+      <div class="fpd-share-design fpd-clearfix">
+        <a href="#" id="fpd-share-button" class="button" ><i class="fpd-icon-share"></i>Share Design</a>
+        <div>
+          <p class="fpd-share-process fpd-hidden">An unique URL to share will be created for you...</p>
+          <div class="fpd-share-widget"></div>
+          <a href="" target="_blank" class="fpd-share-url fpd-hidden"></a>
+        </div>
+      </div>
+      </p>
+<p>Just use the fpd shortcode to display the Product Designer at a specific position:</p>
+<pre>[ fpd ]</pre>
+<p>     <script type="text/javascript">
+        jQuery(document).ready(function() {
+
+          $selector.on('templateLoad', function(evt, url) {
+            fancyProductDesigner.mainOptions.priceFormat = "$%d";
+          });
+
+        })
+
+      </script>
+      <form name="fpd_shortcode_form">
+                <p class="fpd-shortcode-price-wrapper">
+          <span class="fpd-shortcode-price" data-priceformat="$%d"></span>
+        </p>
+                <input type="text" name="fpd_shortcode_form_name" placeholder="Enter your name here" class="fpd-shortcode-form-text-input" />
+        <input type="email" name="fpd_shortcode_form_email" placeholder="Enter your email here" class="fpd-shortcode-form-text-input" />
+        <input type="hidden" name="fpd_product" />
+        <input type="submit" value="Send" class="fpd-disabled button" />
+      </form>
+       The second shortcode displays a simple form, that will the send customized product with the customer name and email to the site owner. <strong>For this demo the &#8220;Send&#8221; button is disabled.</strong></p>
+<pre>[ fpd_form price_format="%d€" ]</pre>
+</div></div></div></div></div>
+  
+
+</div>
+
+        </div>
+      </article>
+
+    
+  </div>
+
+  
+
+
+
+
+  
+
+  <footer class="x-colophon top" role="contentinfo">
+    <div class="x-container max width">
+
+      <div class="x-column x-md x-1-3"><div id="nav_menu-2" class="widget widget_nav_menu"><h4 class="h-widget">Platforms</h4><div class="menu-platforms-container"><ul id="menu-platforms" class="menu"><li id="menu-item-3582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3582"><a href="http://fancyproductdesigner.com/woocommerce/">WooCommerce</a></li>
+<li id="menu-item-3580" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2597 current_page_item menu-item-3580"><a href="http://fancyproductdesigner.com/wordpress/">WordPress</a></li>
+<li id="menu-item-3579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3579"><a href="http://fancyproductdesigner.com/shopify/">Shopify</a></li>
+<li id="menu-item-3581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3581"><a href="http://fancyproductdesigner.com/jquery/">jQuery</a></li>
+</ul></div></div></div><div class="x-column x-md x-1-3"><div id="nav_menu-3" class="widget widget_nav_menu"><h4 class="h-widget">Add-ons</h4><div class="menu-add-ons-container"><ul id="menu-add-ons" class="menu"><li id="menu-item-3585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3585"><a href="http://fancyproductdesigner.com/plus/">Plus</a></li>
+<li id="menu-item-3584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3584"><a href="http://fancyproductdesigner.com/addon-pricing-rules/">Pricing Rules</a></li>
+<li id="menu-item-3586" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3586"><a href="https://codecanyon.net/item/multistep-product-configurator-for-woocommerce-/8749384?ref=radykal">Multistep Product Configurator</a></li>
+<li id="menu-item-3583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3583"><a href="http://fancyproductdesigner.com/woocommerce-bulk-variations/">WooCommerce Bulk Variations</a></li>
+</ul></div></div></div><div class="x-column x-md x-1-3 last"><div id="nav_menu-4" class="widget widget_nav_menu"><h4 class="h-widget">Service</h4><div class="menu-service-container"><ul id="menu-service" class="menu"><li id="menu-item-3588" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3588"><a href="https://admin.fancyproductdesigner.com/">ADMIN</a></li>
+<li id="menu-item-3587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3587"><a href="http://fancyproductdesigner.com/customization-request/">Customization Request</a></li>
+</ul></div></div></div>
+    </div>
+  </footer>
+
+
+  
+    <footer class="x-colophon bottom" role="contentinfo">
+      <div class="x-container max width">
+
+                  <div class="x-colophon-content">
+            
+<p  style="margin-bottom: 25px;">©2014 <a href="http://radykal.de" title="Go to radykal.de">radykal.de</a> | <a href="http://fancyproductdesigner.com/privacy-policy/" title="Privacy Policy">Privacy Policy</a>
+</p>          </div>
+        
+                  <div class="x-social-global"><a href="https://www.facebook.com/web.radykal" class="facebook" title="Facebook" target="_blank"><i class="x-icon-facebook-square" data-x-icon="&#xf082;" aria-hidden="true"></i></a><a href="https://twitter.com/webradykal" class="twitter" title="Twitter" target="_blank"><i class="x-icon-twitter-square" data-x-icon="&#xf081;" aria-hidden="true"></i></a><a href="https://www.youtube.com/channel/UCY7Ep_duODyr6b9aqWPH7ng" class="youtube" title="YouTube" target="_blank"><i class="x-icon-youtube-square" data-x-icon="&#xf166;" aria-hidden="true"></i></a></div>        
+        
+      </div>
+    </footer>
+
+  
+
+    
+    </div> <!-- END .x-site -->
+
+    
+      <a class="x-scroll-top right fade" title="Back to Top">
+        <i class="x-icon-angle-up" data-x-icon="&#xf106;"></i>
+      </a>
+
+      <script>
+
+      jQuery(document).ready(function($) {
+
+        var windowObj            = $(window);
+        var body                 = $('body');
+        var bodyOffsetBottom     = windowObj.scrollBottom();             // 1
+        var bodyHeightAdjustment = body.height() - bodyOffsetBottom;     // 2
+        var bodyHeightAdjusted   = body.height() - bodyHeightAdjustment; // 3
+        var scrollTopAnchor      = $('.x-scroll-top');
+
+        function sizingUpdate(){
+          var bodyOffsetTop = windowObj.scrollTop();
+          if ( bodyOffsetTop > ( bodyHeightAdjusted * 0.25 ) ) {
+            scrollTopAnchor.addClass('in');
+          } else {
+            scrollTopAnchor.removeClass('in');
+          }
+        }
+
+        windowObj.bind('scroll', sizingUpdate).resize(sizingUpdate);
+        sizingUpdate();
+
+        scrollTopAnchor.click(function(){
+          $('html, body').animate({ scrollTop: 0 }, 850, 'easeInOutExpo');
+          return false;
+        });
+
+      });
+
+      </script>
+
+    
+  </div> <!-- END .x-root -->
+
+<div id="cookie-law-info-bar"><span>This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.<a href="#" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button" >Accept</a> <a href="http://fancyproductdesigner.com/privacy-policy/" id="CONSTANT_OPEN_URL" target="_blank"  class="cli-plugin-main-link"  >Read More</a></span></div>    
+    <script type="text/javascript">
+      //<![CDATA[
+      jQuery(document).ready(function() {
+        cli_show_cookiebar({
+          settings: '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#444","border_on":true,"button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":true,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000"}'
+        });
+      });
+      //]]>
+    </script>
+    
+    <!-- Drip Code -->
+<script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {}; 
+  _dcs.account = '5368076';
+  
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true; 
+    dc.src = '//tag.getdrip.com/5368076.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script><script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201803'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"http:\/\/fancyproductdesigner.com\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"http:\/\/fancyproductdesigner.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.2.6'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"http:\/\/fancyproductdesigner.com\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.2.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"http:\/\/fancyproductdesigner.com\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments_cd4667356259e515984efacb2c2e3fb1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.2.6'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/themes/x/framework/js/dist/site/x-body.min.js?ver=5.2.5'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/themes/x/framework/js/dist/site/x-icon.min.js?ver=5.2.5'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/cornerstone/assets/dist/js/site/cs-body.js?ver=2.1.7'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/themes/x/framework/legacy/cranium/js/dist/site/x-body.min.js?ver=5.2.5'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-includes/js/wp-embed.min.js?ver=4.9.2'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-includes/js/jquery/ui/sortable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/assets/js/fabric.min.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer-plus/js/FancyProductDesignerPlus.min.js?ver=1.1.5'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/assets/js/FancyProductDesigner-all.min.js?ver=4.4.7'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer/assets/jssocials/jssocials.min.js?ver=1.4.0'></script>
+<script type='text/javascript' src='http://fancyproductdesigner.com/wp-content/plugins/fancy-product-designer-pricing/js/FPDPricingRules.min.js?ver=1.0.3'></script>
+<script id="cornerstone-custom-content-js" type="text/javascript">//
+// No need to add script tags
+// here; simply get started
+// by writing JavaScript!
+// Remember to save your
+// changes to see them :)
+//
+
+</script>
+  
+    <script id="x-customizer-js">
+      jQuery(document).ready(function() {
+jQuery('[name="fpd_shortcode_form"]').off('click', ':submit').on('click', ':submit', function(evt) {
+evt.preventDefault();
+});
+});    </script>

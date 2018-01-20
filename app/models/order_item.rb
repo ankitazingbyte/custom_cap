@@ -5,7 +5,6 @@ class OrderItem < ApplicationRecord
 	  validate :order_present
 	  validate :product_present
 	  before_save :finalize
-	  belongs_to :user, optional: true
 
 
 	    def unit_price

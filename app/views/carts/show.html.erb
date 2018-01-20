@@ -1,10 +1,25 @@
-<center><h1>My Cart</h1></center>
+<center><h1><strong>My Cart</strong></h1></center>
 <div class="container-fluid">
     <div class="cart-section">
       	<div class="row">
       		<div class="col-sm-8 col-md-9">
 				<div class="shopping-cart">
-				  <%= render "shopping_cart" %>
+					<h3><strong>Custom Products</strong></h3>
+					<table class="cart-table table">
+					  	<%= render "shopping_cart" %>
+					  	<tfoot>
+				            <tr>
+					            <td colspan="6">
+					            	<dl class="summary">
+							            <dt>Subtotal</dt>
+							            <dd><%= number_to_currency current_order.subtotal %></dd>
+							            <dt><strong>Order Total</strong></dt>
+							            <dd><strong><%= number_to_currency current_order.subtotal %></strong></dd>
+					            	</dl>
+					            </td>
+				            </tr>
+			            </tfoot>
+        			</table>
 				</div>
 			</div>
 			<div class="col-sm-4 col-md-3">
@@ -20,7 +35,11 @@
 	                <dt><strong>Order Total</strong></dt>
 	                  <dd><strong><%= number_to_currency current_order.subtotal %></strong></dd>
 	              </dl>
-	                <%= link_to 'CHECKOUT NOW', home_checkout_path, class: "btn btn-danger" %>
+	              	<% if user_signed_in? %>
+	                	<%= link_to 'CHECKOUT NOW', home_checkout_path, class: "btn btn-danger" %>
+	                <% else %>
+	                	<%= link_to 'CHECKOUT NOW', home_login_form_path, class: "btn btn-danger" %>
+	                <% end %>
 	            <div class="link">
 	                <%= link_to'Continue Shopping', home_index_path %>
 	            </div>
