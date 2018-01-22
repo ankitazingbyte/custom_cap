@@ -18,7 +18,6 @@ class HomeController < ApplicationController
   def checkout_shipping
     
   end
-  
   def contact
     
   end
@@ -37,7 +36,7 @@ class HomeController < ApplicationController
   def return
     
   end
-   def contact_us_mailer
+  def contact_us_mailer
     @email = params[:test][:email]
     @first_name = params[:test][:first_name]
     @last_name = params[:test][:last_name]

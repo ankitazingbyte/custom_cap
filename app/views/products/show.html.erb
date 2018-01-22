@@ -60,7 +60,7 @@
           <div class="descr">
             <h1 class="master-product" data-id="1"><%= @product.title %></h1>
             <strong class="price product-price selling dynamic_price"><%= number_to_currency @product.price %></strong>
-      <!-- DISCOUNT MODAL POPUP -->
+    <!-- DISCOUNT MODAL POPUP -->
                 <a data-toggle="modal" data-target="#myModal" class="link">Volume Discounts</a>
             <!-- Modal -->
               <div class="modal fade" id="myModal" role="dialog">
@@ -116,17 +116,17 @@
                       </table>
                     </div>
                     <div class="modal-footer block-form">
-                          <a href="#" data-dismiss="modal" class="btn btn-danger">Close</a>
+                      <a href="#" data-dismiss="modal" class="btn btn-danger">Close</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- END -->
+    <!-- END -->
             <div class="sizes_div">
               <div class="clearfix">
-                  <label class="qty-field">Total Quantity:<p id="qty"></p></label>
-                </div>
+                <label class="qty-field">Total Quantity:<p id="qty"></p></label>
+              </div>
               <%= form_for @order_item, remote: true do |f| %>
                 <div class="row">
                   <div class="col-sm-12">
@@ -144,7 +144,7 @@
               <% end %>
             </div>
             <div> 
-              <!-- <label class="pull-left">Colors:</label>
+              <label class="pull-left">Colors:</label>
               <ul class="set-color list-inline">
                 <li><div class="color-div col-xs-1 fpd-tootip" title="Black" data-index="0" data-url="/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2418" style="background: linear-gradient(to bottom, #000000  50%,  #030303 50%);"></div></li>
                 <li><div class="color-div col-xs-1 fpd-tootip" title="Charcoal" data-index="1" data-url="/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2421" style="background-color: #747D7D;"></div></li>
@@ -152,7 +152,7 @@
                 <li><div class="color-div col-xs-1 fpd-tootip" title="Stone" data-index="3" data-url="/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=279" style="background-color: #D6C994;"></div></li>
                 <li><div class="color-div col-xs-1 fpd-tootip" title="White" data-index="4" data-url="/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2419" style="background-color: #FFFFFF;"></div></li>
                 <li><a data-toggle="modal" href="#colorModal1">more colors</a></li>
-              </ul> -->
+              </ul>
             </div>
             <h4 class="text-left top-mar">Customize Now!</h4>
             <div class="clearfix">
@@ -164,7 +164,7 @@
                   <a data-toggle="modal" href="#uploadImagePopup" class="btn btn-default add-image-button">Upload Image</a>
                 </div>
               </div>
-          <!-- add_text_modal -->
+    <!-- add_text_modal -->
               <div class="product-details modal" id="add-text-Modal">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -185,7 +185,7 @@
                   </div>
                 </div>
               </div>
-          <!-- Upload_logo_modal -->
+    <!-- Upload_logo_modal -->
               <div class="product-details modal" id="uploadImagePopup">
                 <div class="modal-dialog"><br>
                   <div class="modal-content"><br>
@@ -236,7 +236,8 @@
           </div>
           <div id="custom_fpd_tool_bar"></div>
         </div> 
-      </div>  
+      </div> 
+    <!-- COLOR MODEL --> 
       <div class="row">
         <div class="modal" id="colorModal1">
           <div class="modal-dialog">
@@ -249,51 +250,51 @@
                 <div class="row product-colors-section">
                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="product-image">
-                      <!-- <img id="product-zoom" src=https://uploads.capbeast.com/spree/products/191987/original/IMG_0131.jpg?1475692677 alt="" class="img-responsive"> -->
+                      <img id="product-zoom" src=https://uploads.capbeast.com/spree/products/191987/original/IMG_0131.jpg?1475692677 alt="" class="img-responsive">
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="clearfix product-color-information">
                       <label class="pull-left">Available Colors</label>
                     </div>
-                    <!-- <ul class="set-color list-inline">
-                    <li class="change_color_image" style="text-decoration: none;" data-index="0" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2418>
-                    <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191987/original/IMG_0131.jpg?1475692677"></div>
-                    <div class="" style="background: linear-gradient(to bottom, #000000  50%,  #030303 50%);"></div>
-                    </li>
-                    <li class="change_color_image" style="text-decoration: none;" href="#" data-index="1" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2421>
-                    <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191991/original/IMG_0133.jpg?1475692720"></div>
-                    <div class="" style="background-color: #747D7D;"></div>
-                    </li>
-                    <li class="change_color_image" style="text-decoration: none;" href="#" data-index="2" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2420>
-                    <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191992/original/IMG_0128.jpg?1475692723"></div>
-                    <div class="" style="background-color: #15125C;"></div>
-                    </li>
-                    <li class="change_color_image" style="text-decoration: none;" href="#" data-index="3" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=279>
-                    <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/722/original/IMG_0139.jpg?1412110055"></div>
-                    <div class="" style="background-color: #D6C994;"></div>
-                    </li>
-                    <li class="change_color_image" style="text-decoration: none;" href="#" data-index="4" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2419>
-                    <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191993/original/IMG_0138.jpg?1475692725"></div>
-                    <div class="" style="background-color: #FFFFFF;"></div>
-                    </li>
-                    <li class="change_color_image" style="text-decoration: none;" data-index="5" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2426>
-                    <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/261065/original/FLAT_BILL_9FIFTY_SNAPBACK__NEW_ERA_CAMO_-_Front_View.jpg?1485186371"></div>
-                    <div class="" style="background: linear-gradient(to bottom, #030303  50%,  #1F5919  50%);"></div>
-                    </li>
-                    </ul> -->
+                    <ul class="set-color list-inline">
+                      <li class="change_color_image" style="text-decoration: none;" data-index="0" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2418>
+                        <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191987/original/IMG_0131.jpg?1475692677"></div>
+                        <div class="" style="background: linear-gradient(to bottom, #000000  50%,  #030303 50%);"></div>
+                      </li>
+                      <li class="change_color_image" style="text-decoration: none;" href="/products/<% @product.id %>" data-index="1" data-url="/products/<% @product.id %>">
+                        <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191991/original/IMG_0133.jpg?1475692720"></div>
+                        <div class="" style="background-color: #747D7D;"></div>
+                      </li>
+                      <li class="change_color_image" style="text-decoration: none;" href="#" data-index="2" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2420>
+                        <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191992/original/IMG_0128.jpg?1475692723"></div>
+                        <div class="" style="background-color: #15125C;"></div>
+                      </li>
+                      <li class="change_color_image" style="text-decoration: none;" href="#" data-index="3" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=279>
+                        <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/722/original/IMG_0139.jpg?1412110055"></div>
+                        <div class="" style="background-color: #D6C994;"></div>
+                      </li>
+                      <li class="change_color_image" style="text-decoration: none;" href="#" data-index="4" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2419>
+                        <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191993/original/IMG_0138.jpg?1475692725"></div>
+                        <div class="" style="background-color: #FFFFFF;"></div>
+                      </li>
+                      <li class="change_color_image" style="text-decoration: none;" data-index="5" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2426>
+                        <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/261065/original/FLAT_BILL_9FIFTY_SNAPBACK__NEW_ERA_CAMO_-_Front_View.jpg?1485186371"></div>
+                        <div class="" style="background: linear-gradient(to bottom, #030303  50%,  #1F5919  50%);"></div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div class="modal-footer block-form">
-                <!-- <a href="#" data-dismiss="modal" class="btn btn-danger">Cancel</a>
-                <button class="btn btn-default" id="done-color-chooser" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2418 data-index="0" data-modal_id="colorModal1">Done</button> -->
+                <a href="#" data-dismiss="modal" class="btn btn-danger">Cancel</a>
+                <button class="btn btn-default" id="done-color-chooser" data-url=/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2418 data-index="0" data-modal_id="colorModal1">Done</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-  <!-- PRODUCT DEATILS -->
+    <!-- PRODUCT DEATILS -->
       <div class="row">
         <div class="col-sm-12 col-md-8">
           <div class="product-details-section product-details2">
@@ -305,7 +306,7 @@
           </div>
         </div>
       </div>
-  <!-- END -->
+    <!-- END -->
     <!--   ADD TO CART MODAL POPUP -->
       <div class="modal" id="wait_for_upload" data-keyboard=true data-backdrop="static">
         <div class="modal-dialog">
@@ -347,12 +348,11 @@
           </div>
         </div>
       </div>
-  <!-- END -->
       <div class="modal-footer block-form">
       </div>
+    <!-- END -->
 
-<!-- ERROR MODAL POPUP OF ADD TO CART -->
-
+    <!-- ERROR MODAL POPUP OF ADD TO CART -->
       <div class="modal" id="errorPopup">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -590,4 +590,4 @@
   </script>
 <!-- END -->
 
-  
+ 

@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
     elsif params[:brand].blank?
       @category_id = Category.find_by(name: params[:category]).id
       @products = Product.where(:category_id => @category_id)
-    else params[:product].blank?
+    elsif params[:product].blank?
       @order_item = current_order.order_items.new
       @products = Product.search(params[:title])
       @products = Product.all

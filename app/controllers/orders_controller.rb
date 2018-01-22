@@ -1,8 +1,8 @@
 class OrdersController < ApplicationController
+  
     def index
           @orders = Order.all        
     end
-    
     def new
         @order = Order.new
         @order = Order.new(:express_token => params[:token])

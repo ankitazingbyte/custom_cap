@@ -60,7 +60,7 @@
 				<ul class="categories-list list-unstyled text-center row">
 					<% Category.all.each do |category| %>
 						<li class="col-sm-4">
-							<div><picture><a href= "#"><%= image_tag category.image.url,class: "img-holder" unless category.image.blank?%></a></picture></div>
+							<div><picture><a href= "/products/category=<%= category.id %>"><%= image_tag category.image.url, class: "img-holder" unless category.image.blank? %></a></picture></div>
 						    <div class= "categories-list"><%= link_to category.name, products_path(category: category.name), class: "title", id: "hoverelement" %></div>
 						</li>
 					<% end %>

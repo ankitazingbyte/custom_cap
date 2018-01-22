@@ -2,7 +2,7 @@
 	<div class="container-fluid">
 		<nav class="user-bar text-right">
 			<% if user_signed_in? %>
-				Welcome <%= current_user.first_name %> Account
+				WELCOME <%= current_user.first_name %> ACCOUNT
 			<% else %>
 				<%=link_to 'LOGIN', home_login_form_path %>
 			<% end %>
@@ -13,13 +13,11 @@
 				<%= link_to 'SIGN UP', home_signup_form_path %>
 			<% end %>
 		</nav>
-
 		<nav class="navbar navbar-default">
 			<div class="navbar-header">
 			<a class="navbar-brand" href="./home/index">
 				<%= image_tag "classics-2x.png",width: "130" %></a>
 			</div>
-
 			<div class="row ">
 				<div class= "nav-li">
 				<div class="col-sm-2 col-sm-push-10">
