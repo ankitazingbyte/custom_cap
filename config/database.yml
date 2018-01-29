@@ -35,4 +35,6 @@
 development: 
   <<: *default
   database: db/development
-  
+production: 
+  <<: *default
+  database: db/production
