@@ -20,7 +20,7 @@ class OrderItem < ApplicationRecord
 	    end
 		def paypal_url(return_path)
 		    values = {
-		        business: "",
+		        business: "ankita.dangi-facilitator@zingbytes.com",
 		        cmd: "_xclick",
 		        upload: 1,
 		        return: return_path,

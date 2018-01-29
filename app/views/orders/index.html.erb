@@ -28,6 +28,11 @@
         <div class="col-md-6">
           <h4 style="display: inline">Paypal Account</h4>
           <!-- <a href= "https://www.paypal.com/webscr?cmd=_express-checkout&token=EC-4KR9929436625521H&useraction=commit"><%#= image_tag 'paypal.png', class: "checkout" %></a> -->
+          <% current_user.orders.each do |order| %>
+            <% order.order_items.each do |item| %>
+                <%= link_to "Checkout", item.paypal_url(orders_url) %>
+            <% end %>
+          <% end %>
          </div>
       </div>
       <div class="col-sm-8 col-md-9">
@@ -72,7 +77,6 @@
                       <td class="col-actions">
                         <h4 style align="right"><%= link_to "X",order_path(order), method: :delete, class: "delete_line_item", data: { confirm: 'Are you sure?' } %></h4>
                         <a href="/products/<%= item.product.id %>" class= "icon-edit"></a>
-                        <%= link_to "Checkout", item.paypal_url(orders_url) %>
                       </td>
                     </tr>
                   <% end %>
