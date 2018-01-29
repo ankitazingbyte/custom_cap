@@ -2,9 +2,38 @@
     <div class="cart-section">
       	<div class="row">
       		<div class="col-sm-8 col-md-9">
-				<div class="shopping-cart">
-					<%= render "shopping_cart" %>
-				</div>
+      			<% if current_order.order_items.size == 0 %>
+				  <div class="cart-section">
+				    <div class="row">
+				      <div class="col-sm-8 col-md-9">
+				      <h3><center><strong>Your cart is empty</strong></center></h3>
+				      <center><a href="/home/index" class="btn btn-default">Continue shopping</a></center>
+				      </div>
+				    </div>
+				  </div>
+				<% else %>
+					<div class="shopping-cart">
+						<div class="well">
+					  		<div class="row">
+					    		<div class="col-sm-8 col-md-9">
+					    			<table class="cart-table table">
+						      		<thead>
+						            <tr>
+						              <th class="col-photo">ITEM</th>
+						              <th class="col-name"></th>
+						              <th class="col-unit-price">UNIT PRICE</th><br>
+						              <th class="col-qty">QTY</th>
+						              <th class="col-price">Total</th>
+						              <th class="col-actions"></th>
+						            </tr>
+						          	</thead>
+									<%= render "shopping_cart", current_user: current_user %>
+								</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				<% end %>
 			</div>
 			<div class="col-sm-4 col-md-3">
 	          <div class="widget-block">

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'payment_notification/create'
+
+  resources :subscrptions
   resources :shippings
   resources :contacts
   resources :addresses
@@ -28,4 +31,7 @@ Rails.application.routes.draw do
   get 'home/privarcy_policy'
   get 'home/terms_of_delivery'
   get 'home/return'
+  get 'paypal/checkout', to: 'subscriptions#paypal_checkout'
+  resources :payment_notification, only: [:create]
+
 end

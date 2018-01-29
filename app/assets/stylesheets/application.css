@@ -67,7 +67,9 @@
    
 .navbar-brand>img {
     display: block;
-    margin: -59px 11px 4px -2px;
+    margin: -25px 11px 4px -49px;
+    height: 104px;
+    width: 190px;
 }
 
 .img-holder {
@@ -98,7 +100,7 @@
 }
 
 .sort-list {
-    font: 2.2rem/1 "teko", Arial, Helvetica, sans-serif;
+    font: 2.2rem/1 ;
     text-transform: uppercase;
     margin: -21px 23px 50px 43px;
     letter-spacing: 3px;
@@ -117,7 +119,7 @@ div#editor {
 
 
 p, ol, ul, td {
-    font: 600 2.2rem/1"teko", Arial, Helvetica, sans-serif;
+    font: 600 2.2rem/
     font-size: 18px;
     line-height: 28px;
 }
@@ -166,7 +168,7 @@ p, ol, ul, td {
 }
 
 .faq{
-    font-family: "Karla","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: none;
     font-size: 21px;
     line-height: 1.43;
     color: #444;
@@ -224,17 +226,17 @@ div#main-menu {
     position: relative;
     z-index: 100;
     padding: 7px 0 0;
-    font: 15px/1.2 "teko", Arial, Helvetica, sans-serif;
+    font: 15px/1.2 ;
 }
 .categories-list{
     text-transform: uppercase;
-    font: 600 1.2rem/1 "teko", Arial, Helvetica, sans-serif;
+    font: 600 1.2rem/1;
     padding: 0px 50px;
     letter-spacing: 2px;
 
 }
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: none;
     font-size: 20px;
     line-height: 1.42857143;
     color: #333;

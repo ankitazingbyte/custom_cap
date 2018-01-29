@@ -18,7 +18,20 @@ class OrderItem < ApplicationRecord
 	    def total_price
 	      unit_price * quantity
 	    end
-
+		def paypal_url(return_path)
+		    values = {
+		        business: "",
+		        cmd: "_xclick",
+		        upload: 1,
+		        return: return_path,
+		        invoice: id,
+		        amount:10,
+		        item_name: "cap",
+		        item_number: '1',
+		        quantity: '1'
+		    }
+		    "#{Rails.application.secrets.paypal_host}/cgi-bin/webscr?" + values.to_query
+	  	end
 	  private
 	    def product_present
 	      if product.nil?

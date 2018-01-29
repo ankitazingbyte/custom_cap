@@ -58,7 +58,7 @@
         </div>
         <div class="col-md-4 col-md-push-1">
           <div class="descr">
-            <h1 class="master-product" data-id="1"><%= @product.title %></h1>
+            <h1 class="master-product" data-id="1"><%= @product.title %><span>/</span><%= @product.brand.name %></h1>
             <strong class="price product-price selling dynamic_price"><%= number_to_currency @product.price %></strong>
     <!-- DISCOUNT MODAL POPUP -->
                 <a data-toggle="modal" data-target="#myModal" class="link">Volume Discounts</a>
@@ -143,7 +143,7 @@
                 </div>
               <% end %>
             </div>
-            <div> 
+            <!-- <div> 
               <label class="pull-left">Colors:</label>
               <ul class="set-color list-inline">
                 <li><div class="color-div col-xs-1 fpd-tootip" title="Black" data-index="0" data-url="/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2418" style="background: linear-gradient(to bottom, #000000  50%,  #030303 50%);"></div></li>
@@ -153,7 +153,7 @@
                 <li><div class="color-div col-xs-1 fpd-tootip" title="White" data-index="4" data-url="/products/flat-bill-snapback-new-era/get_variant_image_url?variant_id=2419" style="background-color: #FFFFFF;"></div></li>
                 <li><a data-toggle="modal" href="#colorModal1">more colors</a></li>
               </ul>
-            </div>
+            </div> -->
             <h4 class="text-left top-mar">Customize Now!</h4>
             <div class="clearfix">
               <div class="row">
@@ -238,7 +238,7 @@
         </div> 
       </div> 
     <!-- COLOR MODEL --> 
-      <div class="row">
+      <!-- <div class="row">
         <div class="modal" id="colorModal1">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -293,7 +293,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     <!-- PRODUCT DEATILS -->
       <div class="row">
         <div class="col-sm-12 col-md-8">
@@ -375,7 +375,7 @@
 </main>
 
 
-<script>
+<!-- <script>
     $(document).ready(function(){
         $('#demo-1 .simpleLens-thumbnails-container img').simpleGallery({
             loading_image: 'demo/images/loading.gif'
@@ -385,7 +385,7 @@
             loading_image: 'demo/images/loading.gif'
         });
     });
-</script>
+</script> -->
 
 
 <!-- ADD TEXT BOX MODAL  -->
@@ -477,18 +477,18 @@
     });
   </script> -->
   <!-- EDITOR UPDATE -->
-  <script>
+  <!-- <script>
     // $(function(){
     //    $('#edit').froalaEditor({
     //      editInPopup: true
     //   })
     // });
-  </script>
+  </script> -->
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script> -->
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"> -->
     
-  </script>
+  <!-- </script> -->
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0//js/froala_editor.pkgd.min.js"></script> -->
 <!-- END -->
 

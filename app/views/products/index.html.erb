@@ -46,7 +46,7 @@
                   <div class="variant_source hide" id="https://uploads.capbeast.com/spree/products/191987/product/IMG_0131.jpg?1475692677"></div>
                   </li>
               </ul>
-              <strong class="title"><a href="/products/<%= product.id %>"><%= product.title %><%= product.brand.name %></a></strong>
+              <strong class="title"><a href="/products/<%= product.id %>"><%= product.title %><span>/</span><%= product.brand.name %></a></strong>
               <strong class="price">$<%= product.price %></strong>
             </li>
           <% end %>

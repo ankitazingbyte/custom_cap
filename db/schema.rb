@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180119111049) do
+ActiveRecord::Schema.define(version: 20180125083958) do
 
   create_table "addresses", force: :cascade do |t|
     t.string "first_name"
@@ -92,6 +92,17 @@ ActiveRecord::Schema.define(version: 20180119111049) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "payment_notifications", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "payments", force: :cascade do |t|
+    t.integer "order_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "products", force: :cascade do |t|
     t.string "image"
     t.string "title"
@@ -107,6 +118,17 @@ ActiveRecord::Schema.define(version: 20180119111049) do
   create_table "shippings", force: :cascade do |t|
     t.string "express"
     t.string "standard"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "subscrptions", force: :cascade do |t|
+    t.string "email"
+    t.integer "card_number"
+    t.integer "cvv"
+    t.string "expiration"
+    t.string "customer_token"
+    t.string "recurring_profile_token"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

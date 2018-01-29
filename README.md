@@ -22,3 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+https://www.froala.com/wysiwyg-editor/docs/overview
