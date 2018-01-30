@@ -23,8 +23,7 @@ class OrderItem < ApplicationRecord
 		        business: "ankita.dangi-facilitator@zingbytes.com",
 		        cmd: "_xclick",
 		        upload: 1,
-		        return: return_path,
-			      "amount" => current_order.subtotal	    }
+		        return: return_path,	    }
 		 #    <% debuger
 		 #    		    OrderItem.each do |item|
 			#     values.merge!({
