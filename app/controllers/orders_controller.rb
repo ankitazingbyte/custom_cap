@@ -1,7 +1,9 @@
 class OrdersController < ApplicationController
   
     def index
-          @orders = Order.all        
+          @orders = Order.all 
+          @shippings = Shipping.all
+          @addresses = Address.all       
     end
     def new
         @order = Order.new

@@ -28,11 +28,7 @@
         <div class="col-md-6">
           <h4 style="display: inline">Paypal Account</h4>
           <!-- <a href= "https://www.paypal.com/webscr?cmd=_express-checkout&token=EC-4KR9929436625521H&useraction=commit"><%#= image_tag 'paypal.png', class: "checkout" %></a> -->
-          <% current_user.orders.each do |order| %>
-            <% order.order_items.each do |item| %>
-                <%= link_to "Checkout", item.paypal_url(orders_url) %>
-            <% end %>
-          <% end %>
+              <%= link_to "Checkout", OrderItem.paypal_url(orders_url), class: "btn btn-warning" %>
          </div>
       </div>
       <div class="col-sm-8 col-md-9">
@@ -123,7 +119,12 @@
         <dt>Subtotal</dt>
         <dd><%= number_to_currency current_order.subtotal %></dd>
         <dt>Shipping Total: </dt>
-        <dd>$14.00</dd>
+        <dd>
+          <% @shippings.each do |shipping| %>
+            <%= shipping.express %>
+            <%= shipping.standard %>
+          <% end %>
+        </dd>
         <dt>Total items:</dt>
         <dd><strong><%= current_order.order_items.size %></strong></dd>
         <dt><strong>Order Total</strong></dt>
