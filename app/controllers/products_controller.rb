@@ -14,6 +14,7 @@ class ProductsController < ApplicationController
       @products = Product.search(params[:title])
     else
       @products = Product.all
+      render json: @products
     end
   end
   # GET /products/1

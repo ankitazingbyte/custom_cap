@@ -58,7 +58,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'carrierwave'
-gem 'devise'
+# gem 'devise'
 gem 'stripe'
 gem 'mini_magick'
 gem 'cocoon'
@@ -67,3 +67,5 @@ gem 'jquery-rails'
 gem 'kaminari'
 gem 'ransack'
 gem 'activemerchant'
+gem 'devise_token_auth'
+gem 'omniauth'

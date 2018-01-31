@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
+  mount_devise_token_auth_for 'User', at: 'auth'
   get 'payment_notification/create'
 
   resources :subscrptions
   resources :shippings
   resources :contacts
   resources :addresses
-  devise_for :users
+  # devise_for :users
   resources :products
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :brands

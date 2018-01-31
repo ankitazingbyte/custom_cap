@@ -3,7 +3,8 @@ class OrdersController < ApplicationController
     def index
           @orders = Order.all 
           @shippings = Shipping.all
-          @addresses = Address.all       
+          @addresses = Address.all    
+          render json: @orders   
     end
     def new
         @order = Order.new
